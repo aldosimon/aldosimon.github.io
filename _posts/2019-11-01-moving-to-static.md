@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: moving to static.md
+title: moving to static
 ---
 I'm moving to static web hosting, old post are going to be moved when I have the willpower :D
 
