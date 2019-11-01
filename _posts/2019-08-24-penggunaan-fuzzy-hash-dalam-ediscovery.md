@@ -1,12 +1,17 @@
 ---
 layout: post
 title: penggunaan fuzzy hash dalam ediscovery
-date: 2019-08-24 06:35
+date: '2019-08-24 06:35'
 author: admin
 comments: true
-categories: [ediscovery, forensic, ssdeep]
+categories:
+  - ediscovery
+  - forensic
+  - ssdeep
+published: true
 ---
 <p style="text-align: justify;">Beberapa saat yang lalu, ketika sedang menunggu rekan-rekan praktisi forensik digital melakukan akuisisi pada beberapa perangkat komunikasi, mata penulis terpaku pada sebuah poster SANS forensic yang berisi teknik identifikasi <em>malware</em>. Dari beberapa teknik identifikasi tersebut, terdapat salah satu teknik untuk menghitung kesamaan dari dua buah <em>malware</em> yang berbeda. Penulis bertanya di dalam hati, mengapa teknik tersebut tidak digunakan untuk mencari dokumen elektronik yang memiliki kesamaan. Pertanyaan tersebut tidak menuai jawaban hari itu….karena penulis bertanya di dalam hati.</p>
+
 <p style="text-align: justify;"><strong>Pengantar</strong></p>
 <p style="text-align: justify;">Sebagai praktisi forensik digital, terutama yang berfokus di e-discovery, kegiatan menemukan file sudah menjadi makanan sehari-hari. Namun adakalanya diperlukan juga bagi praktisi forensik digital untuk menemukan file yang serupa dengan file yang sudah ditemukan (file yang sudah di-<em>update, </em>di-<em>edit, </em>di-<em>save as­</em> dsb).  Fuzzy hash dapat digunakan sebagai salah satu alternative untuk menyelesaikan permasalahan tersebut.</p>
 <p style="text-align: justify;"><strong>Hash dan fuzzy hash</strong></p>
