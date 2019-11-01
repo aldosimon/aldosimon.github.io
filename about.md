@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 published: true
 ---
+##About
 
 DFIR practitioner with keen interest in infosec.
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
