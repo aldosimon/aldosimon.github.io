@@ -13,11 +13,8 @@ published: true
 <p style="text-align: justify;">Wireshark digunakan untuk melakukan network packet analysis. Untuk membantu melakukan analysis, dapat dilakukan filtering, capture filter dan display filter. Berikut beberapa display filter yang seringkali saya lupakan, sehingga perlu ditulis disini:</p>
 
 1. filter web browsing (http/https web traffic)
-
 <code>http.request or ssl.handshake.type == 1.</code>
-
 2.  identifying host information (mac address and hostname) from dhcp
-
 <code>bootp</code> or <code>dhcp</code>
 <p style="text-align: justify;">setelah melakukan filtering (dhcp atau bootp), pada jendela packet details (jendela tengah) bisa terlihat mac address dari client, serta hostname dari client tersebut.</p>
 <p style="text-align: justify;"><a href="http://aldosimon.com/blog/wp-content/uploads//2019/04/mac-and-host-name.png"><img class="aligncenter size-full wp-image-406" src="http://aldosimon.com/blog/wp-content/uploads//2019/04/mac-and-host-name.png" alt="" width="572" height="243" /></a></p>
