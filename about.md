@@ -5,7 +5,8 @@ permalink: /about/
 published: true
 ---
 
-DFIR practitioner with interest in infosec. Learn more from my [curriculum vitae](https://www.visualcv.com/aldosimon/)
+DFIR practitioner with interest in infosec and sleep marathon. 
+Learn more from my [curriculum vitae](https://www.visualcv.com/aldosimon/)
 
 ### contact
 
