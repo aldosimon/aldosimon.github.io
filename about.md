@@ -11,3 +11,7 @@ DFIR practitioner with interest in infosec. Learn more from my [curriculum vitae
 
 [aldo[at]aldosimon.com](mailto:aldo@aldosimon.com)
 
+
+### Credits
+
+[logo](https://www.freepik.com/3ab2ou)
