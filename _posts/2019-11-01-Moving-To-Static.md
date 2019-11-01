@@ -1,6 +1,4 @@
 ---
 published: true
 ---
-## A New Post
-
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+We're moving to static hosting, old post are being move when I have the willpower :D
