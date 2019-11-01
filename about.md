@@ -5,7 +5,7 @@ permalink: /about/
 published: true
 ---
 
-DFIR practitioner with keen interest in infosec.
+DFIR practitioner with interest in infosec.
 
 ### Contact me
 
