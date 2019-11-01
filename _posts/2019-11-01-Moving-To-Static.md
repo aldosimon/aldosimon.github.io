@@ -1,4 +1,4 @@
 ---
 published: true
 ---
-We're moving to static hosting, old post are being move when I have the willpower :D
+I'm moving to static web hosting, old post are going to be moved when I have the willpower :D
