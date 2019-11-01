@@ -9,4 +9,4 @@ DFIR practitioner with interest in infosec.
 
 ### Contact me
 
-[aldo@aldosimon.com](mailto:aldo@aldosimon.com)
+[aldo[at]aldosimon.com](mailto:aldo@aldosimon.com)
