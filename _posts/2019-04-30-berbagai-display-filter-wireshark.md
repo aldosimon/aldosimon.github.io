@@ -1,12 +1,17 @@
 ---
 layout: post
 title: berbagai display filter wireshark
-date: 2019-04-30 10:09
+date: '2019-04-30 10:09'
 author: admin
 comments: true
-categories: [DFIR, forensic, forensic]
+categories:
+  - DFIR
+  - forensic
+  - forensic
+published: true
 ---
-<p style="text-align: justify;">Wireshark digunakan untuk melakukan network packet analysis. Untuk membantu melakukan analysis, dapat dilakukan filtering, capture filter dan display filter. Berikut beberapa display filter yang seringkali saya lupakan, sehingga perlu ditulis disini:<!--more--></p>
+<p style="text-align: justify;">Wireshark digunakan untuk melakukan network packet analysis. Untuk membantu melakukan analysis, dapat dilakukan filtering, capture filter dan display filter. Berikut beberapa display filter yang seringkali saya lupakan, sehingga perlu ditulis disini:</p>
+<!--more-->
 1. filter web browsing (http/https web traffic)
 
 <code>http.request or ssl.handshake.type == 1.</code>
