@@ -5,7 +5,7 @@ permalink: /cv2/
 published: true
 ---
 
-## Ewaldo Simon Hiras / Digital Forensic Investigator
+<center> <h2> Ewaldo Simon Hiras / Digital Forensic Investigator </h2> </center>
 
 ## Summary
 ----
