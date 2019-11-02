@@ -1,6 +1,6 @@
 ---
-layout: cv
-title: Ewaldo Simon Hiras
+layout: page
+title: CV
 permalink: /cv2/
 published: true
 ---
