@@ -16,85 +16,81 @@ I have a huge interest in information security related topics, and hold a master
 
 ## Experience
 ----
-`2013 - Present`
 
-**Directorate General of Taxes, Digital Forensic Investigator**
+
+**Directorate General of Taxes, Digital Forensic Investigator** (`2013 - Present`)
 - Digital forensic team supervisor.
 - Digital forensic investigator in several high profile tax investigation.
 - Conduct forensic acquisition, analysis and presentation of digital evidence on various tax investigations.
 -   Employing various computer and mobile forensic tools, mainly focusing in e-discovery.
 -   Trainer on several digital forensic training held by Directorate General of Tax throughout Indonesia.
 
-`2019`
 
-**Indonesia Security Summit 2019, Panelist**
+
+**Indonesia Security Summit 2019, Panelist** (`2019`)
 
 As one of the Panelist in the summit on the topic why being secure is not enough
 
-`2018`
 
-**Indonesia Security Summit 2018, Panelist**
+
+**Indonesia Security Summit 2018, Panelist** (`2018`)
 
 As one of the Panelist in the summit focusing on IoT Security
 
-`2017`
 
-**121digital, Information Technology Tutor**
+
+**121digital, Information Technology Tutor** (`2017`)
 
 121digital provides free information technology training for adults.
 
-`2013 - 2015`
 
-**Directorate General of Taxes, Liaison Officer**
+
+**Directorate General of Taxes, Liaison Officer** (`2013 - 2015`)
 
 - Evaluate of ongoing tax crime investigation progress report.
 -   Facilitate coordination works between Directorate General of Taxes and various law enforcement agency.
 
-`2007 - 2012`
 
-**Capital Market Supervisory Agency, Investigator**
+
+**Capital Market Supervisory Agency, Investigator** (`2007 - 2012`)
 
 Document examination, on site examination, witness inquiries, and reporting. Focusing in Capital Market crime investigation mainly regarding stock transaction and brokerage.
 
 
 ## Education
 ----
-`2016 - 2017`
 
-**University College Dublin,  Master of Science in Digital Investigation and Forensic Computer**
+
+**University College Dublin,  Master of Science in Digital Investigation and Forensic Computer** (`2016 - 2017`)
 
 First class-honour degree in computer forensic and information security masters degree.  My thesis focuses on Metasploit attack from digital forensic point of view.
 
-`2008 - 2010`
 
-**Universitas Indonesia, Bachelor on Accountancy**
+
+**Universitas Indonesia, Bachelor on Accountancy** (`2008 - 2010`)
 
 Accounting degree with thesis focusing in stock recommendation and returns.
 
-`2004 - 2007`
 
-**Sekolah Tinggi Akuntansi Negara, Diploma on Accountancy**
+
+**Sekolah Tinggi Akuntansi Negara, Diploma on Accountancy** (`2004 - 2007`)
 
 A three years diploma focusing on governmental accounting system.
 
 ## Achievements
 ----
-`2016`
 
-**Indonesia Endowment Fund for Education**
+
+**Indonesia Endowment Fund for Education** (`2016`)
 
 Awarded a full scholarship on Msc. in Digital Investigation and Forensic Computing.
 
 
 ## Writings
 ----
-`2018`
+**The fault in our Shell, Cyber Defense eMagz** (`2018`)
 
-The fault in our Shell, Cyber Defense eMagz
-
-`2017`
-
-Forensic Artefacts of Metasploit Post Exploit Scenarios, Msc. Theses
+**Forensic Artefacts of Metasploit Post Exploit Scenarios** (`2017`)
 
 
 
