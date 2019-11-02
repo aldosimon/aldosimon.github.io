@@ -24,22 +24,22 @@ Bagi praktisi forensik digital yang berfokus di bidang <em>malware analysis, </e
 ssdeep merupakan implementasi dari konsep <em>fuzzy hash</em>. Untuk penggunaan dalam e-discovery, khususnya menemukan file-file yang memiliki kemiripan, dapat digunakan beberapa teknik ssdeep berikut:
 1. Menghitung ssdeep hash.
 untuk menghitung ssdeep hash, dapat digunakan perintah:
-  <code><em>ssdeep -b nama_file</em></code>
+  `ssdeep -b nama_file`
   atau apabila hasil hash tersebut akan disimpan ke dalam sebuah file:
-  <code><em>ssdeep -b nama_file &gt; hash.txt</em></code>
+  `ssdeep -b nama_file > hash.txt`
 
 2. Membandingkan hash yang disimpan dalam file dengan:
-  <code><em>ssdeep -b -m hash.txt nama_file</em></code>
+  `ssdeep -b -m hash.txt nama_file`
 
 3. Apabila anda pemalas kelas kakap, dapat dilakukan perbandingan langsung seluruh folder secara <em>recursive </em>dengan
-<code><em>ssdeep -l -r -p nama_directory</em></code>
+`ssdeep -l -r -p nama_directory`
 
 flags:
-<span style="font-size: 8pt;">-b:  tidak perlu tampilkan <em>path
-</em></span><span style="font-size: 8pt;">-m: tandingkan dengan <em>hash
-</em></span><span style="font-size: 8pt;">-l:  gunakan <em>path relative
-</em></span><span style="font-size: 8pt;">-r:  <em>recursive
-</em></span><span style="font-size: 8pt;">-p: tampilkan semua yang sama</span>
+  -b:  tidak perlu tampilkan path
+  -m: tandingkan dengan hash
+  -l:  gunakan path relative
+  -r:  recursive
+  -p: tampilkan semua yang sama
 
 <strong>kekurangan</strong>
 
