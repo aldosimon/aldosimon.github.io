@@ -8,9 +8,10 @@ categories: [how to, networking, ubuntu, ubuntu]
 ---
 Mess your connection? here's how to start networking ubuntu from console
 
->/etc/init.d/NetworkManager start
->ifconfig
->ifconfig wlan0 up
->iwlist scan iwconfig wlan0 essid essid_name dhcp wlan0
-
+~~~bash
+/etc/init.d/NetworkManager start
+ifconfig
+ifconfig wlan0 up
+iwlist scan iwconfig wlan0 essid essid_name dhcp wlan0
+~~~
 cheers :)
