@@ -1,6 +1,6 @@
 ---
 layout: post
-title: fix ubuntu 11.04 wifi problem
+title: Fix ubuntu 11.04 wifi problem
 date: '2012-08-29 12:30'
 author: admin
 comments: true

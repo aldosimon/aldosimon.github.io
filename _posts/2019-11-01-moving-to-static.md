@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: moving to static
+title: Moving to static
 author: admin
 comments: true
 categories:
