@@ -2,6 +2,10 @@
 layout: post
 published: true
 title: moving to static
+author: admin
+comments: true
+categories:
+  -random
 ---
 I'm moving to static web hosting, old post are going to be moved when I have the willpower :D
 
