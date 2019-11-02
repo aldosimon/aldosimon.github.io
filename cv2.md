@@ -1,7 +1,10 @@
 ---
 layout: cv
 title: Ewaldo Simon Hiras
+permalink: /cv2/
+published: true
 ---
+
 ## Ewaldo Simon Hiras
 Digital Forensic Investigator
 
