@@ -1,6 +1,6 @@
 ---
-layout: page
-title: misc. shell command
+layout: post
+title: Misc. shell command
 date: 2012-08-29 12:15
 author: admin
 comments: true
@@ -16,6 +16,7 @@ turn off screen:
 ```bash
 xset dpms force standby
 ```
+
 see user:
 ```bash
 lastlog
