@@ -17,8 +17,8 @@ turn off screen:
 xset dpms force standby
 ```
 see user:
-
-```lastlog
+```bash
+lastlog
 cat /etc/passwd
 ```
 
