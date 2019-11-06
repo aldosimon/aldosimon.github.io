@@ -8,5 +8,5 @@ published: true
 DFIR practitioner with interest in infosec and sleep marathon. Learn more from my [cv](https://www.visualcv.com/aldosimon/).
 
 ### credits
-* [logo](https://www.freepik.com/3ab2ou)
+* [logo](https://www.cleanpng.com/)
 * [jekyll-now](https://github.com/barryclark/jekyll-now "jekyll-now")
