@@ -9,7 +9,7 @@ name: aldosimon
 description: DFIR and random stuff
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/aldosimon/aldosimon.github.io/master/images/528e.jpg
+avatar: https://raw.githubusercontent.com/aldosimon/aldosimon.github.io/master/images/528e.png
 #https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
 #
@@ -22,7 +22,7 @@ footer-links:
   email: aldo@aldosimon.com
   facebook:
   flickr:
-  github: 
+  github:
   instagram:
   linkedin: aldosimon
   pinterest:
