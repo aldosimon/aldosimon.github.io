@@ -14,7 +14,10 @@ Around one year back, [this site](aldosimon.com) was breached. This is the secon
 
 #####what happened
 
-The second breach happened around a year back, I started seeing my domain being blocked by several firewall. Upon looking at my hosting, which happened so rarely - the blog is not well maintained mind you, I see a lot of weirdly named folder.
+The second breach happened around a year back, I started seeing my domain being blocked by several firewall. Upon looking at my hosting, which happened oh so rarely - the blog is not well maintained mind you, I see a lot of weirdly named folder.
+
+
+
 
 
 
