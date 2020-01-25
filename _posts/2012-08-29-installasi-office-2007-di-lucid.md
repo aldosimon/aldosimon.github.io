@@ -14,7 +14,7 @@ Baru saja menginstallkan ubuntu ke salah satu temen dan karena  katanya ga bisa 
 2. Jalankan installasi Office 2007, Run setup.exe via wine (right click-run with wine)
 ps. no. 2, pertama saya coba jalankan setup via USB tidak bisa, via directory windows lama yang masih ntfs tidak bisa, kopikan filesnya ke desktop ubuntu baru bisa. Lagi2 saya tidak tahu kenapa, silahkan trial and error aja.
 
-3. Install dlls, fonts dan lain-lain yang dibutuhkan officenya.
+3. Install dlls, fonts dan lain-lain yang dibutuhkan officenya.  
 `sudo wget www.kegel.com/wine/winetricks`  
 `chmod +x ./winetricks`  
 `cabextracts sudo apt-get install cabextract`  
@@ -28,5 +28,3 @@ terminal > wincfg > pilih tab libraries > pilih rpcrt4 > edit to native then bui
 ps. originally posted on oprekpc.com/forum
 
 cheers :)
-
-<sub><sup>last edited on 25/01/2020</sup></sub>
