@@ -29,4 +29,4 @@ ps. originally posted on oprekpc.com/forum
 
 cheers :)
 
-<small>last edited on 25/01/2020</small>
+<sub><sup>last edited on 25/01/2020</sup></sub>
