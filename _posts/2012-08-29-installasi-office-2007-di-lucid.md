@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: installasi office 2007 di ubuntu lucid
+title: Installasi office 2007 di ubuntu lucid
 date: 2012-08-29 12:31
 author: admin
 comments: true
