@@ -21,7 +21,7 @@ ps. no. 2, pertama saya coba jalankan setup via USB tidak bisa, via directory wi
 `./winetricks gdiplus riched20 riched30 msxml3 msxml4 msxml6 corefonts tahoma vb6run vcrun6 msi2`
 
 4. wincfg
-terminal &gt; wincfg &gt; pilih tab libraries &gt; pilih rpcrt4 &gt; edit to native then built in
+terminal > wincfg > pilih tab libraries > pilih rpcrt4 > edit to native then built in
 
 5. restart!
 
