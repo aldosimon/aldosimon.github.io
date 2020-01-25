@@ -15,19 +15,10 @@ Baru saja menginstallkan ubuntu ke salah satu temen dan karena  katanya ga bisa 
 ps. no. 2, pertama saya coba jalankan setup via USB tidak bisa, via directory windows lama yang masih ntfs tidak bisa, kopikan filesnya ke desktop ubuntu baru bisa. Lagi2 saya tidak tahu kenapa, silahkan trial and error aja.
 
 3. Install dlls, fonts dan lain-lain yang dibutuhkan officenya.
-3.a winetricks :
 `sudo wget www.kegel.com/wine/winetricks`
-
-3.a.1
 `chmod +x ./winetricks`
-
-3.b
 `cabextracts sudo apt-get install cabextract`
-
-3.c fonts, dlls :
 `./winetricks gdiplus riched20 riched30 msxml3 msxml4 msxml6 corefonts tahoma vb6run vcrun6 msi2`
-
-
 
 4. wincfg
 terminal &gt; wincfg &gt; pilih tab libraries &gt; pilih rpcrt4 &gt; edit to native then built in
