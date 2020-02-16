@@ -7,7 +7,8 @@ comments: true
 categories:
   -random
 ---
-I'm moving to static web hosting, since the last wordpress installation got infected with emotet :(.
-Old post are going to be moved when I have the willpower :D
+I'm moving to static web hosting, since the last wordpress installation got infected with emotet :(
+
+Old post are going to be moved when I have the willpower.
 
 The new site was built using [jekyll-now](https://github.com/barryclark/jekyll-now "jekyll-now"), and  hosted in github.  I'm also using image found [here](https://www.cleanpng.com/) and  [disqus](https://disqus.com/) as a comment system.
