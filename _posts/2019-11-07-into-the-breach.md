@@ -1,7 +1,7 @@
 ---
 layout: post
 published: false
-title: Moving to static
+title: moving to static
 author: admin
 comments: true
 date: '2019-11-07 06:38'
@@ -10,7 +10,7 @@ categories:
 ---
 #####intro
 
-Around one year back, [this site](aldosimon.com) was breached. This is the second time it happened. The first time was through [remote file inclusion](https://www.imperva.com/learn/application-security/rfi-remote-file-inclusion/). I wrote my own 'so called' blog cms, which is immensely simple, but had a built in feature of remote file inclusion.
+around one year back, [this site](aldosimon.com) was breached. This is the second time it happened. The first time was through [remote file inclusion](https://www.imperva.com/learn/application-security/rfi-remote-file-inclusion/). I wrote my own 'so called' blog cms, which is immensely simple, but had a built in feature of remote file inclusion.
 
 #####what happened
 
