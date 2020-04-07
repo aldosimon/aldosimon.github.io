@@ -1,12 +1,12 @@
 ---
 layout: post
-title: How to start networking ubuntu
+title: how to start networking ubuntu
 date: 2012-08-29 12:27
 author: admin
 comments: true
 categories: [how to, networking, ubuntu, ubuntu]
 ---
-Mess your connection? here's how to start networking ubuntu from console
+mess your connection? here's how to start networking ubuntu from console
 
 ```bash
 /etc/init.d/NetworkManager start
