@@ -6,7 +6,7 @@ author: admin
 comments: true
 categories: [DFIR, forensic, forensic, triage]
 ---
-Beberapa perintah wmic yang berguna saat melakukan *triage*, yang *rencananya* akan terus di update
+beberapa perintah wmic yang berguna saat melakukan *triage*, yang *rencananya* akan terus di update
 <!--more-->
 #### nama, model, ukuran dan serial number hard drive
 ```bash
