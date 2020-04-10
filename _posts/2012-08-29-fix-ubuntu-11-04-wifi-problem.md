@@ -15,32 +15,31 @@ published: true
 no wifi on 11.04?
 <!--more-->
 
-<strong>SHOW LIST</strong>
-<pre>
+##### show list
+```bash
 sudo rfkill list
-</pre>
+```
 
 
-<strong>RESULT</strong>
-<pre>
+##### result
+```bash
 1: phy0: Wireless LAN
     Soft blocked: yes
     Hard blocked: no
 2: acer-wireless: Wireless LAN
     Soft blocked: yes
     Hard blocked: no
-</pre>
+```
+yes means softblocked. use this:
 
-<strong>yes means softblocked. use this:</strong>
+```bash
+sudo rfkill unblock all sudo rfkill list all
+```
+or
 
-<pre>
-1.sudo rfkill unblock all sudo rfkill list all
-</pre>
-
-<strong>OR</strong>
-<pre>
-2.sudo rmmod -f acer-wmi sudo rfkill unblock all sudo rfkill list all
-</pre>
+```bash
+sudo rmmod -f acer-wmi sudo rfkill unblock all sudo rfkill list all
+```
 
 
 cheers :)
