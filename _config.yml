@@ -88,5 +88,5 @@ exclude:
 
 #personal tags
 ---
-excerpt_separator: <!--more-->
+excerpt_separator: "<!--more-->"
 ---
