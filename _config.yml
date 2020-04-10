@@ -50,6 +50,9 @@ url: aldosimon.com
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+#front matter default
+excerpt_separator: "<!--more-->"
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
@@ -86,7 +89,4 @@ exclude:
   - README.md
   - CNAME
 
-#personal tags
----
-excerpt_separator: "<!--more-->"
----
+
