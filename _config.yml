@@ -85,3 +85,8 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+#personal tags
+---
+excerpt_separator: <!--more-->
+---
