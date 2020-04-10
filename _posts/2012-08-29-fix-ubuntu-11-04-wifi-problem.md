@@ -13,7 +13,7 @@ categories:
 published: true
 ---
 no wifi on 11.04?
-
+<!--more-->
 
 <strong>SHOW LIST</strong>
 <pre>

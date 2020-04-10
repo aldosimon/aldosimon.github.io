@@ -6,7 +6,8 @@ author: admin
 comments: true
 categories: [DFIR, forensic, forensic]
 ---
-wireshark digunakan untuk melakukan network packet analysis. Untuk membantu melakukan analysis, dapat dilakukan filtering, capture filter dan display filter. Berikut beberapa display filter yang seringkali saya lupakan, sehingga perlu ditulis disini:<!--more-->
+wireshark digunakan untuk melakukan network packet analysis. Untuk membantu melakukan analysis, dapat dilakukan filtering, capture filter dan display filter. Berikut beberapa display filter yang seringkali saya lupakan, sehingga perlu ditulis disini:
+<!--more-->
 ##### filter web browsing (http/https web traffic)
 
 ```bash

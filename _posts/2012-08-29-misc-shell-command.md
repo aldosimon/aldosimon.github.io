@@ -11,7 +11,7 @@ dmesg refresh
 ```bash
 while true;dmesg -c;sleep 5;done dmesg-c;tail -f /var/log/messages
 ```
-
+<!--more-->
 turn off screen:
 ```bash
 xset dpms force standby

@@ -11,7 +11,7 @@ categories:
 published: true
 ---
 beberapa saat yang lalu, ketika sedang menunggu rekan-rekan praktisi forensik digital melakukan akuisisi pada beberapa perangkat komunikasi, mata penulis terpaku pada sebuah poster SANS forensic yang berisi teknik identifikasi *malware*. Dari beberapa teknik identifikasi tersebut, terdapat salah satu teknik untuk menghitung kesamaan dari dua buah *malware* yang berbeda. Penulis bertanya di dalam hati, mengapa teknik tersebut tidak digunakan untuk mencari dokumen elektronik yang memiliki kesamaan. Pertanyaan tersebut tidak menuai jawaban hari itu….karena penulis bertanya di dalam hati.
-
+<!--more-->
 ### pengantar
 
 Sebagai praktisi forensik digital, terutama yang berfokus di e-discovery, kegiatan menemukan file sudah menjadi makanan sehari-hari. Namun adakalanya diperlukan juga bagi praktisi forensik digital untuk menemukan file yang serupa dengan file yang sudah ditemukan (file yang sudah di-*update*, di-*edit*, di-*save as­* dsb).  *Fuzzy hash* dapat digunakan sebagai salah satu alternative untuk menyelesaikan permasalahan tersebut.

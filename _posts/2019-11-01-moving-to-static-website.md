@@ -4,7 +4,6 @@ published: true
 title: moving to static website
 author: admin
 comments: true
-excerpt_separator: "<!--morea-->"
 categories:
   -random
 ---

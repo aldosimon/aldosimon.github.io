@@ -8,7 +8,7 @@ comments: true
 categories: [how to, ubuntu, ubuntu]
 ---
 baru saja menginstallkan ubuntu ke salah satu temen dan karena  katanya ga bisa make open office, jadi diinstallin Office 2007 deh, berikut langkah nya:
-
+<!--more-->
 1. Download Wine (http://wine.budgetdedicated.com/archive/index.html), saya pakai versi  1.1.24, dan ga tau kenapa versi terbarunya malah ga bisa.
 
 2. Jalankan installasi Office 2007, Run setup.exe via wine (right click-run with wine)
