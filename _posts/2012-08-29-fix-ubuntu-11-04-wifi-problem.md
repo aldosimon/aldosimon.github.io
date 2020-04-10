@@ -15,13 +15,13 @@ published: true
 no wifi on 11.04?
 <!--more-->
 
-##### show list
+#### show list
 ```bash
 sudo rfkill list
 ```
 
 
-##### result
+#### result
 ```bash
 1: phy0: Wireless LAN
     Soft blocked: yes
