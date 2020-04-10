@@ -6,7 +6,7 @@ author: admin
 comments: true
 categories: [how to, networking, ubuntu, ubuntu]
 ---
-mess your connection? here's how to start networking ubuntu from console
+Mess your connection? here's how to start networking ubuntu from console
 <!--more-->
 ```bash
 /etc/init.d/NetworkManager start

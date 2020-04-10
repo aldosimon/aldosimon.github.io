@@ -12,7 +12,7 @@ categories:
   - ubuntu
 published: true
 ---
-no wifi on 11.04?
+No wifi on 11.04?
 <!--more-->
 
 #### show list

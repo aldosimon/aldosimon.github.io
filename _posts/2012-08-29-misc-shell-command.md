@@ -6,6 +6,7 @@ author: admin
 comments: true
 categories: [linux]
 ---
+Beberapa perintah shell (bash) yang *rencananya* akan di-*update* terus.
 
 dmesg refresh
 ```bash
