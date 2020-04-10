@@ -4,6 +4,7 @@ published: true
 title: moving to static website
 author: admin
 comments: true
+featured-image: /images/moving.jpg
 categories:
   -random
 ---
