@@ -52,6 +52,7 @@ baseurl: ""
 
 #front matter default
 excerpt_separator: "<!--more-->"
+paginate: 5
 
 #
 # !! You don't need to change any of the configuration flags below !!
