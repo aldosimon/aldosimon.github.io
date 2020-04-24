@@ -7,7 +7,7 @@ comments: true
 categories:
   -random
 ---
-![moving](/images/moving.jpg)
+![moving](/images/moving.jpg){: .center-image }
 
 I'm moving to static web hosting, since the last wordpress installation got infected with emotet :(
 <!--more-->

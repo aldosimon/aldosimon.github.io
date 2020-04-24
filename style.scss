@@ -289,11 +289,20 @@ footer {
 @import "highlights";
 @import "svg-icons";
 
+//edits
 
+//bottom link for pagination
 .bottompagination .navigation {
     display: block;
     padding: 35px 0 0 0;
     text-align: center;
     color: #999;
     border-top: 1px solid #ddd;
+}
+
+//center image in post
+.center-image
+{
+    margin: 0 auto;
+    display: block;
 }
