@@ -14,6 +14,7 @@ categories:
 Sebagai sebuah blog forensik, malu rasanya tidak pernah menulis tentang forensik. Tadi pagi ketika membaca thisweekin4n6, ada artikel yang cukup menarik, yaitu siasat menggunakan netsh dalam melakukan persistance. Netsh sendiri secara default terinstall di Windows, sehingga teknik ini merupakan teknik yang cukup menarik untuk dibahas.
 
 <!--more-->
+
 #### intro
 Netsh adalah command line utility yang memiliki fitur untuk melihat dan memodifikasi konfigurasi network (local dan remote). Selain fungsi utama tersebut, ternyata netsh memiliki fitur untuk menambahkan dll untuk di-load ketika netsh dijalankan. Fitur  yang satu ini dapat digunakan untuk melakukan persistance, dan disebut dengan helper.
 
@@ -21,20 +22,20 @@ Netsh adalah command line utility yang memiliki fitur untuk melihat dan memodifi
 
 1. buat dan upload payload
 
-  Tulisan ini hanya bicara mengenai persistance, oleh karena itu kita tidak akan membahas detail mengenai dua hal tersebut. Anda yang tertarik dapat meriset lebih jauh. Yang termudah dan paling umum adalah dengan membuat payload via msfvenom. Untuk kepentingan tulisan ini, maka payload kita akan disebut dengan payload.dll
+    Tulisan ini hanya bicara mengenai persistance, oleh karena itu kita tidak akan membahas detail mengenai dua hal tersebut. Anda yang tertarik dapat meriset lebih jauh. Yang termudah dan paling umum adalah dengan membuat payload via msfvenom. Untuk kepentingan tulisan ini, maka payload kita akan disebut dengan payload.dll
 
 
 2. tulis registry untuk menjalankan  netsh
 
-  anda dapat menjalankan netsh melalui registry key berikut (atau dengan berbagai registry key lain)
-  ```bash
-  "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run" /v namakey /t REG_SZ /d "C:\Windows\System32\netsh"
-  ```
+    anda dapat menjalankan netsh melalui registry key berikut (atau dengan berbagai registry key lain)
+    ```bash
+    "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run" /v namakey /t REG_SZ /d "C:\Windows\System32\netsh"
+    ```
 
-  lalu tambahkan helper ke netsh, melalui perintah di command line windows:
-  ```bash
-  netsh add helper payload.dll
-  ```
+    lalu tambahkan helper ke netsh, melalui perintah di command line windows:
+    ```bash
+    netsh add helper payload.dll
+    ```
 
 setelah ini, makan setiap restart, perintah pertama (di registry) akan menyalakan netsh, namun netsh yang secara otomatis me-load helper yang merupakan payload kita.
 
