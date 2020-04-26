@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: persistance dengan netsh
+title: peristence dengan netsh
 author: admin
 comments: true
 date: '2020-04-26 10:54'
