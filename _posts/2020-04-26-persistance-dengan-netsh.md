@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: persistance dengan netsh
 author: admin
 comments: true
@@ -64,6 +64,6 @@ atau gunakan sysmon config swiftonsecurity (link di akhir tulisan).
 Keuntungan utama dari persistance ini adalah netsh merupakan perintah yang cukup sering ditemui pada Windows, terutama server, sehingga melihat sebuah key menjalankan netsh dapat dengan mudah terlewat. Lebih jauh key konfigurasi helper netsh termasuk yang jarang dipantau.
 
 
-[mitre](https://attack.mitre.org/techniques/T1128/)
-[swiftonsecurity](https://github.com/SwiftOnSecurity/sysmon-config/blob/master/sysmonconfig-export.xml)
-[pentestlab on persistance](https://pentestlab.blog/2019/10/29/persistence-netsh-helper-dll/)
+* [mitre](https://attack.mitre.org/techniques/T1128/)
+* [swiftonsecurity](https://github.com/SwiftOnSecurity/sysmon-config/blob/master/sysmonconfig-export.xml)
+* [pentestlab on persistance](https://pentestlab.blog/2019/10/29/persistence-netsh-helper-dll/)
