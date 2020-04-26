@@ -11,7 +11,7 @@ categories:
   -artifacts
 ---
 
-Sebagai sebuah blog forensik, malu rasanya tidak pernah menulis tentang forensik. Tadi pagi ketika membaca thisweekin4n6, ada artikel yang cukup menarik, yaitu siasat menggunakan netsh dalam melakukan persistance. Netsh sendiri secara default terinstall di Windows, sehingga teknik ini merupakan teknik yang cukup menarik untuk dibahas.
+Sebagai sebuah blog yang *mengaku* blog forensik, malu rasanya tidak pernah menulis tentang forensik. Tadi pagi ketika membaca thisweekin4n6, ada artikel yang cukup menarik, yaitu teknik menggunakan netsh dalam melakukan persistance. Netsh sendiri secara default terinstall di Windows, sehingga teknik ini merupakan teknik yang cukup menarik untuk dibahas walaupun sudah lama beredar.
 
 <!--more-->
 
@@ -42,7 +42,7 @@ setelah ini, makan setiap restart, perintah pertama (di registry) akan menyalaka
 #### deteksi
 untuk mendeteksi persistance ini, ada dua registry key yang bisa dipantau. pertama registry terkait persistance standar (kita menggunakan Run, seperti contoh di atas):
 
-```bash
+```js
 Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
 ```
 
