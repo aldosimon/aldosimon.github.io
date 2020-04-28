@@ -1,28 +1,28 @@
 ---
 layout: post
 published: true
-title: peristence dengan netsh
+title: persistence dengan netsh
 author: admin
 comments: true
 date: '2020-04-26 10:54'
 categories:
   -forensic
-  -persistance
+  -persistence
   -artifacts
 ---
 
-Sebagai sebuah blog yang *mengaku* blog forensik, malu rasanya tidak pernah menulis tentang forensik. Tadi pagi ketika membaca thisweekin4n6, ada artikel yang cukup menarik, yaitu teknik menggunakan netsh dalam melakukan persistance. Netsh sendiri secara default terinstall di Windows, sehingga teknik ini merupakan teknik yang cukup menarik untuk dibahas walaupun sudah lama beredar.
+Sebagai sebuah blog yang *mengaku* blog forensik, malu rasanya tidak pernah menulis tentang forensik. Tadi pagi ketika membaca thisweekin4n6, ada artikel yang cukup menarik, yaitu teknik menggunakan netsh dalam melakukan persistence. Netsh sendiri secara default terinstall di Windows, sehingga teknik ini merupakan teknik yang cukup menarik untuk dibahas walaupun sudah lama beredar.
 
 <!--more-->
 
 #### intro
-Netsh adalah command line utility yang memiliki fitur untuk melihat dan memodifikasi konfigurasi network (local dan remote). Selain fungsi utama tersebut, ternyata netsh memiliki fitur untuk menambahkan dll untuk di-load ketika netsh dijalankan. Fitur  yang satu ini dapat digunakan untuk melakukan persistance, dan disebut dengan helper.
+Netsh adalah command line utility yang memiliki fitur untuk melihat dan memodifikasi konfigurasi network (local dan remote). Selain fungsi utama tersebut, ternyata netsh memiliki fitur untuk menambahkan dll untuk di-load ketika netsh dijalankan. Fitur  yang satu ini dapat digunakan untuk melakukan persistence, dan disebut dengan helper.
 
 #### eksekusi
 
 1. buat dan upload payload
 
-    Tulisan ini hanya bicara mengenai persistance, oleh karena itu kita tidak akan membahas detail mengenai dua hal tersebut. Anda yang tertarik dapat meriset lebih jauh. Yang termudah dan paling umum adalah dengan membuat payload via msfvenom. Untuk kepentingan tulisan ini, maka payload kita akan disebut dengan payload.dll
+    Tulisan ini hanya bicara mengenai persistence, oleh karena itu kita tidak akan membahas detail mengenai dua hal tersebut. Anda yang tertarik dapat meriset lebih jauh. Yang termudah dan paling umum adalah dengan membuat payload via msfvenom. Untuk kepentingan tulisan ini, maka payload kita akan disebut dengan payload.dll
 
 
 2. tulis registry untuk menjalankan  netsh
@@ -40,7 +40,7 @@ Netsh adalah command line utility yang memiliki fitur untuk melihat dan memodifi
 setelah ini, makan setiap restart, perintah pertama (di registry) akan menyalakan netsh, namun netsh yang secara otomatis me-load helper yang merupakan payload kita.
 
 #### deteksi
-untuk mendeteksi persistance ini, ada dua registry key yang bisa dipantau. pertama registry terkait persistance standar (kita menggunakan Run, seperti contoh di atas):
+untuk mendeteksi persistence ini, ada dua registry key yang bisa dipantau. pertama registry terkait persistence standar (kita menggunakan Run, seperti contoh di atas):
 
 ```js
 Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
@@ -63,9 +63,9 @@ bagi anda pengguna sysmon, maka dapat menambahkan line berikut (khusus untuk dua
 atau gunakan sysmon config swiftonsecurity (link di akhir tulisan).
 
 #### penutup
-Keuntungan utama dari persistance ini adalah netsh merupakan perintah yang cukup sering ditemui pada Windows, terutama server, sehingga melihat sebuah key menjalankan netsh dapat dengan mudah terlewat. Lebih jauh key konfigurasi helper netsh termasuk yang jarang dipantau.
+Keuntungan utama dari persistence ini adalah netsh merupakan perintah yang cukup sering ditemui pada Windows, terutama server, sehingga melihat sebuah key menjalankan netsh dapat dengan mudah terlewat. Lebih jauh key konfigurasi helper netsh termasuk yang jarang dipantau.
 
 
 * [mitre](https://attack.mitre.org/techniques/T1128/)
 * [swiftonsecurity](https://github.com/SwiftOnSecurity/sysmon-config/blob/master/sysmonconfig-export.xml)
-* [pentestlab on persistance](https://pentestlab.blog/2019/10/29/persistence-netsh-helper-dll/)
+* [pentestlab on persistence](https://pentestlab.blog/2019/10/29/persistence-netsh-helper-dll/)
