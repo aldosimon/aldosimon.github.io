@@ -7,12 +7,10 @@
     <meta name="description" content="{{ page.excerpt| strip_html }}" />
     <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
     {% else %}
-    <meta name="description" content="{{ site.description }}">
-    <meta property="og:description" content="{{ site.description }}" />
+    <meta property="keywords" content="{{ site.metakeyword }}" />
     {% endif %}
-    <meta name="author" content="{{ site.name }}" />
+    <meta name="author" content="{{ site.metaauthor }}" />
     <meta name="description" content="{{ site.metadescription }}" />
-    <!-- <meta name="description" content="personal web of ewaldo simon" /> --?
     {% if page.title %}
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="twitter:title" content="{{ page.title }}" />
