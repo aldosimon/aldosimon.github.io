@@ -9,7 +9,7 @@ Ewaldo Simon is a DFIR enthusiast with interest in sleep marathon. Learn more fr
 
 ### credits
 * [jekyll-now](https://github.com/barryclark/jekyll-now "jekyll-now")
-* [disqus](https://disqus.com/)
+* <s>[disqus](https://disqus.com/)</s>
 * [cleanpng](https://www.cleanpng.com/)
 * [pexels](https://www.pexels.com/)
 * [unsplash](https://unsplash.com)
