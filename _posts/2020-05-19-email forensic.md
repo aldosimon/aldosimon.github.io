@@ -10,6 +10,7 @@ categories:
 ---
 #### intro
 Email merupakan sebuah sarana komunikasi yang sangat digunakan banyak pihak. Penting bagi seorang investigator forensik digital untuk mengerti secara menyeluruh, bagaimana protokol email bekerja. Tulisan ini akan membahas sebagian dari forensik email, dengan berfokus pada header email.
+
 <!--more-->
 
 
