@@ -4,7 +4,6 @@ title: about
 permalink: /about/
 published: true
 ---
-#### about
 Ewaldo Simon is a DFIR enthusiast with interest in sleep marathon. Learn more from my [cv](https://www.visualcv.com/aldosimon/).
 
 #### credits
