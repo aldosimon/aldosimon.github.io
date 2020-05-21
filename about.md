@@ -4,10 +4,10 @@ title: about
 permalink: /about/
 published: true
 ---
-### about
+#### about
 Ewaldo Simon is a DFIR enthusiast with interest in sleep marathon. Learn more from my [cv](https://www.visualcv.com/aldosimon/).
 
-### credits
+#### credits
 * [jekyll-now](https://github.com/barryclark/jekyll-now "jekyll-now")
 * <s>disqus</s>
 * [cleanpng](https://www.cleanpng.com/)
