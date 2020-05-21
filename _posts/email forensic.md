@@ -15,20 +15,20 @@ Email merupakan sebuah sarana komunikasi yang sangat digunakan banyak pihak. Pen
 
 
 #### field pada email header
-
-    Return Path: The email address which should be used for bounces.
-    The mail server will send a message to the specified email address if the message cannot be delivered
-    Delivery-date: The data the message was delivered
-    Date: The date the message was sent
-    Message-ID: The ID of the message
-    X-Mailer: The mail client (mail program) used to send the message
-    From: The message sender in the format: "Friendly Name" <email@address.tld>
-    To: The message recipient in the format: "Friendly Name" <email@address.tld>
-    Subject: The message subject
+Return Path: alamat email yang akan dikirimi pesan apabila email tidak bisa dikirim
+Delivery-date: tanggal pesan diterima
+Date: tanggal pesan dikirimkan
+Message-ID: nomor identifikasi sebuah pesn. terdiri dari dua bagian [karakterrandom]@[namadomain]. tidak terdapat format baku untuk menghasilkan Message-ID, sehingga tiap server dapat menghasilkan format yang berbeda.
+X-Mailer: The mail client (mail program) used to send the message
+From: The message sender in the format: "Friendly Name" <email@address.tld>
+To: The message recipient in the format: "Friendly Name" <email@address.tld>
+Subject: The message subject
 
 
 #### DKIM
-
+owner domain -> pub/pri key -> pub publish di DNS record
+body pesan -> hash -> hash di encrypt dgn pri key
+penerima pesan -> decrypt dgn pub key -> calculate body hash -> compare
 
 https://www.youtube.com/watch?v=nK5QpGSBR8c
 https://www.metaspike.com/leveraging-dkim-email-forensics/
