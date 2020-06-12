@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: forensik email: analisis header email
 author: admin
 comments: true
@@ -123,9 +123,6 @@ secara sederhana, proses penggunaan DKIM dalam sebuah email  adalah:
 
 kita dapat secara manual melakukan verifikasi DKIM, atau menggunakan banyak aplikasi yang tersedia online. salah satu yang paling populer adalah [mxtoolbox](https://mxtoolbox.com/Public/Tools/EmailHeaders.aspx?). memperhatikan lagi field yang tersedia, maka yang bisa dijamin oleh DKIM signature adalah beberapa field yang dicantumkan pada field h. isi dari email sendiri (body) memang di hash dan dicantumkan pada field bh, namun tidak ikut dihitung (hash dan encrypt dengan private key) menjadi DKIM signature (field b).
 
-#### rangkuman
-
-maka berdasarkan data di atas, dapat kita cek kebenaran dari email tersebut sebagai berikut:
 
 
 [13cubed's youtube](https://www.youtube.com/watch?v=nK5QpGSBR8c)
