@@ -22,7 +22,7 @@ Netsh adalah command line utility yang memiliki fitur untuk melihat dan memodifi
 
 1. buat dan upload payload
 
-    Tulisan ini hanya bicara mengenai persistence, oleh karena itu kita tidak akan membahas detail mengenai dua hal tersebut. Anda yang tertarik dapat meriset lebih jauh. Yang termudah dan paling umum adalah dengan membuat payload via msfvenom. Untuk kepentingan tulisan ini, maka payload kita akan disebut dengan payload.dll
+    tulisan ini hanya bicara mengenai persistence, oleh karena itu kita tidak akan membahas detail mengenai dua hal tersebut. Anda yang tertarik dapat meriset lebih jauh. Yang termudah dan paling umum adalah dengan membuat payload via msfvenom. Untuk kepentingan tulisan ini, maka payload kita akan disebut dengan payload.dll
 
 
 2. tulis registry untuk menjalankan  netsh
