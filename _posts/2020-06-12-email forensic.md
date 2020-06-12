@@ -6,7 +6,7 @@ author: admin
 comments: true
 date: '2020-06-12 11:08'
 categories:
-  -random
+  -email forensics
 ---
 #### intro
 email merupakan sebuah sarana komunikasi yang sangat digunakan banyak pihak. Penting bagi seorang investigator forensik digital untuk mengerti secara menyeluruh, bagaimana protokol email bekerja. Tulisan ini akan membahas sebagian dari forensik pada email, dengan berfokus pada header email.
@@ -110,7 +110,10 @@ beberapa field terkait DKIM antara lain:
   2. a= algoritma hash dan enkripsi yang digunakan. pada contoh di atas adalah rsa-sha1.
   3. c= jenis canonicalization yang digunakan. artinya bagaimana sebuah konten (pesan atau header pesan) harus diperlakukan sebelum di hash. secara jelas ada di RFC 6376 pada link. pada contoh di atas, header dan body nya di canonicalized dengan metode relaxed (karena field c-nya relaxed/relaxed)
   4. d= adalah nama domain yang mengklaim tanggung jawab atas email dimaksud. domain ini pula yang diquery untuk mendapatkan public key nya. pada contoh di atas adalah info.paypal.com
-  5. s= adalah selector dari domain, mudahnya terdapat beberapa record dns milik domain (d), selector adalah penunjuk kita meminta record dns yang mana, agar mendapatkan public key. pada contoh di atas adalah responsys.
+  5. s= adalah selector dari domain, mudahnya terdapat beberapa record dns milik domain (d), selector adalah penunjuk kita meminta record dns yang mana, agar mendapatkan public key. pada contoh di atas adalah responsys. anda bisa memverifikasi informasi pada vield ini dengan menggunakan berbagai aplikasi online (mxtoolbox contohnya) atau dengan menggunakan perintah dig pada linux, menggunakan field d (info.paypal.com) dan s (responsys).  DKIM key disimpan di bawah subdomain _domainkey, serta jenis dns record nya adalah TXT. sehingga perintah dig anda akan terlihat seperti:
+  ```bash
+  dig -t txt dig responsys._domainkey.info.paypal.com TXT
+  ```
   6. h= adalah bagian dari header email yang dipilih dan nantinya ikut di encrypt dan hash untuk menjadi signature. pada contoh diatas MIME-Version:Content-Type:Date:From:Reply-To:Subject:List-Unsubscribe:To:Message-Id
   7. bh= body email yang sudah di hash (sesuai dengan field a) dan kemudian disajikan dalam base64.
   8. b= signature dalam bentuk Base64 form.
@@ -121,14 +124,15 @@ secara sederhana, proses penggunaan DKIM dalam sebuah email  adalah:
   3. beberapa bagian email yang dikirimkan (yang dipilih ada di field h) kemudian melalui proses canonicalization (sesuai jenis pada field c) dan dihash (sesuai jenis pada field a) dan hash tersebut di encrypt (sesuai jenis pada field a) dengan private key yang  dibuat pada langkah pertama. inilah yang menjadi signature dari email tersebut (field b)
   4. penerima pesan dapat memastikan integritas pesan dengan men-decrypt hash tersebut dengan public key yang tersedia, kemudian membandingkannya dengan menghitung hash dari email tersebut. apabila ada perbedaan, maka terdapat kemungkinan field-field yang disebutkan pada field h berubah.
 
-kita dapat secara manual melakukan verifikasi DKIM, atau menggunakan banyak aplikasi yang tersedia online. salah satu yang paling populer adalah [mxtoolbox](https://mxtoolbox.com/Public/Tools/EmailHeaders.aspx?). memperhatikan lagi field yang tersedia, maka yang bisa dijamin oleh DKIM signature adalah beberapa field yang dicantumkan pada field h. isi dari email sendiri (body) memang di hash dan dicantumkan pada field bh, namun tidak ikut dihitung (hash dan encrypt dengan private key) menjadi DKIM signature (field b).
+kita dapat secara manual melakukan verifikasi DKIM, atau menggunakan banyak aplikasi yang tersedia online. salah satu yang paling populer adalah [mxtoolbox](https://mxtoolbox.com/Public/Tools/EmailHeaders.aspx?).
+memperhatikan lagi field yang tersedia, maka yang bisa dijamin oleh DKIM signature adalah beberapa field yang dicantumkan pada field h. isi dari email sendiri (body) memang di hash dan dicantumkan pada field bh, namun tidak ikut dihitung (hash dan encrypt dengan private key) menjadi DKIM signature (field b).
 
 
 
-[13cubed's youtube](https://www.youtube.com/watch?v=nK5QpGSBR8c)
-[metaspike](https://www.metaspike.com/leveraging-dkim-email-forensics/)
-[arclab](https://www.arclab.com/en/kb/email/how-to-read-and-analyze-the-email-header-fields-spf-dkim.html)
-[redsift](http://knowledge.ondmarc.redsift.com/en/articles/1148885-spf-hard-fail-vs-spf-soft-fail)
-[stackoverflow](https://stackoverflow.com/questions/48762829/proper-way-to-validate-dkim-signature-b-part)
-[stackoverflow](https://stackoverflow.com/questions/36047831/generating-dkim-signatures-via-python-for-custom-mta)
-[rfc6376](https://tools.ietf.org/html/rfc6376)
+* [13cubed's youtube](https://www.youtube.com/watch?v=nK5QpGSBR8c)
+* [metaspike](https://www.metaspike.com/leveraging-dkim-email-forensics/)
+* [arclab](https://www.arclab.com/en/kb/email/how-to-read-and-analyze-the-email-header-fields-spf-dkim.html)
+* [redsift](http://knowledge.ondmarc.redsift.com/en/articles/1148885-spf-hard-fail-vs-spf-soft-fail)
+* [stackoverflow](https://stackoverflow.com/questions/48762829/proper-way-to-validate-dkim-signature-b-part)
+* [stackoverflow](https://stackoverflow.com/questions/36047831/generating-dkim-signatures-via-python-for-custom-mta)
+* [rfc6376](https://tools.ietf.org/html/rfc6376)
