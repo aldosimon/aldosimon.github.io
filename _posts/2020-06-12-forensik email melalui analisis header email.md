@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: forensik email, analisis header email
+title: forensik email melalui analisis header email
 author: admin
 comments: true
 date: '2020-06-12 11:08'
@@ -118,7 +118,7 @@ beberapa field terkait DKIM antara lain:
   dig -t txt dig responsys._domainkey.info.paypal.com TXT
   ```
   6. h= adalah bagian dari header email yang dipilih dan nantinya ikut di encrypt dan hash untuk menjadi signature. pada contoh diatas MIME-Version:Content-Type:Date:From:Reply-To:Subject:List-Unsubscribe:To:Message-Id
-  7. bh= body email yang sudah di hash (sesuai dengan field a) dan kemudian disajikan dalam base64.
+  7. bh= body email yang sudah canonicalized (sesuai field c RFC 6376) di hash (sesuai dengan field a) dan kemudian disajikan dalam base64.
   8. b= signature dalam bentuk Base64 form.
 
 secara sederhana, proses penggunaan DKIM dalam sebuah email  adalah:
@@ -133,7 +133,7 @@ kita dapat secara manual melakukan verifikasi DKIM, atau menggunakan banyak apli
 #### konsiderasi saat akuisisi
 berdasarkan penjelasan tersebut, maka ketika melakukan akuisisi email (tanpa menggunakan perangkat khusus email), akan lebih baik apabila header email tersebut juga ikut kita akuisisi, karena dapat menjamin otentitas dari beberapa hal, khususnya field yang turut dihitung dalam DKIM signature. memperhatikan lagi field yang tersedia, maka yang bisa dijamin oleh DKIM signature adalah beberapa field yang dicantumkan pada field h. isi dari email sendiri (body) memang di hash dan dicantumkan pada field bh, namun tidak ikut dihitung (hash dan encrypt dengan private key) menjadi DKIM signature (field b).
 
-selain itu field-field lain yang tidak turut masuk dalam DKIM signature dapat pula menjadi petunjuk dalam melakukan analisis. 
+selain itu field-field lain yang tidak turut masuk dalam DKIM signature dapat pula menjadi petunjuk dalam melakukan analisis.
 
 * [13cubed's youtube](https://www.youtube.com/watch?v=nK5QpGSBR8c)
 * [metaspike](https://www.metaspike.com/leveraging-dkim-email-forensics/)
