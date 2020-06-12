@@ -7,6 +7,7 @@ comments: true
 date: '2020-06-12 11:08'
 categories:
   -email forensics
+  -email forensik
 ---
 #### intro
 email merupakan sebuah sarana komunikasi yang sangat digunakan banyak pihak. Penting bagi seorang investigator forensik digital untuk mengerti secara menyeluruh, bagaimana protokol email bekerja. Tulisan ini akan membahas sebagian dari forensik pada email, dengan berfokus pada header email.
