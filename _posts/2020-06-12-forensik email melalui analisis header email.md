@@ -31,7 +31,7 @@ DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=responsys; d=info.paypal.c
 DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=responsys; d=info.paypal.com; b=JyWv8SKVgNBckLxZClNYi2e4jB1O0vXN7+xXenYtgqxrhl7aTJB9Ccby1dTC5AMLnI6labChYrFK
    QLbtHPQNh7jBrXrCzp5lj5vTjXKv9eujU/3dkRNInnSzS127eebDWs0J/nCTwEXaVx6E8UrMh0Wp
    AK9CJR9afWN8hPNXS0c=;
-Received: by om-paypal-apac.rsys4.com (PowerMTA(TM) v3.5r10) id h347jq0morc1 for <[disembunyikan]simon@gmail.com>; Fri, 4 Dec 2009 05:18:36 -0800 (envelope-from <[disembunyikan]@info.paypal.com>)
+Received: by om-paypal-apac.rsys4.com (PowerMTA(TM) v3.5r10) id h347jq0morc1 for <[disembunyikan]@gmail.com>; Fri, 4 Dec 2009 05:18:36 -0800 (envelope-from <[disembunyikan]@info.paypal.com>)
 MIME-Version: 1.0
 Content-Type: multipart/mixed; boundary="----msg_border"
 Date: Fri, 4 Dec 2009 05:18:36 -0800
@@ -66,7 +66,7 @@ Received: from om-paypal-apac.rsys4.com (om-paypal-apac.rsys4.com [12.130.139.51
         by mx.google.com with ESMTP id 22si6368786gxk.17.2009.12.04.05.31.39;
         Fri, 04 Dec 2009 05:31:41 -0800 (PST)
 --dipotong--
-Received: by om-paypal-apac.rsys4.com (PowerMTA(TM) v3.5r10) id h347jq0morc1 for <[disembunyikan]simon@gmail.com>; Fri, 4 Dec 2009 05:18:36 -0800 (envelope-from <[disembunyikan]@info.paypal.com>)
+Received: by om-paypal-apac.rsys4.com (PowerMTA(TM) v3.5r10) id h347jq0morc1 for <[disembunyikan]@gmail.com>; Fri, 4 Dec 2009 05:18:36 -0800 (envelope-from <[disembunyikan]@info.paypal.com>)
 ```
 terdapat beberapa field yang perlu diperhatikan pada sebuah header email. antara lain:
   1. Return Path: alamat email yang akan dikirimi pesan apabila email tidak bisa dikirim
