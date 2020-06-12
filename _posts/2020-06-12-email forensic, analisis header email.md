@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: forensik email: analisis header email
+title: forensik email, analisis header email
 author: admin
 comments: true
 date: '2020-06-12 11:08'
@@ -50,6 +50,8 @@ Message-Id: <4B190C2C.00000A7C@om-paypal-apac.rsys4.com>
 ```
 namun sebelum masuk ke pembahasan field pada email header, kita perlu mengetahui bahwa sebuah email memulai perjalanannya di Mail User Agent (MUA), yang merupakan client yang dapat berbicara dengan protokol tertentu (SMTP, POP3) kepada sebuah Mail Transfer Agent (MTA), yang berfungsi meneruskan email kepada MTA lain, atau langsung kepada MUA (dengan protokol IMAP). contoh MUA antara lain Thunderbird, Ms. Outlook. Sedangkan contoh sebuah MTA adalah Ms. Exchange, Sendmail, Postfix.
 
+setelah memahami mengenai konsep dasar tersebut, kita akan memotong-motong header email di atas, serta membahasnya satu persatu.
+
 #### field standar pada email header
 
 ```bash
@@ -74,6 +76,7 @@ terdapat beberapa field yang perlu diperhatikan pada sebuah header email. antara
   6. From: akun pengirim email
   7. To: akun tujuan/ penerima email
   8. Subject: subjek email
+
 yang perlu diingat adalah field di atas dibaca dengan urutan dari bawah ke atas. sehingga informasi yang disampaikan dari field di atas adalah email dikirimkan dari domain om-paypal-apac.rsys4.com [12.130.139.51] dan diterima oleh mx.google.com dengan protokol ESMTP pada  04 Dec 2009 05:31:41 -0800 (PST). email ini selanjutnya diteruskan ke 10.150.87.2, dan terakhir ke 10.229.84.10.
 perlu diperhatikan juga di bawah baris --dipotong-- kita bisa melihat pertama kali email tersebut dikirim oleh MUA kepada MTA, namun tidak tercantum nama klien yang digunakan. contoh di bawah memperlihatkan sebuah MUA yang mengirimkan kepada MTA, dengan nama client yang digunakan Exim 4.69. beberapa klien lain yang mungkin sering ditemui adalah Thunderbird, dan Ms. Outlook.
 
@@ -125,9 +128,12 @@ secara sederhana, proses penggunaan DKIM dalam sebuah email  adalah:
   4. penerima pesan dapat memastikan integritas pesan dengan men-decrypt hash tersebut dengan public key yang tersedia, kemudian membandingkannya dengan menghitung hash dari email tersebut. apabila ada perbedaan, maka terdapat kemungkinan field-field yang disebutkan pada field h berubah.
 
 kita dapat secara manual melakukan verifikasi DKIM, atau menggunakan banyak aplikasi yang tersedia online. salah satu yang paling populer adalah [mxtoolbox](https://mxtoolbox.com/Public/Tools/EmailHeaders.aspx?).
-memperhatikan lagi field yang tersedia, maka yang bisa dijamin oleh DKIM signature adalah beberapa field yang dicantumkan pada field h. isi dari email sendiri (body) memang di hash dan dicantumkan pada field bh, namun tidak ikut dihitung (hash dan encrypt dengan private key) menjadi DKIM signature (field b).
 
 
+#### konsiderasi saat akuisisi
+berdasarkan penjelasan tersebut, maka ketika melakukan akuisisi email (tanpa menggunakan perangkat khusus email), akan lebih baik apabila header email tersebut juga ikut kita akuisisi, karena dapat menjamin otentitas dari beberapa hal, khususnya field yang turut dihitung dalam DKIM signature. memperhatikan lagi field yang tersedia, maka yang bisa dijamin oleh DKIM signature adalah beberapa field yang dicantumkan pada field h. isi dari email sendiri (body) memang di hash dan dicantumkan pada field bh, namun tidak ikut dihitung (hash dan encrypt dengan private key) menjadi DKIM signature (field b).
+
+selain itu field-field lain yang tidak turut masuk dalam DKIM signature dapat pula menjadi petunjuk dalam melakukan analisis.
 
 * [13cubed's youtube](https://www.youtube.com/watch?v=nK5QpGSBR8c)
 * [metaspike](https://www.metaspike.com/leveraging-dkim-email-forensics/)
