@@ -133,7 +133,7 @@ kita dapat secara manual melakukan verifikasi DKIM, atau menggunakan banyak apli
 #### konsiderasi saat akuisisi
 berdasarkan penjelasan tersebut, maka ketika melakukan akuisisi email (tanpa menggunakan perangkat khusus email), akan lebih baik apabila header email tersebut juga ikut kita akuisisi, karena dapat menjamin otentitas dari beberapa hal, khususnya field yang turut dihitung dalam DKIM signature. memperhatikan lagi field yang tersedia, maka yang bisa dijamin oleh DKIM signature adalah beberapa field yang dicantumkan pada field h. isi dari email sendiri (body) memang di hash dan dicantumkan pada field bh, namun tidak ikut dihitung (hash dan encrypt dengan private key) menjadi DKIM signature (field b).
 
-selain itu field-field lain yang tidak turut masuk dalam DKIM signature dapat pula menjadi petunjuk dalam melakukan analisis.
+selain itu field-field lain yang tidak turut masuk dalam DKIM signature dapat pula menjadi petunjuk dalam melakukan analisis. 
 
 * [13cubed's youtube](https://www.youtube.com/watch?v=nK5QpGSBR8c)
 * [metaspike](https://www.metaspike.com/leveraging-dkim-email-forensics/)
