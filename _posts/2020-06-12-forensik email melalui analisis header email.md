@@ -8,6 +8,7 @@ date: '2020-06-12 11:08'
 categories:
   -email forensics
   -email forensik
+  -email
 ---
 #### intro
 email merupakan sebuah sarana komunikasi yang sangat digunakan banyak pihak. Penting bagi seorang investigator forensik digital untuk mengerti secara menyeluruh, bagaimana protokol email bekerja. Tulisan ini akan membahas sebagian dari forensik pada email, dengan berfokus pada header email.
@@ -130,11 +131,15 @@ secara sederhana, proses penggunaan DKIM dalam sebuah email  adalah:
 
 kita dapat secara manual melakukan verifikasi DKIM, atau menggunakan banyak aplikasi yang tersedia online. salah satu yang paling populer adalah [mxtoolbox](https://mxtoolbox.com/Public/Tools/EmailHeaders.aspx?).
 
+#### x-headers
 
-#### konsiderasi saat akuisisi
+apabila diperhatikan, pada email di atas terdapat beberapa header yang berawalan "x-". x-headers adalah headers custom yang memiliki standar yang beragam. digunakan untuk berbagai hal mulai dari melacak user id, atau advertising id dari penerima email, karena minimnya standar dari x-headers, terdapat begitu banyak jenisnya.
+
+#### penutup: konsiderasi saat akuisisi
 berdasarkan penjelasan tersebut, maka ketika melakukan akuisisi email (tanpa menggunakan perangkat khusus email), akan lebih baik apabila header email tersebut juga ikut kita akuisisi, karena dapat menjamin otentitas dari beberapa hal, khususnya field yang turut dihitung dalam DKIM signature. memperhatikan lagi field yang tersedia, maka yang bisa dijamin oleh DKIM signature adalah beberapa field yang dicantumkan pada field h. isi dari email sendiri (body) memang di hash dan dicantumkan pada field bh, namun tidak ikut dihitung (hash dan encrypt dengan private key) menjadi DKIM signature (field b).
 
 selain itu field-field lain yang tidak turut masuk dalam DKIM signature dapat pula menjadi petunjuk dalam melakukan analisis.
+
 
 * [13cubed's youtube](https://www.youtube.com/watch?v=nK5QpGSBR8c)
 * [metaspike](https://www.metaspike.com/leveraging-dkim-email-forensics/)

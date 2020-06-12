@@ -4,7 +4,8 @@ title: misc. shell command
 date: 2012-08-29 12:15
 author: admin
 comments: true
-categories: [linux]
+categories:
+  - linux
 ---
 Beberapa perintah shell (bash) yang *rencananya* akan di-*update* terus.
 

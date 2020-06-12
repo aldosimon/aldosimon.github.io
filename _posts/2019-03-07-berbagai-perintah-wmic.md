@@ -4,7 +4,11 @@ title: berbagai perintah wmic
 date: 2019-03-07 08:00
 author: admin
 comments: true
-categories: [DFIR, forensic, forensic, triage]
+categories:
+  - DFIR
+  - forensic
+  - forensik
+  - triage
 ---
 Beberapa perintah wmic yang berguna saat melakukan *triage*, yang *rencananya* akan terus di update
 <!--more-->

@@ -5,7 +5,9 @@ title: installasi office 2007 di ubuntu lucid
 date: 2012-08-29 12:31
 author: admin
 comments: true
-categories: [how to, ubuntu, ubuntu]
+categories:
+  - how to
+  - ubuntu
 ---
 Baru saja menginstallkan ubuntu ke salah satu temen dan karena  katanya ga bisa make open office, jadi diinstallin Office 2007 deh, berikut langkah nya:
 <!--more-->
