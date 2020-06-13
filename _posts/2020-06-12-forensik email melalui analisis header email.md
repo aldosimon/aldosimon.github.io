@@ -151,7 +151,7 @@ melakukan verifikasi manual akan cukup memakan waktu, kita bisa juga menulis scr
 
 berikut hasil verifikasi (email yang digunakan di bawah berbeda dengan email paypal di atas):
   1. field DKIM dan body email asli
-  ![email](/images/DKIM.png){: .center-image }
+  ![email](/images/dkim.png){: .center-image }
   ![email](/images/email_asli.png){: .center-image }
   2. body email kedua (email asli yang ditambahkan "!" pada body)
   ![edited email](/images/email_edit.png){: .center-image }
