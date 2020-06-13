@@ -158,6 +158,7 @@ berikut hasil verifikasi (email yang digunakan di bawah berbeda dengan email pay
   ![edited email](/images/email_edit.png)
   4. hasil verifikasi kedua email
   ![edited email](/images/verifikasi_dkim.png)
+
 terlihat bahwa ketika isi email berubah sedikit saja (tambahan simbol "!"), maka verifikasi akan gagal. silahkan mencoba verifikasi email anda sendiri, dengan menggunakan mxtoolbox.
 
 #### penutup: pertimbangan saat akuisisi
