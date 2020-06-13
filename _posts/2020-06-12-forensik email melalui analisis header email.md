@@ -134,6 +134,30 @@ kita dapat secara manual melakukan verifikasi DKIM dengan mengikuti langkah di a
 
 apabila diperhatikan, pada email di atas terdapat beberapa header yang berawalan "x-". x-headers adalah headers custom yang memiliki standar yang beragam. digunakan untuk berbagai hal mulai dari melacak user id, atau advertising id dari penerima email, karena minimnya standar dari x-headers, terdapat begitu banyak jenisnya.
 
+#### verifikasi dengan dkimpy
+melakukan verifikasi manual akan cukup memakan waktu, kita bisa juga menulis script sendiri dengan memperhatikan beberapa RFC terkait DKIM. apabila memutuskan untuk menggunakan aplikasi, maka dkimpy bisa di eksekusi sebagai berikut:
+  1. installasi (apabila belum memiliki pip, silahkan install terlebih dahulu)
+  ```bash
+  pip install dkimpy
+  ```
+  2. baca manual
+  ```bash
+  man dkimverify
+  ```
+  3. verifikasi
+  ```bash
+  cat fileemail.eml | dkimverify
+  ```
+berikut hasil verifikasi (email yang digunakan di bawah berbeda dengan email paypal di atas):
+  1. field DKIM dan body email asli
+  ![email](/images/DKIM.png){: .center-image }
+  ![email](/images/email_asli.png){: .center-image }
+  2. body email kedua (email asli yang ditambahkan "!" pada body)
+  ![edited email](/images/email_edit.png){: .center-image }
+  3. hasil verifikasi kedua email
+  ![edited email](/images/verifikasi_dkim.png){: .center-image }
+terlihat bahwa ketika isi email berubah sedikit saja (tambahan simbol "!"), maka verifikasi akan gagal. silahkan mencoba verifikasi email anda sendiri, dengan menggunakan mxtoolbox.
+
 #### penutup: pertimbangan saat akuisisi
 berdasarkan penjelasan tersebut, maka ketika melakukan akuisisi email (tanpa menggunakan perangkat khusus email), akan lebih baik apabila header email tersebut juga ikut kita akuisisi, karena dapat menjamin otentitas dari beberapa hal, khususnya field yang turut dihitung dalam DKIM signature.
 memperhatikan lagi field yang tersedia, maka yang bisa dijamin oleh DKIM signature adalah beberapa field yang dicantumkan pada field h, termasuk field bh, yang merupakan hash dari body email. perlu diingat bahwa field-field yang tidak turut masuk dalam DKIM signature tetap menjadi petunjuk dalam melakukan analisis.
