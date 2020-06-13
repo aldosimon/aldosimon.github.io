@@ -162,7 +162,7 @@ berikut hasil verifikasi (email yang digunakan di bawah berbeda dengan email pay
 terlihat bahwa ketika isi email berubah sedikit saja (tambahan simbol "!"), maka verifikasi akan gagal. silahkan mencoba verifikasi email anda sendiri, dengan menggunakan mxtoolbox.
 
 #### penutup: pertimbangan saat akuisisi
-berdasarkan penjelasan tersebut, maka ketika melakukan akuisisi email (tanpa menggunakan perangkat khusus email), akan lebih baik apabila header email tersebut juga ikut kita akuisisi, karena dapat menjamin otentitas dari beberapa hal, khususnya field yang turut dihitung dalam DKIM signature.
+berdasarkan penjelasan tersebut, maka ketika melakukan akuisisi email, harus menyadari bahwa header email menyimpan banyak field yang dapat menjamin otentitas dari beberapa hal, khususnya field yang turut dihitung dalam DKIM signature, sehingga header email menjadi sangat penting untuk turut di-akuisisi.
 memperhatikan lagi field yang tersedia, maka yang bisa dijamin oleh DKIM signature adalah beberapa field yang dicantumkan pada field h, termasuk field bh, yang merupakan hash dari body email. perlu diingat bahwa field-field yang tidak turut masuk dalam DKIM signature tetap menjadi petunjuk dalam melakukan analisis.
 
 
