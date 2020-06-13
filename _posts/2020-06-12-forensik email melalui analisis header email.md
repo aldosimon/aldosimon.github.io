@@ -148,6 +148,7 @@ melakukan verifikasi manual akan cukup memakan waktu, kita bisa juga menulis scr
   ```bash
   cat fileemail.eml | dkimverify
   ```
+
 berikut hasil verifikasi (email yang digunakan di bawah berbeda dengan email paypal di atas):
   1. field DKIM dan body email asli
   ![email](/images/DKIM.png){: .center-image }
