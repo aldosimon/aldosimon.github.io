@@ -136,7 +136,7 @@ apabila diperhatikan, pada email di atas terdapat beberapa header yang berawalan
 
 #### penutup: pertimbangan saat akuisisi
 berdasarkan penjelasan tersebut, maka ketika melakukan akuisisi email (tanpa menggunakan perangkat khusus email), akan lebih baik apabila header email tersebut juga ikut kita akuisisi, karena dapat menjamin otentitas dari beberapa hal, khususnya field yang turut dihitung dalam DKIM signature.
-memperhatikan lagi field yang tersedia, maka yang bisa dijamin oleh DKIM signature adalah beberapa field yang dicantumkan pada field h, termasuk isi dari email sendiri (body) yang di-hash dan dicantumkan pada field bh. perlu diingat bahwa field-field yang tidak turut masuk dalam DKIM signature tetap menjadi petunjuk dalam melakukan analisis.
+memperhatikan lagi field yang tersedia, maka yang bisa dijamin oleh DKIM signature adalah beberapa field yang dicantumkan pada field h, termasuk field bh, yang merupakan hash dari body email. perlu diingat bahwa field-field yang tidak turut masuk dalam DKIM signature tetap menjadi petunjuk dalam melakukan analisis.
 
 
 * [13cubed's youtube](https://www.youtube.com/watch?v=nK5QpGSBR8c)
