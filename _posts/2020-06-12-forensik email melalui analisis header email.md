@@ -150,13 +150,14 @@ melakukan verifikasi manual akan cukup memakan waktu, kita bisa juga menulis scr
   ```
 
 berikut hasil verifikasi (email yang digunakan di bawah berbeda dengan email paypal di atas):
-  1. field DKIM dan body email asli
-  ![email](/images/dkim.png){: .center-image }
-  ![email](/images/email_asli.png){: .center-image }
-  2. body email kedua (email asli yang ditambahkan "!" pada body)
-  ![edited email](/images/email_edit.png){: .center-image }
-  3. hasil verifikasi kedua email
-  ![edited email](/images/verifikasi_dkim.png){: .center-image }
+  1. DKIM signature email
+  ![email](/images/dkim.png)
+  2. body email asli
+  ![email](/images/email_asli.png)
+  3. body email kedua (email asli yang ditambahkan "!" pada body)
+  ![edited email](/images/email_edit.png)
+  4. hasil verifikasi kedua email
+  ![edited email](/images/verifikasi_dkim.png)
 terlihat bahwa ketika isi email berubah sedikit saja (tambahan simbol "!"), maka verifikasi akan gagal. silahkan mencoba verifikasi email anda sendiri, dengan menggunakan mxtoolbox.
 
 #### penutup: pertimbangan saat akuisisi
