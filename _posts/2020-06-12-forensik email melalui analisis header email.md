@@ -163,6 +163,7 @@ terlihat bahwa ketika isi email berubah sedikit saja (tambahan simbol "!"), maka
 
 #### penutup: pertimbangan saat akuisisi
 berdasarkan penjelasan tersebut, maka ketika melakukan akuisisi email, harus menyadari bahwa header email menyimpan banyak field yang dapat menjamin otentitas dari beberapa hal, khususnya field yang turut dihitung dalam DKIM signature, sehingga header email menjadi sangat penting untuk turut di-akuisisi.
+
 memperhatikan lagi field yang tersedia, maka yang bisa dijamin oleh DKIM signature adalah beberapa field yang dicantumkan pada field h, termasuk field bh, yang merupakan hash dari body email. perlu diingat bahwa field-field yang tidak turut masuk dalam DKIM signature tetap menjadi petunjuk dalam melakukan analisis.
 
 
