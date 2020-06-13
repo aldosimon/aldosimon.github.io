@@ -125,17 +125,18 @@ beberapa field terkait DKIM antara lain:
 secara sederhana, proses penggunaan DKIM dalam sebuah email  adalah:
   1. pemilik sebuah domain, pertama-tama membuat sebuah kombinasi public dan private key.
   2. setelah itu  public key tersebut di-publish pada DNS record domainnya.
-  3. beberapa bagian email yang dikirimkan (yang dipilih ada di field h) kemudian melalui proses canonicalization (sesuai jenis pada field c) dan dihash (sesuai jenis pada field a) dan hash tersebut di encrypt (sesuai jenis pada field a) dengan private key yang  dibuat pada langkah pertama. inilah yang menjadi signature dari email tersebut (field b)
+  3. beberapa bagian email yang dikirimkan (hanya yang tercantum di field h) kemudian melalui proses canonicalization (sesuai jenis pada field c) dan dihash (sesuai jenis pada field a) dan hash tersebut di encrypt (sesuai jenis pada field a) dengan private key yang  dibuat pada langkah pertama. inilah yang menjadi signature dari email tersebut (field b)
   4. penerima pesan dapat memastikan integritas pesan dengan men-decrypt hash tersebut dengan public key yang tersedia, kemudian membandingkannya dengan menghitung hash dari email tersebut. apabila ada perbedaan, maka terdapat kemungkinan field-field yang disebutkan pada field h berubah.
 
-kita dapat secara manual melakukan verifikasi DKIM, atau menggunakan banyak aplikasi yang tersedia online. salah satu yang paling populer adalah [mxtoolbox](https://mxtoolbox.com/Public/Tools/EmailHeaders.aspx?).
+kita dapat secara manual melakukan verifikasi DKIM dengan mengikuti langkah di atas (detail pada RFC), menggunakan aplikasi seperti dkimpy atau opendkim, dan juga menggunakan banyak aplikasi yang tersedia online. salah satu yang paling populer adalah [mxtoolbox](https://mxtoolbox.com/Public/Tools/EmailHeaders.aspx?).
 
 #### x-headers
 
 apabila diperhatikan, pada email di atas terdapat beberapa header yang berawalan "x-". x-headers adalah headers custom yang memiliki standar yang beragam. digunakan untuk berbagai hal mulai dari melacak user id, atau advertising id dari penerima email, karena minimnya standar dari x-headers, terdapat begitu banyak jenisnya.
 
-#### penutup: konsiderasi saat akuisisi
-berdasarkan penjelasan tersebut, maka ketika melakukan akuisisi email (tanpa menggunakan perangkat khusus email), akan lebih baik apabila header email tersebut juga ikut kita akuisisi, karena dapat menjamin otentitas dari beberapa hal, khususnya field yang turut dihitung dalam DKIM signature. memperhatikan lagi field yang tersedia, maka yang bisa dijamin oleh DKIM signature adalah beberapa field yang dicantumkan pada field h. isi dari email sendiri (body) memang di hash dan dicantumkan pada field bh, namun tidak ikut dihitung (hash dan encrypt dengan private key) menjadi DKIM signature (field b).
+#### penutup: pertimbangan saat akuisisi
+berdasarkan penjelasan tersebut, maka ketika melakukan akuisisi email (tanpa menggunakan perangkat khusus email), akan lebih baik apabila header email tersebut juga ikut kita akuisisi, karena dapat menjamin otentitas dari beberapa hal, khususnya field yang turut dihitung dalam DKIM signature.
+memperhatikan lagi field yang tersedia, maka yang bisa dijamin oleh DKIM signature adalah beberapa field yang dicantumkan pada field h. isi dari email sendiri (body) memang di-hash dan dicantumkan pada field bh, namun tidak ikut dihitung (hash dan encrypt dengan private key) menjadi DKIM signature (field b).
 
 selain itu field-field lain yang tidak turut masuk dalam DKIM signature dapat pula menjadi petunjuk dalam melakukan analisis.
 
