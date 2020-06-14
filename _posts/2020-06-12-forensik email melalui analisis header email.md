@@ -10,7 +10,7 @@ categories:
   -email forensik
   -email
 ---
-email merupakan sebuah sarana komunikasi yang sangat digunakan banyak pihak. Penting bagi seorang investigator forensik digital untuk mengerti secara menyeluruh, bagaimana protokol email bekerja. Tulisan ini akan membahas sebagian dari forensik pada email, dengan berfokus pada header email.
+email merupakan sebuah sarana komunikasi yang umum digunakan banyak pihak. Penting bagi seorang investigator forensik digital untuk mengerti secara menyeluruh, bagaimana protokol email bekerja. Tulisan ini akan membahas sebagian dari forensik pada email, dengan berfokus pada header email.
 <!--more-->
 sebagai bagian pembahasan, kita akan membedah sebuah email dari paypal di bawah ini:
 ```bash
@@ -73,10 +73,9 @@ terdapat beberapa field yang perlu diperhatikan pada sebuah header email. antara
   2. Delivery-date: tanggal pesan diterima
   3. Date: tanggal pesan dikirimkan
   4. Message-ID: nomor identifikasi sebuah email/pesan. Terdiri dari dua bagian [karakterrandom]@[namadomain]. Tidak terdapat format baku untuk menghasilkan Message-ID, sehingga tiap server dapat menghasilkan format yang berbeda.
-  5. X-Mailer: jenis klien email/ pesan yang digunakan
-  6. From: akun pengirim email
-  7. To: akun tujuan/ penerima email
-  8. Subject: subjek email
+  5. From: akun pengirim email
+  6. To: akun tujuan/ penerima email
+  7. Subject: subjek email
 
 yang perlu diingat adalah field di atas dibaca dengan urutan dari bawah ke atas. sehingga informasi yang disampaikan dari field di atas adalah email dikirimkan dari domain om-paypal-apac.rsys4.com [12.130.139.51] dan diterima oleh mx.google.com dengan protokol ESMTP pada  04 Dec 2009 05:31:41 -0800 (PST). email ini selanjutnya diteruskan ke 10.150.87.2, dan terakhir ke 10.229.84.10.
 perlu diperhatikan juga di bawah baris --dipotong-- kita bisa melihat pertama kali email tersebut dikirim oleh MUA kepada MTA, namun tidak tercantum nama klien yang digunakan. contoh di bawah memperlihatkan sebuah MUA yang mengirimkan kepada MTA, dengan nama client yang digunakan Exim 4.69. beberapa klien lain yang mungkin sering ditemui adalah Thunderbird, dan Ms. Outlook.
@@ -112,7 +111,7 @@ DomainKeys Identified Mail (DKIM). DKIM adalah sebuah standar yang digunakan unt
 beberapa field terkait DKIM antara lain:
   1. v= versi DKIM yang digunakan. pada contoh di atas adalah versi 1.
   2. a= algoritma hash dan enkripsi yang digunakan. pada contoh di atas adalah rsa-sha1.
-  3. c= jenis canonicalization yang digunakan. artinya bagaimana sebuah konten (pesan atau header pesan) harus diperlakukan sebelum di hash. secara jelas ada di RFC 6376 pada link. pada contoh di atas, header dan body nya di canonicalized dengan metode relaxed (karena field c-nya relaxed/relaxed)
+  3. c= jenis canonicalization yang digunakan. artinya bagaimana sebuah konten (pesan atau header pesan) harus diperlakukan/diolah sebelum di hash. secara jelas ada di RFC 6376 pada link. pada contoh di atas, header dan body nya di canonicalized dengan metode relaxed (karena field c-nya relaxed/relaxed)
   4. d= adalah nama domain yang mengklaim tanggung jawab atas email dimaksud. domain ini pula yang diquery untuk mendapatkan public key nya. pada contoh di atas adalah info.paypal.com
   5. s= adalah selector dari domain, mudahnya terdapat beberapa record dns milik domain (d), selector adalah penunjuk kita meminta record dns yang mana, agar mendapatkan public key. pada contoh di atas adalah responsys. anda bisa memverifikasi informasi pada vield ini dengan menggunakan berbagai aplikasi online (mxtoolbox contohnya) atau dengan menggunakan perintah dig pada linux, menggunakan field d (info.paypal.com) dan s (responsys).  DKIM key disimpan di bawah subdomain _domainkey, serta jenis dns record nya adalah TXT. sehingga perintah dig anda akan terlihat seperti:
   ```bash
@@ -135,8 +134,8 @@ kita dapat secara manual melakukan verifikasi DKIM dengan mengikuti langkah di a
 apabila diperhatikan, pada email di atas terdapat beberapa header yang berawalan "x-". x-headers adalah headers custom yang memiliki standar yang beragam. digunakan untuk berbagai hal mulai dari melacak user id, atau advertising id dari penerima email, karena minimnya standar dari x-headers, terdapat begitu banyak jenisnya.
 
 #### verifikasi dengan dkimpy
-melakukan verifikasi manual akan cukup memakan waktu, kita bisa juga menulis script sendiri dengan memperhatikan beberapa RFC terkait DKIM. apabila memutuskan untuk menggunakan aplikasi, maka dkimpy bisa di eksekusi sebagai berikut:
-  1. installasi (apabila belum memiliki pip, silahkan install terlebih dahulu)
+melakukan verifikasi manual akan cukup memakan waktu, kita bisa juga menulis script sendiri dengan memperhatikan beberapa RFC terkait DKIM. apabila memutuskan untuk menggunakan aplikasi, salah satu aplikasi yang cukup baik adalah dkimpy. dkimpy adalah sebuah script python, dan bisa digunakan dengan langkah sebagai berikut:
+  1. installasi (sebelumnya telah melakukan installasi python dan pip)
   ```bash
   pip install dkimpy
   ```
@@ -162,7 +161,7 @@ berikut hasil verifikasi (email yang digunakan di bawah berbeda dengan email pay
 terlihat bahwa ketika isi email berubah sedikit saja (tambahan simbol "!"), maka verifikasi akan gagal. silahkan mencoba verifikasi email anda sendiri, dengan menggunakan mxtoolbox.
 
 #### penutup: pertimbangan saat akuisisi
-berdasarkan penjelasan tersebut, maka ketika melakukan akuisisi email, harus menyadari bahwa header email menyimpan banyak field yang dapat menjamin otentitas dari beberapa hal, khususnya field yang turut dihitung dalam DKIM signature, sehingga header email menjadi sangat penting untuk turut di-akuisisi.
+berdasarkan penjelasan tersebut, maka ketika melakukan akuisisi email, harus menyadari bahwa header email menyimpan banyak field yang dapat menjamin keaslian/otentitas dari beberapa hal, khususnya field yang turut dihitung dalam DKIM signature, sehingga header email menjadi sangat penting untuk turut di-akuisisi.
 
 memperhatikan lagi field yang tersedia, maka yang bisa dijamin oleh DKIM signature adalah beberapa field yang dicantumkan pada field h, termasuk field bh, yang merupakan hash dari body email. perlu diingat bahwa field-field yang tidak turut masuk dalam DKIM signature tetap menjadi petunjuk dalam melakukan analisis.
 
