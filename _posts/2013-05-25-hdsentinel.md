@@ -11,12 +11,10 @@ categories:
 HDD external yang tidak terdeteksi sensors atau hdtemp? Coba gunakan hdsentinel, mampu mendeteksi HDD external yang tidak terdeteksi hdtemp, bahkan yang terhubung via docking.
 <!--more-->
   1 . download hdsentinel:
-  32bit:
   ```bash
   wget -c http://www.hdsentinel.com/hdslin/hdsentinel_008.zip
   ```
-
-  64bit:
+  atau
   ```bash
   wget -c http://www.hdsentinel.com/hdslin/hdsentinel_008_x64.zip
   ```
