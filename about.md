@@ -4,7 +4,7 @@ title: about
 permalink: /about/
 published: true
 ---
-Ewaldo Simon is a Digital Forensic and Incident Response enthusiast with interest in sleep marathon. Learn more from my [cv](https://www.visualcv.com/aldosimon/).
+Ewaldo Simon is a digital forensic and incident response enthusiast with interest in sleep marathon. learn more from my [cv](https://www.visualcv.com/aldosimon/).
 
 #### credits
 * [jekyll-now](https://github.com/barryclark/jekyll-now "jekyll-now")
