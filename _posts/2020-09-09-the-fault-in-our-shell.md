@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: persistence dengan netsh
+title: the fault in our shell
 author: admin
 comments: true
 date: '2020-09-09 11:34'
