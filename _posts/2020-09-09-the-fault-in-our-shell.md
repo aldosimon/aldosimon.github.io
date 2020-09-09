@@ -10,5 +10,5 @@ categories:
   -writings
   -honeypot
 ---
-Tulisan lama mengenai honeypot saya, bisa dilihat disini:
+Tulisan lama saya mengenai honeypot, bisa dilihat disini:
 [the fault in our shell](https://aldosimon.com/writings/The Fault in Our Shell.pdf)
