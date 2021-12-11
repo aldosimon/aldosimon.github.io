@@ -1,4 +1,4 @@
----
+--
 layout: post
 published: false
 title: mengamati RDP failed login dengan Azure sentinel
@@ -17,8 +17,6 @@ Tulisan ini akan merangkum apa saja yang saya lakukan, serta bagaimana internet 
 
 #### menyiapkan VM windows
 
-Menyiapkan VM windows tentu saja dimulai dengan pemilihan VM resources, installasi windows, serta beberapa setting.
-
 mematikan firewall
 mengizinkan rdp login
 
@@ -32,5 +30,7 @@ menghubungkan law dengan vm windows
 mencoba koneksi
 
 
-
+https://github.com/RoganDawes/LOGITacker/blob/USB_host_enum/fingerprint_os.md
+https://kieczkowska.com/2020/05/02/usb-101/
+https://kieczkowska.com/2020/05/11/usb-forensics/
 #####the aftermath
