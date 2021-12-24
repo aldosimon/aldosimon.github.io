@@ -4,7 +4,7 @@ published: true
 title: nginx log terkait log4j/ log4shell
 author: admin
 comments: true
-date: '2021-12-24 22:00'
+date: '2021-12-23 22:00'
 categories:
   - vuln
   - nginx
