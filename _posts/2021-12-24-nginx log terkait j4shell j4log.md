@@ -28,19 +28,19 @@ hasil dari log selama beberapa hari tersebut membuat kita bisa mempelajari lebih
 ```bash
 cat access.log* | grep -i jndi |awk '{print $1}'| sort | uniq -c | sort -rn
 ```
-![log4j](/images/log4j2.PNG)
+(/images/log4j2.PNG)
 
 2. menambahkan negara ke list ip pada nomor sebelumnya
 ```bash
 cat top_ip_jndi.txt | while read amt ip;do country=$(geoiplookup $ip | awk -v FS="(GeoIP Country Edition: |,)" {print }); echo $amt $ip $country; done;
 ```
-![log4j](/images/log4j3.PNG)
+(/images/log4j3.PNG)
 
 3. melihat rincian string exploit
 ```bash
 cat access.log* | grep -i jndi |awk '{print $7}'| sort | uniq -c | sort -rn
 ```
-![log4j](/images/log4j1.PNG)
+(/images/log4j1.PNG)
 
 dengan merefer ke gambar pada bagian awal, kita dapat melihat bahwa serangan ini cukup sederhana. attacker mengirimkan string lookup ke sebuah server yang dikuasai, reply dari lookup tersebut akan di eksekusi oleh server target (RCE).
 namun terlihat pada gambar diatas, kebanyakan serangan tersebut hanya bertujuan recon/ mengetahui apakah server vulnerable, dan bukan  merupakan RCE.
