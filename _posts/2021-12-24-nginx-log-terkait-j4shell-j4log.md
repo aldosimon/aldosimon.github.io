@@ -53,6 +53,6 @@ string yang paling banyak ditemui (urutan pertama) di-encode dengan base64, yang
 secara sederhana mengirimkan alamat [targetsvr] ke resources yang dikuasai penyerang (195.54.160.149) dengan curl/ wget.
 
 #### penutup
-walaupun cukup heboh, nampaknya tidak terlalu banyak juga penyerang yang memanfaatkan log4j. Mungkin juga ada attacker yang ketika mengenali versi nginx yang saya jalankan, dan memutuskan tidak perlu mengirimkan string "jndi" sehingga saya tidak mendeteksinya.
+walaupun cukup heboh, nampaknya tidak terlalu banyak juga penyerang yang memanfaatkan log4j. Mungkin juga ada attacker yang ketika mengenali versi nginx yang saya jalankan, dan memutuskan tidak perlu mengirimkan string "jndi" sehingga saya tidak mendeteksinya (*pendapat tidak berdasar).
 sudah terdapat beberapa langkah mitigasi di dunia maya, sehingga bila anda terdampak, sangat disarankan melakukan mitigasi.
-log dari inetsim sendiri akan saya update bila tidak terlalu malas.
+log dari inetsim sendiri akan saya update bila hasilnya menarik.
