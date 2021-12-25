@@ -28,13 +28,13 @@ hasil dari log selama beberapa hari tersebut membuat kita bisa mempelajari lebih
 
 1. ip berdasarkan request terbanyak yang memuat string "jndi"
 ```bash
-cat access.log* | grep -i jndi |awk '{print $1}'| sort | uniq -c | sort -rn
+cat access.log* | grep -i jndi |awk '{print $1}'| sort | uniq -c | sort -rn > top_ip_jndi.txt
 ```
 ![topip](/images/log4j2.PNG)
 
 2. menambahkan negara ke list ip pada nomor sebelumnya
 ```bash
-cat top_ip_jndi.txt | while read amt ip;do country=$(geoiplookup $ip | awk -v FS="(GeoIP Country Edition: |,)" {print }); echo $amt $ip $country; done;
+cat top_ip_jndi.txt | while read amt ip;do country=$(geoiplookup $ip | awk -v FS="(GeoIP Country Edition: |,)" '{print $3}'); echo $amt $ip $country; done;
 ```
 ![topipwithcountry](/images/log4j3.PNG)
 
