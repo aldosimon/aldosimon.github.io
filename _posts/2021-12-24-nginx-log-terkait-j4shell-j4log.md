@@ -13,8 +13,8 @@ categories:
 #### intro
 
 log4j/ log4shell adalah sebuah vuln yang cukup menghebohkan di akhir tahun ini, hal ini karena aplikasi logging ini cukup banyak di pakai di software OSS, serta vuln. nya yang cukup parah.
-salah satu script logging memiliki kelemahan yang membuat attacker bisa menjalankan perintah dari jauh (RCE) dengan mengirimkan parameter tertentu ke service yang menjalankan j4log tersebut.
-tulisan ini memperlihatkan beberapa exploitasi yang tertangkap di nginx log milik penulis di salah satu penyedia jasa cloud.
+log4j memiliki kelemahan yang membuat attacker bisa menjalankan perintah dari jauh (RCE) dengan mengirimkan perintah lookup tertentu ke service yang menjalankan log4j.
+tulisan ini meramu beberapa exploitasi yang tertangkap di nginx log milik penulis di salah satu penyedia jasa cloud.
 <!--more-->
 #### informasi terkait log4j/ log4shell
 cara kerja exploit: ![log4j](/images/log4j.jpg)
