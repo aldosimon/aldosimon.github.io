@@ -17,17 +17,17 @@ serta dapat dipakai sebagai script IR kilat di bagian awal asesmen.
 
 <!--more-->
 #### the command lines
-###### list usernames
+1. list usernames
 ```bash
 net user
 ```
 
-###### last logon, group member, password settings, user full name, etc
+2. last logon, group member, password settings, user full name, etc
 ```bash
 net user [username]
 ```
 
-###### show local group and/or members of groups
+3. show local group and/or members of groups
 ```bash
 net localgroup
 ```
@@ -35,21 +35,20 @@ net localgroup
 net localgroup "Administrators"
 ```
 
-###### list running programs
+4. list running programs
 ```bash
 tasklist
 ```
 
-###### list all schedule task.
+5. list all schedule task.
 ```bash
 schtasks /query /fo list /v > schtasks.txt
 ```
 
-.export security event list to text.
+6. export security event list to text.
 ```bash
 wevtutil qe Security /f:text > seclogs.txt
 ```
-
 
 #### penutup
 bagusnya sih dirangkum dalam sebuah script yang dapat dengan mudah langsung dijalankan.
