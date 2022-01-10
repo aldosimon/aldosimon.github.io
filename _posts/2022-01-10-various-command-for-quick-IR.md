@@ -16,7 +16,7 @@ dan ada beberapa command line yang saya pakai disana yang menurut saya cukup men
 serta dapat dipakai sebagai script IR kilat di bagian awal asesmen.
 
 <!--more-->
-#### the command lines
+#### command line yang saya pakai
 1. list usernames
 ```bash
 net user
