@@ -17,17 +17,17 @@ serta dapat dipakai sebagai script IR kilat di bagian awal asesmen.
 
 <!--more-->
 #### the command lines
-.list usernames
+###### list usernames
 ```bash
 net user
 ```
 
-.last logon, group member, password settings, user full name, etc
+###### last logon, group member, password settings, user full name, etc
 ```bash
 net user [username]
 ```
 
-.show local group and/or members of groups
+###### show local group and/or members of groups
 ```bash
 net localgroup
 ```
@@ -35,12 +35,12 @@ net localgroup
 net localgroup "Administrators"
 ```
 
-.list running programs
+###### list running programs
 ```bash
 tasklist
 ```
 
-.list all schedule task.
+###### list all schedule task.
 ```bash
 schtasks /query /fo list /v > schtasks.txt
 ```
