@@ -4,17 +4,19 @@ published: true
 title: various command for quick IR
 author: admin
 comments: true
-date: '2021-12-23 22:00'
+date: '2022-01-10 23:00'
 categories:
   - DFIR
   - incident Response
   - shell
 ---
 #### intro
-
+Saya sedang mengerjakan kelas investigation challange di tryhackme.com,
+dan ada beberapa command line yang saya pakai disana yang menurut saya cukup menarik untuk di dokumentasikan,
+serta dapat dipakai sebagai script IR kilat di bagian awal asesmen.
 
 <!--more-->
-#### informasi terkait log4j/ log4shell
+#### command lines
 ```bash
 net user
 ```
@@ -36,7 +38,6 @@ show local group and/or members of groups
 ```bash
 tasklist
 ```
-
 list running programs
 
 ```bash
@@ -50,6 +51,5 @@ wevtutil qe Security /f:text > seclogs.txt
 export security event list to text.
 
 #### penutup
-walaupun cukup heboh, nampaknya tidak terlalu banyak juga penyerang yang memanfaatkan log4j. Mungkin juga ada attacker yang ketika mengenali versi nginx yang saya jalankan, dan memutuskan tidak perlu mengirimkan string "jndi" sehingga saya tidak mendeteksinya (*pendapat tidak berdasar).
-sudah terdapat beberapa langkah mitigasi di dunia maya, sehingga bila anda terdampak, sangat disarankan melakukan mitigasi.
-log dari inetsim sendiri akan saya update bila hasilnya menarik.
+bagusnya sih dirangkum dalam sebuah script yang dapat dengan mudah langsung dijalankan.
+post ini tentu saja akan saya update d masa mendatang, dan semoga suatu saat script yang menyatukannya akan saya kerjakan :D
