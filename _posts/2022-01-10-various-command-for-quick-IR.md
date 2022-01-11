@@ -10,7 +10,6 @@ categories:
   - incident Response
   - shell
 ---
-#### intro
 Saya sedang mengerjakan sebuah investigation challenge di tryhackme.com,
 dan ada beberapa command line yang saya pakai disana yang menurut saya cukup menarik untuk di dokumentasikan,
 serta dapat dipakai sebagai script IR kilat di bagian awal asesmen.
