@@ -31,8 +31,18 @@ proses yang berjalan di session 0 tidak memiliki GUI.
 ada beberapa tools yang bisa digunakan untuk memahami lebih jauh proses ini, kita akan menggunakan [processes explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer) dan [processes hacker](https://processhacker.sourceforge.io/)
 
 #### windows core processes
-1. system
+1. System
+system merupakan process yang berjalan dalam kernel mode, serta menjadi rumah bagi process2 lain yang berjalan di kernel mode.
+system dijalankan (parent) oleh PID 0 (system idle process), atau pada process explorer tidak memiliki parent. beberapa ciri-ciri lain dari proses ini adalah:
 
++system selalu dijalankan dengan PID 4
++hanya memiliki 1 instance
++berjalan di session 0
++user account yang menjalankan SYSTEM
++tidak memiliki parent process *pada process explorer* (atau system idle process PID 0 *pada process hacker*)
++image filename berada di C:\Windows\system32\ntoskrnl.exe *pada process hacker*
+
+2. SMSS.exe
 
 #### penutup
 bagusnya sih dirangkum dalam sebuah script yang dapat dengan mudah langsung dijalankan.
