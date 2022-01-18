@@ -14,7 +14,7 @@ categories:
 ---
 Dalam sebuah kegiatan incident response, adakalanya kita perlu mengetahui proses yang sedang berjalan.
 Sehingga dapat memutuskan apakah proses tersebut malicious atau tidak. Berikut beberapa proses inti windows (Windows core processes),
-untuk melakukan filtering proses yang malicious atau tidak.
+dengan karakteristik masing-masing, sehingga ketika melakukan incident response kita memiliki kemudahan untuk melakukan filtering proses yang malicious atau tidak.
 
 <!--more-->
 #### pengantar
@@ -25,7 +25,7 @@ sebuah proses bisa dijalankan dalam dua buah mmode yang berbeda, yaitu kernel mo
 
 2. session 0 vs session 1
 sejak windows vista, microsoft memperkenalkan "session 0 isolation". session 0 diperuntukan untuk servis dan aplikasi non-interaktif. user yang login akan berada di session 1 atau sealnjutnya.
-proses yang berjalan di session 0 tidak memiliki GUI.
+proses yang berjalan di session 0 tidak memiliki GUI. sedangkan session 1 (dan seterusnya) untuk proses yang terkait/ dijalankan user.
 
 3. tools
 ada beberapa tools yang bisa digunakan untuk memahami lebih jauh proses ini, kita akan menggunakan [processes explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer) dan [processes hacker](https://processhacker.sourceforge.io/)
@@ -35,6 +35,7 @@ ada beberapa tools yang bisa digunakan untuk memahami lebih jauh proses ini, kit
 system merupakan process yang berjalan dalam kernel mode, serta menjadi rumah bagi process2 lain yang berjalan di kernel mode.
 system dijalankan (parent) oleh PID 0 (system idle process), atau pada process explorer tidak memiliki parent. beberapa ciri-ciri lain dari proses ini adalah:
 
+beberapa karakteristik system process:
 +system selalu dijalankan dengan PID 4
 +hanya memiliki 1 instance
 +berjalan di session 0
@@ -43,6 +44,24 @@ system dijalankan (parent) oleh PID 0 (system idle process), atau pada process e
 +image filename berada di C:\Windows\system32\ntoskrnl.exe *pada process hacker*
 
 2. SMSS.exe
+smss.exe (Session Manager Subsystem), atau windows session manager. smss.exe menjalankan csrss.exe dan wininit.exe di session 0, serta menjalankan csrss.exe dan winlogin.exe di session 1.
+seperti yang ditulis sebelumnya, session 0 berisi proses-proses terkait servis sedangkan session 1 untuk proses terkait user.
+smss.exe menjalankan proses dengan cara menjalankan child smss process setelah itu melakukan terminasi diri sendiri, sehingga pada suatu waktu seharusnya hanya terdapat sebuah smss.explorer
+
+beberapa karakteristik smss.exe:
++hanya terdapat satu instances
++parent process system
++berjalan di session 0 (karena yang session 1 dst menterminasi diri sendiri)
++user account yang menjalankan SYSTEM
++image path c:\Windows\System32\smss.exe
+
+3. csrss.exe
+proses ini bertanggung jawab menyediakan Windows API, mapping drive letters, and menangani proses shutdown  Windows.
+beberapa karakteristik csrss.exe:
++tidak mempunyai parent process/ parent process sudah tidak jalan.
++image path c:\Windows\System32\csrss.exe
++bisa terdapat lebih dari satu instances (ingat smss.exe dimana tiap login akan menjalankan csrss.exe dan winlogin.exe pada session baru)
++user account yang menjalankan SYSTEM
 
 #### penutup
 bagusnya sih dirangkum dalam sebuah script yang dapat dengan mudah langsung dijalankan.
