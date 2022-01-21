@@ -76,10 +76,10 @@ beberapa karakteristik csrss.exe:
 +hanya satu instances
 +user account yang menjalankan SYSTEM
 
-
 5. services.exe
-
+[incomplete]
 6. svchost.exe
+[incomplete]
 #### penutup
 bagusnya sih dirangkum dalam sebuah script yang dapat dengan mudah langsung dijalankan.
 post ini tentu saja akan saya update d masa mendatang, dan semoga suatu saat script yang menyatukannya akan saya kerjakan :D
