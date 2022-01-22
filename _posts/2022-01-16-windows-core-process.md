@@ -33,7 +33,7 @@ ada beberapa tools yang bisa digunakan untuk memahami lebih jauh proses ini, kit
 selain itu bisa juga menggunakan command line yaitu tasklist, Get-Process atau ps (PowerShell), dan wmic.
 
 #### windows core processes
-##### System
+##### system
 
 system merupakan process yang berjalan dalam kernel mode, serta menjadi rumah bagi process2 lain yang berjalan di kernel mode.
 system dijalankan (parent) oleh PID 0 (system idle process), atau pada process explorer tidak memiliki parent. beberapa ciri-ciri lain dari proses ini adalah:
