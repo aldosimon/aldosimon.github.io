@@ -34,6 +34,7 @@ selain itu bisa juga menggunakan command line yaitu tasklist, Get-Process atau p
 
 #### windows core processes
 1. System
+
 system merupakan process yang berjalan dalam kernel mode, serta menjadi rumah bagi process2 lain yang berjalan di kernel mode.
 system dijalankan (parent) oleh PID 0 (system idle process), atau pada process explorer tidak memiliki parent. beberapa ciri-ciri lain dari proses ini adalah:
 
@@ -46,6 +47,7 @@ beberapa karakteristik system process:
 +image filename berada di C:\Windows\system32\ntoskrnl.exe *pada process hacker*
 
 2. smss.exe
+
 smss.exe (Session Manager Subsystem), atau windows session manager. smss.exe menjalankan csrss.exe dan wininit.exe di session 0, serta menjalankan csrss.exe dan winlogin.exe di session 1.
 seperti yang ditulis sebelumnya, session 0 berisi proses-proses terkait servis sedangkan session 1 untuk proses terkait user.
 smss.exe menjalankan proses dengan cara menjalankan child smss process setelah itu melakukan terminasi diri sendiri, sehingga pada suatu waktu seharusnya hanya terdapat sebuah smss.explorer
@@ -58,6 +60,7 @@ beberapa karakteristik smss.exe:
 +image path c:\Windows\System32\smss.exe
 
 3. csrss.exe
+
 proses ini bertanggung jawab menyediakan Windows API, mapping drive letters, and menangani proses shutdown  Windows.
 
 beberapa karakteristik csrss.exe:
@@ -67,6 +70,7 @@ beberapa karakteristik csrss.exe:
 +user account yang menjalankan SYSTEM
 
 4. winit.exe
+
 process ini dijalankan oleh smss.exe, dan sama seperti csrss.exe, smss.exe akan mematikan dirinya sendiri setelah menjalankan proses ini.
 The Windows Initialization Process atau wininit.exe bertanggung jawab menjalankan services.exe (Service Control Manager), lsass.exe (Local Security Authority), dan lsaiso.exe (hanya bila credential guard dinyalakan) dalam Session 0.
 
@@ -77,9 +81,12 @@ beberapa karakteristik csrss.exe:
 +user account yang menjalankan SYSTEM
 
 5. services.exe
+
 [incomplete]
 6. svchost.exe
+
 [incomplete]
+
 #### penutup
 bagusnya sih dirangkum dalam sebuah script yang dapat dengan mudah langsung dijalankan.
 post ini tentu saja akan saya update d masa mendatang, dan semoga suatu saat script yang menyatukannya akan saya kerjakan :D
