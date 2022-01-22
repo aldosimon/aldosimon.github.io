@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: windows core processes
 author: admin
 comments: true
