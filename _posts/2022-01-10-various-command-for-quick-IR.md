@@ -89,10 +89,7 @@ post ini tentu saja akan saya update d masa mendatang, dan semoga suatu saat scr
 
 #### referensi
 
-[arts.ubc.ca](https://isit.arts.ubc.ca/how-to-locate-serial-number-of-computer/)
-
-[sans](https://www.sans.org/blog/wmic-for-incident-response/)
-
-[jordanpotti](https://jordanpotti.com/2017/01/20/basics-of-windows-incident-response/)
-
-[cybernote](http://www.cybernote.net/index.php/2020/05/02/practical-incident-response-commands-wmic/)
+1. [arts.ubc.ca](https://isit.arts.ubc.ca/how-to-locate-serial-number-of-computer/)
+2. [sans](https://www.sans.org/blog/wmic-for-incident-response/)
+3. [jordanpotti](https://jordanpotti.com/2017/01/20/basics-of-windows-incident-response/)
+4. [cybernote](http://www.cybernote.net/index.php/2020/05/02/practical-incident-response-commands-wmic/)
