@@ -33,7 +33,7 @@ ada beberapa tools yang bisa digunakan untuk memahami lebih jauh proses ini, kit
 selain itu bisa juga menggunakan command line yaitu tasklist, Get-Process atau ps (PowerShell), dan wmic.
 
 #### windows core processes
-##### system
+###### system
 
 system merupakan process yang berjalan dalam kernel mode, serta menjadi rumah bagi process2 lain yang berjalan di kernel mode.
 system dijalankan (parent) oleh PID 0 (system idle process), atau pada process explorer tidak memiliki parent. beberapa ciri-ciri lain dari proses ini adalah:
@@ -46,7 +46,7 @@ beberapa karakteristik system process:
 +tidak memiliki parent process *pada process explorer* (atau system idle process PID 0 *pada process hacker*)
 +image filename berada di C:\Windows\system32\ntoskrnl.exe *pada process hacker*
 
-##### smss.exe
+###### smss.exe
 
 smss.exe (Session Manager Subsystem), atau windows session manager. smss.exe menjalankan csrss.exe dan wininit.exe di session 0, serta menjalankan csrss.exe dan winlogin.exe di session 1.
 seperti yang ditulis sebelumnya, session 0 berisi proses-proses terkait servis sedangkan session 1 untuk proses terkait user.
@@ -59,7 +59,7 @@ beberapa karakteristik smss.exe:
 +user account yang menjalankan SYSTEM
 +image path c:\Windows\System32\smss.exe
 
-##### csrss.exe
+###### csrss.exe
 
 proses ini bertanggung jawab menyediakan Windows API, mapping drive letters, and menangani proses shutdown  Windows.
 
@@ -69,7 +69,7 @@ beberapa karakteristik csrss.exe:
 +bisa terdapat lebih dari satu instances (ingat smss.exe dimana tiap login akan menjalankan csrss.exe dan winlogin.exe pada session baru)
 +user account yang menjalankan SYSTEM
 
-##### winit.exe
+###### winit.exe
 
 process ini dijalankan oleh smss.exe, dan sama seperti csrss.exe, smss.exe akan mematikan dirinya sendiri setelah menjalankan proses ini.
 The Windows Initialization Process atau wininit.exe bertanggung jawab menjalankan services.exe (Service Control Manager), lsass.exe (Local Security Authority), dan lsaiso.exe (hanya bila credential guard dinyalakan) dalam Session 0.
@@ -80,7 +80,7 @@ beberapa karakteristik csrss.exe:
 +hanya satu instances
 +user account yang menjalankan SYSTEM
 
-##### services.exe
+###### services.exe
 ![services.exe](/images/services.png)
 
 services.exe/ Service Control Manager (SCM) berfungsi mengontrol services yang dijalankan serta mengeset "Last Known Good control set/Last Known Good Configuration (HKLM\System\Select\LastKnownGood)" setelah berhasil login.
@@ -91,7 +91,7 @@ informasi services yang dijalankan bisa dilihat di HKLM\System\CurrentControlSet
 +hanya satu instances
 +user account yang menjalankan SYSTEM
 
-##### svchost.exe
+###### svchost.exe
 
 [incomplete]
 
