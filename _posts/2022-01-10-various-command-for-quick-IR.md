@@ -81,6 +81,7 @@ netstat -bona
 netsh firewall show state
 ```
 
+
 #### penutup
 
 bagusnya sih dirangkum dalam sebuah script yang dapat dengan mudah langsung dijalankan.
@@ -89,6 +90,9 @@ post ini tentu saja akan saya update d masa mendatang, dan semoga suatu saat scr
 #### referensi
 
 [arts.ubc.ca](https://isit.arts.ubc.ca/how-to-locate-serial-number-of-computer/)
+
 [sans](https://www.sans.org/blog/wmic-for-incident-response/)
+
 [jordanpotti](https://jordanpotti.com/2017/01/20/basics-of-windows-incident-response/)
+
 [cybernote](http://www.cybernote.net/index.php/2020/05/02/practical-incident-response-commands-wmic/)
