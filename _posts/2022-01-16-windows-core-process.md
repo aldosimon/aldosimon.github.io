@@ -82,7 +82,15 @@ beberapa karakteristik csrss.exe:
 
 ##### services.exe
 
-[incomplete]
+![services.exe](/images/services.png)
+services.exe/ Service Control Manager (SCM) berfungsi mengontrol services yang dijalankan serta mengeset "Last Known Good control set/Last Known Good Configuration (HKLM\System\Select\LastKnownGood)" setelah berhasil login.
+informasi services yang dijalankan bisa dilihat di HKLM\System\CurrentControlSet\Services atau dengan "sc.exe query".
+
++parent process winit.exe
++image path c:\Windows\System32\
++hanya satu instances
++user account yang menjalankan SYSTEM
+
 ##### svchost.exe
 
 [incomplete]
@@ -94,3 +102,5 @@ post ini tentu saja akan saya update d masa mendatang, dan semoga suatu saat scr
 #### referensi
 1. [user mode and kernel mode](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/user-mode-and-kernel-mode)
 2. [session 0 isolation](http://securityinternals.blogspot.com/2014/02/windows-session-0-isolation.html)
+3. [lsass.exe] (https://yungchou.wordpress.com/2016/03/14/an-introduction-of-windows-10-credential-guard/)
+4. [services] (https://en.wikipedia.org/wiki/Service_Control_Manager)
