@@ -82,6 +82,7 @@ beberapa karakteristik csrss.exe:
 
 ##### services.exe
 ![services.exe](/images/services.png)
+
 services.exe/ Service Control Manager (SCM) berfungsi mengontrol services yang dijalankan serta mengeset "Last Known Good control set/Last Known Good Configuration (HKLM\System\Select\LastKnownGood)" setelah berhasil login.
 informasi services yang dijalankan bisa dilihat di HKLM\System\CurrentControlSet\Services atau dengan "sc.exe query".
 
