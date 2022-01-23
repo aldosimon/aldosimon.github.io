@@ -39,11 +39,17 @@ system merupakan process yang berjalan dalam kernel mode, serta menjadi rumah ba
 system dijalankan (parent) oleh PID 0 (system idle process), atau pada process explorer tidak memiliki parent. beberapa ciri-ciri lain dari proses ini adalah:
 
 beberapa karakteristik system process:
+
 +system selalu dijalankan dengan PID 4
+
 +hanya memiliki 1 instance
+
 +berjalan di session 0
+
 +user account yang menjalankan SYSTEM
+
 +tidak memiliki parent process *pada process explorer* (atau system idle process PID 0 *pada process hacker*)
+
 +image filename berada di C:\Windows\system32\ntoskrnl.exe *pada process hacker*
 
 ###### smss.exe
@@ -53,10 +59,15 @@ seperti yang ditulis sebelumnya, session 0 berisi proses-proses terkait servis s
 smss.exe menjalankan proses dengan cara menjalankan child smss process setelah itu melakukan terminasi diri sendiri, sehingga pada suatu waktu seharusnya hanya terdapat sebuah smss.explorer
 
 beberapa karakteristik smss.exe:
+
 +hanya terdapat satu instances
+
 +parent process system
+
 +berjalan di session 0 (karena yang session 1 dst menterminasi diri sendiri)
+
 +user account yang menjalankan SYSTEM
+
 +image path c:\Windows\System32\smss.exe
 
 ###### csrss.exe
@@ -64,9 +75,13 @@ beberapa karakteristik smss.exe:
 proses ini bertanggung jawab menyediakan Windows API, mapping drive letters, and menangani proses shutdown  Windows.
 
 beberapa karakteristik csrss.exe:
+
 +tidak mempunyai parent process/ parent process sudah tidak jalan.
+
 +image path c:\Windows\System32\csrss.exe
+
 +bisa terdapat lebih dari satu instances (ingat smss.exe dimana tiap login akan menjalankan csrss.exe dan winlogin.exe pada session baru)
+
 +user account yang menjalankan SYSTEM
 
 ###### winit.exe
@@ -84,8 +99,9 @@ beberapa karakteristik csrss.exe:
 ![services.exe](/images/services.png)
 
 services.exe/ Service Control Manager (SCM) berfungsi mengontrol services yang dijalankan serta mengeset "Last Known Good control set/Last Known Good Configuration (HKLM\System\Select\LastKnownGood)" setelah berhasil login.
-informasi services yang dijalankan bisa dilihat di HKLM\System\CurrentControlSet\Services atau dengan "sc.exe query".
+informasi services yang dijalankan bisa dilihat di "HKLM\System\CurrentControlSet\Services" atau dengan "sc.exe query".
 
+beberapa karakteristik services.exe:
 +parent process winit.exe
 +image path c:\Windows\System32\
 +hanya satu instances
