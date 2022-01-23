@@ -16,6 +16,7 @@ serta dapat dipakai sebagai script IR kilat di bagian awal asesmen.
 
 <!--more-->
 #### command line yang saya pakai
+
 1. list usernames
 ```bash
 net user
@@ -34,9 +35,10 @@ net localgroup
 net localgroup "Administrators"
 ```
 
-4. list running programs
+4. list running programs (and certain programs only)
 ```bash
 tasklist
+tasklist /m /fi “pid eq <Insert Process ID here w/out the brackets>”
 ```
 
 5. list all schedule task.
@@ -68,11 +70,24 @@ wmic /node:<remote-ip> /user:<username> diskdrive get model,serialNumber,size,me
 ```bash
 ipconfig /displaydns
 ```
+
+10. netstat with PID
+```bash
+netstat -bona
+```
+
+11. see firewall state
+```bash
+netsh firewall show state
+```
+
 #### penutup
+
 bagusnya sih dirangkum dalam sebuah script yang dapat dengan mudah langsung dijalankan.
 post ini tentu saja akan saya update d masa mendatang, dan semoga suatu saat script yang menyatukannya akan saya kerjakan :D
 
 #### referensi
+
 [arts.ubc.ca](https://isit.arts.ubc.ca/how-to-locate-serial-number-of-computer/)
 [sans](https://www.sans.org/blog/wmic-for-incident-response/)
 [jordanpotti](https://jordanpotti.com/2017/01/20/basics-of-windows-incident-response/)
