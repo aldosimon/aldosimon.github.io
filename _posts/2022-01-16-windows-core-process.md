@@ -43,7 +43,7 @@ beberapa karakteristik system process:
 * hanya memiliki 1 instance
 * berjalan di session 0
 * user account yang menjalankan SYSTEM
-* tidak memiliki parent process * pada process explorer*  (atau system idle process PID 0 * pada process hacker* )
+* tidak memiliki parent process (pada process explorer atau system idle process PID 0 pada process hacker )
 * image filename berada di C:\Windows\system32\ntoskrnl.exe * pada process hacker*
 
 ###### smss.exe
