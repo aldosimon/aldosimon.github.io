@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title: windows core processes
 author: admin
 comments: true
@@ -103,5 +103,5 @@ post ini tentu saja akan saya update d masa mendatang, dan semoga suatu saat scr
 #### referensi
 1. [user mode and kernel mode](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/user-mode-and-kernel-mode)
 2. [session 0 isolation](http://securityinternals.blogspot.com/2014/02/windows-session-0-isolation.html)
-3. [lsass.exe] (https://yungchou.wordpress.com/2016/03/14/an-introduction-of-windows-10-credential-guard/)
-4. [services] (https://en.wikipedia.org/wiki/Service_Control_Manager)
+3. [lsass.exe](https://yungchou.wordpress.com/2016/03/14/an-introduction-of-windows-10-credential-guard/)
+4. [services](https://en.wikipedia.org/wiki/Service_Control_Manager)
