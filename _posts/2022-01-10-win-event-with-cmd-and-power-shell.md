@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title: various command for quick IR
 author: admin
 comments: true
