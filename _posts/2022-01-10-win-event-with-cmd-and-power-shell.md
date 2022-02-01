@@ -14,6 +14,7 @@ winevent viewer shell
 #### command line yang saya pakai
 
 https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/Get-WinEvent?view=powershell-7.1
+https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms256115(v=vs.100)
 
 #### penutup
 
