@@ -13,8 +13,6 @@ categories:
 winevent viewer shell
 #### command line yang saya pakai
 
-https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/Get-WinEvent?view=powershell-7.1
-https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms256115(v=vs.100)
 
 #### penutup
 
@@ -27,3 +25,9 @@ post ini tentu saja akan saya update d masa mendatang, dan semoga suatu saat scr
 2. [sans](https://www.sans.org/blog/wmic-for-incident-response/)
 3. [jordanpotti](https://jordanpotti.com/2017/01/20/basics-of-windows-incident-response/)
 4. [cybernote](http://www.cybernote.net/index.php/2020/05/02/practical-incident-response-commands-wmic/)
+
+https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.diagnostics/Get-WinEvent?view=powershell-7.1
+https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms256115(v=vs.100)
+https://devblogs.microsoft.com/powershell/powershell-the-blue-team/
+https://adamtheautomator.com/get-winevent/
+https://r1d1cul0us.xyz/posts/pentest-001/boxes/windows/windows-tools/
