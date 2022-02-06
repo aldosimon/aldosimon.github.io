@@ -105,10 +105,10 @@ beberapa karakteristik services.exe:
 ![svchost.exe](/images/svchost.png)
 
 svchost.exe (service host/ host process for windows services) bertugas mengontrol windows services. servis yang dijalankan proses ini berbentuk dll, dan dapat dilihat di registry (HKLM\SYSTEM\CurrentControlSet\Services\SERVICE NAME\Parameters).
-sebagai contoh, svchost menjalankan service terkait bluetooth, maka kita bisa melihat dengan
+sebagai contoh, svchost menjalankan service terkait bluetooth, maka kita bisa melihat dll yang dijalankan  dengan
 1. processhacker > right click on svchost.exe > properties > services > double click on name.  maka akan menampilkan gambar di atas, dimana pada binary path terlihat dll yang dijalankan.
-perlu juga diperhatikan flag/parameter "-k" pada command line di binary path, hal ini merupakan perintah grouping services sejenis (sejak Windows 10 Version 1703 services sejenis dilakukan grouping pada mesin dengan memory di atas 3.5 GB)
-2. atau pada registry di "\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTAGService\Parameters"
+perlu juga diperhatikan flag/parameter "-k" pada command line di binary path, hal ini merupakan perintah grouping services sejenis (sejak Windows 10 Version 1703 services sejenis dilakukan grouping pada mesin dengan memory di atas 3.5 GB); atau
+2. pada registry key "\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTAGService\Parameters"
 
 beberapa karakteristik svchost.exe:
 * parent process services.exe
