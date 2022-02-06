@@ -118,7 +118,16 @@ beberapa karakteristik svchost.exe:
 * user account yang menjalankan beragam (SYSTEM, Network Service, Local Service) tergantung jenis services (pada windows 10 ada yang dijalankan logged-in user)
 * start time:  dalam beberapa detik dari boot time, namun mungkin ada yang berjarak dari boot time
 
-#### penutup
+###### lsass.exe
+
+Local Security Authority Subsystem Service (LSASS) adalah process Microsoft Windows operating systems yang berfungsi melakukan enforcing security policy on the system.
+beberapa hal yang dilakukan antara lain verifikasi user login, password changes,  membuat access tokens, dan menulis Windows Security Log.
+
+###### winlogon.exe
+
+###### explorer.exe
+
+###### penutup
 bagusnya sih dirangkum dalam sebuah script yang dapat dengan mudah langsung dijalankan.
 post ini tentu saja akan saya update d masa mendatang, dan semoga suatu saat script yang menyatukannya akan saya kerjakan :D
 
