@@ -54,7 +54,7 @@ beberapa karakteristik system process:
 
 ![smss.exe](/images/smss.png)
 
-smss.exe (Session Manager Subsystem), atau windows session manager. smss.exe menjalankan csrss.exe dan wininit.exe di session 0, serta menjalankan csrss.exe dan winlogin.exe di session 1.
+smss.exe (Session Manager Subsystem) atau windows session manager. smss.exe menjalankan csrss.exe dan wininit.exe di session 0, serta menjalankan csrss.exe dan winlogin.exe di session 1.
 seperti yang ditulis sebelumnya, session 0 berisi proses-proses terkait servis sedangkan session 1 untuk proses terkait user.
 smss.exe menjalankan proses dengan cara menjalankan child smss process setelah itu melakukan terminasi diri sendiri, sehingga pada suatu waktu seharusnya hanya terdapat sebuah smss.explorer
 
