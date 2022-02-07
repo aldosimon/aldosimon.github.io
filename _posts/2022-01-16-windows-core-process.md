@@ -33,7 +33,10 @@ ada beberapa tools yang bisa digunakan untuk memahami lebih jauh proses ini, kit
 selain itu bisa juga menggunakan command line yaitu tasklist, Get-Process atau ps (PowerShell), dan wmic.
 
 #### windows core processes
+
 ###### system
+
+![system.exe](/images/system.png)
 
 system merupakan process yang berjalan dalam kernel mode, serta menjadi rumah bagi process2 lain yang berjalan di kernel mode.
 system dijalankan (parent) oleh PID 0 (system idle process), atau pada process explorer tidak memiliki parent. beberapa ciri-ciri lain dari proses ini adalah:
@@ -49,6 +52,8 @@ beberapa karakteristik system process:
 
 ###### system > smss.exe
 
+![smss.exe](/images/smss.png)
+
 smss.exe (Session Manager Subsystem), atau windows session manager. smss.exe menjalankan csrss.exe dan wininit.exe di session 0, serta menjalankan csrss.exe dan winlogin.exe di session 1.
 seperti yang ditulis sebelumnya, session 0 berisi proses-proses terkait servis sedangkan session 1 untuk proses terkait user.
 smss.exe menjalankan proses dengan cara menjalankan child smss process setelah itu melakukan terminasi diri sendiri, sehingga pada suatu waktu seharusnya hanya terdapat sebuah smss.explorer
@@ -63,6 +68,8 @@ beberapa karakteristik smss.exe:
 
 ###### system > csrss.exe
 
+![csrss.exe](/images/csrss.png)
+
 proses ini bertanggung jawab menyediakan Windows API, mapping drive letters, and menangani proses shutdown Windows. csrss.exe dijalankan (parent process) oleh smss.exe yang akan mematikan dirinya sendiri setelahnya.
 oleh karena itu csrss.exe tidak memiliki parent process (parent process terminated/ non-existent process pada field parent)
 
@@ -74,6 +81,8 @@ beberapa karakteristik csrss.exe:
 * start time:  dalam beberapa detik dari boot time (untuk 2 instances pertama, dan setelah itu setiap ada login baru)
 
 ###### smss.exe > wininit.exe
+
+![wininit.exe](/images/wininit.png)
 
 process ini dijalankan oleh smss.exe, dan sama seperti csrss.exe, smss.exe akan mematikan dirinya sendiri setelah menjalankan proses ini, sehingga winit.exe tidak memiliki parent process.
 The Windows Initialization Process atau wininit.exe bertanggung jawab menjalankan services.exe (Service Control Manager), lsass.exe (Local Security Authority), dan lsaiso.exe (hanya bila credential guard dinyalakan) dalam Session 0.
@@ -102,6 +111,7 @@ beberapa karakteristik services.exe:
 * start time:  dalam beberapa detik dari boot time
 
 ###### wininit.exe > services.exe> svchost.exe
+
 ![svchost.exe](/images/svchost.png)
 
 svchost.exe (service host/ host process for windows services) bertugas mengontrol windows services. servis yang dijalankan proses ini berbentuk dll, dan dapat dilihat di registry (HKLM\SYSTEM\CurrentControlSet\Services\SERVICE NAME\Parameters).
@@ -119,6 +129,7 @@ beberapa karakteristik svchost.exe:
 * start time:  dalam beberapa detik dari boot time, namun mungkin ada yang berjarak dari boot time
 
 ###### wininit.exe > lsass.exe
+
 ![lsass.exe](/images/lsass.png)
 
 Local Security Authority Subsystem Service (LSASS) adalah process Microsoft Windows operating systems yang berfungsi melakukan enforcing security policy on the system.
@@ -133,11 +144,13 @@ beberapa hal yang dilakukan antara lain verifikasi user login, password changes,
 
 ###### winlogon.exe
 
+![winlogon.exe](/images/winlogon.png)
+
 ###### explorer.exe
 
-###### penutup
-bagusnya sih dirangkum dalam sebuah script yang dapat dengan mudah langsung dijalankan.
-post ini tentu saja akan saya update d masa mendatang, dan semoga suatu saat script yang menyatukannya akan saya kerjakan :D
+![explorer.exe](/images/explorer.png)
+
+##### penutup
 
 #### referensi
 1. [user mode and kernel mode](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/user-mode-and-kernel-mode)
