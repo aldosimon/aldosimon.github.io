@@ -18,5 +18,8 @@ Setelah mendapatkan akses, malware melakukan fingerprinting, mengunduh  dan menj
 
 Dikarenakan keterbatasan interaksinya, cowrie tidak mendokumentasikan aktivitas dari payload yang diunduh dan dijalankan, hal ini dapat dijadikan topik penelitian lebih lanjut namun diperlukan penggunaan high interaction honeypot.
 
-Rinciannya dapat dilihat disini:
+rinciannya dapat dilihat disini:
 [the fault in our shell](https://aldosimon.com/writings/The Fault in Our Shell.pdf)
+
+originally posted on:
+[cdef 4](https://aldosimon.com/writings/cdef4.pdf)
