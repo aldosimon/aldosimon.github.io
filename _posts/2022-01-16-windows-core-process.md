@@ -61,7 +61,7 @@ beberapa karakteristik smss.exe:
 * image path c:\Windows\System32\smss.exe
 * start time:  dalam beberapa detik dari boot time (untuk master instance)
 
-###### csrss.exe
+###### system > csrss.exe
 
 proses ini bertanggung jawab menyediakan Windows API, mapping drive letters, and menangani proses shutdown Windows. csrss.exe dijalankan (parent process) oleh smss.exe yang akan mematikan dirinya sendiri setelahnya.
 oleh karena itu csrss.exe tidak memiliki parent process (parent process terminated/ non-existent process pada field parent)
@@ -73,7 +73,7 @@ beberapa karakteristik csrss.exe:
 * user account yang menjalankan SYSTEM
 * start time:  dalam beberapa detik dari boot time (untuk 2 instances pertama, dan setelah itu setiap ada login baru)
 
-###### wininit.exe
+###### smss.exe > wininit.exe
 
 process ini dijalankan oleh smss.exe, dan sama seperti csrss.exe, smss.exe akan mematikan dirinya sendiri setelah menjalankan proses ini, sehingga winit.exe tidak memiliki parent process.
 The Windows Initialization Process atau wininit.exe bertanggung jawab menjalankan services.exe (Service Control Manager), lsass.exe (Local Security Authority), dan lsaiso.exe (hanya bila credential guard dinyalakan) dalam Session 0.
@@ -118,7 +118,7 @@ beberapa karakteristik svchost.exe:
 * user account yang menjalankan beragam (SYSTEM, Network Service, Local Service) tergantung jenis services (pada windows 10 ada yang dijalankan logged-in user)
 * start time:  dalam beberapa detik dari boot time, namun mungkin ada yang berjarak dari boot time
 
-###### lsass.exe
+###### wininit.exe > lsass.exe
 ![lsass.exe](/images/lsass.png)
 
 Local Security Authority Subsystem Service (LSASS) adalah process Microsoft Windows operating systems yang berfungsi melakukan enforcing security policy on the system.
@@ -130,6 +130,7 @@ beberapa hal yang dilakukan antara lain verifikasi user login, password changes,
 * start time:  dalam beberapa detik dari boot time
 * image file path C:\Windows\System32\lsass.exe
 * user account yang menjalankan as SYSTEM
+
 ###### winlogon.exe
 
 ###### explorer.exe
