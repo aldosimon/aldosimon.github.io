@@ -119,10 +119,17 @@ beberapa karakteristik svchost.exe:
 * start time:  dalam beberapa detik dari boot time, namun mungkin ada yang berjarak dari boot time
 
 ###### lsass.exe
+![lsass.exe](/images/lsass.png)
 
 Local Security Authority Subsystem Service (LSASS) adalah process Microsoft Windows operating systems yang berfungsi melakukan enforcing security policy on the system.
 beberapa hal yang dilakukan antara lain verifikasi user login, password changes,  membuat access tokens, dan menulis Windows Security Log.
 
+* parent process wininit.exe
+* hanya satu instances
+* hati-hati terhadap image dengan nama yang mirip
+* start time:  dalam beberapa detik dari boot time
+* image file path C:\Windows\System32\lsass.exe
+* user account yang menjalankan as SYSTEM
 ###### winlogon.exe
 
 ###### explorer.exe
