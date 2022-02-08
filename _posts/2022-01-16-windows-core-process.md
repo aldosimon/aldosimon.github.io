@@ -157,3 +157,5 @@ beberapa hal yang dilakukan antara lain verifikasi user login, password changes,
 2. [session 0 isolation](http://securityinternals.blogspot.com/2014/02/windows-session-0-isolation.html)
 3. [lsass.exe](https://yungchou.wordpress.com/2016/03/14/an-introduction-of-windows-10-credential-guard/)
 4. [services](https://en.wikipedia.org/wiki/Service_Control_Manager)
+5. [nasbench.medium](https://nasbench.medium.com/windows-system-processes-an-overview-for-blue-teams-42fa7a617920)
+6. [andreafortuna](https://andreafortuna.org/2017/06/15/standard-windows-processes-a-brief-reference/)
