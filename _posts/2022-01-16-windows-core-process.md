@@ -135,6 +135,7 @@ beberapa karakteristik svchost.exe:
 Local Security Authority Subsystem Service (LSASS) adalah process Microsoft Windows operating systems yang berfungsi melakukan enforcing security policy on the system.
 beberapa hal yang dilakukan antara lain verifikasi user login, password changes,  membuat access tokens, dan menulis Windows Security Log.
 
+beberapa karakteristik lsass.exe:
 * parent process wininit.exe
 * hanya satu instances
 * hati-hati terhadap image dengan nama yang mirip
@@ -146,9 +147,29 @@ beberapa hal yang dilakukan antara lain verifikasi user login, password changes,
 
 ![winlogon.exe](/images/winlogon.png)
 
+windows logon (winlogon.exe) berperan dalam menangani secure attention sequence (key combination CTRL+ALT+DEL yang menampilkan user login/password),
+me-load user profile (NTUSER.DAT ke registry HKCU), menjalankan userinit.exe (yang kemudian me-load HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell dan kemudian exit),
+mengunci layar, dan juga screen saver.
+
+beberapa karakteristik winlogon.exe:
+* tidak memiliki parent process (karena parent smss.exe exit)
+* bisa terdapat lebih dari satu instances
+* image file path C:\Windows\System32\winlogon.exe
+* start time dalam beberapa detik dari boot time
+
 ###### explorer.exe
 
 ![explorer.exe](/images/explorer.png)
+
+Windows explorer (explorer.exe) bertangungg jawab untuk menampilkan interface untuk mengakses folder dan files, start menu, taskbar, etc.
+explorer.exe dijalankan oleh userinit.exe (me-load HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell), yang kemudian exit sendiri sehingga tidak memiliki parent process.
+
+beberapa karakteristik explorer.exe:
+* tidak memiliki parent process
+* lokasi image di C:\WINDOWS\explorer.exe
+* dijalankan oleh user yang winlogin
+* seharusnya tidak memiliki koneksi outbound TCP/IP
+* start time beberapa saat setelah logon (interactive logon)
 
 ##### penutup
 
@@ -159,3 +180,4 @@ beberapa hal yang dilakukan antara lain verifikasi user login, password changes,
 4. [services](https://en.wikipedia.org/wiki/Service_Control_Manager)
 5. [nasbench.medium](https://nasbench.medium.com/windows-system-processes-an-overview-for-blue-teams-42fa7a617920)
 6. [andreafortuna](https://andreafortuna.org/2017/06/15/standard-windows-processes-a-brief-reference/)
+7. [tryhackme] (https://tryhackme.com/room/btwindowsinternals)

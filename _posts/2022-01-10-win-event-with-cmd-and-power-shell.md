@@ -31,3 +31,6 @@ https://docs.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms256
 https://devblogs.microsoft.com/powershell/powershell-the-blue-team/
 https://adamtheautomator.com/get-winevent/
 https://r1d1cul0us.xyz/posts/pentest-001/boxes/windows/windows-tools/
+
+
+Get-WinEvent -Path <Path to Log> -FilterXPath '*/System/EventID=3 and */EventData/Data[@Name="DestinationPort"] and */EventData/Data=<Port>'
