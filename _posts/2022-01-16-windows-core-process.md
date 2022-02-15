@@ -12,9 +12,8 @@ categories:
   - sysinternals
   - malware
 ---
-Dalam sebuah kegiatan incident response, adakalanya kita perlu mengetahui proses yang sedang berjalan.
-Sehingga dapat memutuskan apakah proses tersebut malicious atau tidak. Berikut beberapa proses inti windows (Windows core processes),
-dengan karakteristik masing-masing, sehingga ketika melakukan incident response kita memiliki kemudahan untuk melakukan filtering proses yang malicious atau tidak.
+Dalam sebuah kegiatan incident response, adakalanya kita perlu mengetahui karakteristik proses yang sedang berjalan, sehingga dapat memutuskan apakah proses tersebut malicious atau tidak.
+Berikut beberapa proses inti windows (Windows core processes), dengan sedikit deskripsi dan karakteristik masing-masing, sebagai acuan baseline, sehingga ketika melakukan incident response kita memiliki kemudahan untuk melakukan filtering proses yang malicious atau tidak.
 
 <!--more-->
 #### pengantar
@@ -31,11 +30,9 @@ proses yang berjalan di session 0 tidak memiliki GUI. sedangkan session 1 (dan s
 ada beberapa tools yang bisa digunakan untuk memahami lebih jauh proses ini, kita akan menggunakan [processes explorer](https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer) dan [processes hacker](https://processhacker.sourceforge.io/).
 selain itu bisa juga menggunakan command line yaitu tasklist, Get-Process atau ps (PowerShell), dan wmic.
 
-#### windows core processes
-
 ###### system
 
-![system.exe](/images/system.png)
+![system](/images/system.png)
 
 system merupakan process yang berjalan dalam kernel mode, serta menjadi rumah bagi process2 lain yang berjalan di kernel mode.
 system dijalankan (parent) oleh PID 0 (system idle process), atau pada process explorer tidak memiliki parent. beberapa ciri-ciri lain dari proses ini adalah:
@@ -46,8 +43,11 @@ beberapa karakteristik system process:
 * berjalan di session 0
 * user account yang menjalankan SYSTEM
 * tidak memiliki parent process (pada process explorer atau system idle process PID 0 pada process hacker )
-* image filename berada di C:\Windows\system32\ntoskrnl.exe * pada process hacker*
+* image filename berada di C:\Windows\system32\ntoskrnl.exe (pada process hacker)
 * start time:  At boot time
+
+
+
 
 ###### system > smss.exe
 
@@ -55,7 +55,7 @@ beberapa karakteristik system process:
 
 smss.exe (Session Manager Subsystem) atau windows session manager. smss.exe menjalankan csrss.exe dan wininit.exe di session 0, serta menjalankan csrss.exe dan winlogin.exe di session 1.
 seperti yang ditulis sebelumnya, session 0 berisi proses-proses terkait servis sedangkan session 1 untuk proses terkait user.
-smss.exe menjalankan proses dengan cara menjalankan child smss process setelah itu melakukan terminasi diri sendiri, sehingga pada suatu waktu seharusnya hanya terdapat sebuah smss.explorer
+smss.exe menjalankan proses dengan cara menjalankan child smss process setelah itu melakukan terminasi diri sendiri, sehingga pada suatu waktu seharusnya hanya terdapat sebuah smss.exe.
 
 beberapa karakteristik smss.exe:
 * hanya terdapat satu instances
