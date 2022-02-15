@@ -4,7 +4,7 @@ published: true
 title: windows core processes
 author: admin
 comments: true
-date: '2022-01-16 23:00'
+date: '2022-04-16 23:00'
 categories:
   - DFIR
   - incident Response
@@ -15,7 +15,6 @@ categories:
 Dalam sebuah kegiatan incident response, adakalanya kita perlu mengetahui proses yang sedang berjalan.
 Sehingga dapat memutuskan apakah proses tersebut malicious atau tidak. Berikut beberapa proses inti windows (Windows core processes),
 dengan karakteristik masing-masing, sehingga ketika melakukan incident response kita memiliki kemudahan untuk melakukan filtering proses yang malicious atau tidak.
-
 
 <!--more-->
 #### pengantar
@@ -173,6 +172,9 @@ beberapa karakteristik explorer.exe:
 
 ##### penutup
 
+Dengan menggunakan processhacker, procexp, atau perangkat lain, maka sebagai IR kita bisa membandingkan antara karakteristik asli (baseline) dari beberapa proses utama windows.
+Hal ini dapat dijadikan acuan untuk memutuskan apakah sebuah proses malicious atau tidak. Selain yang disebutkan di atas, proses malicious juga seringkali menggunakan nama yang serupa (mengganti huruf tertentu) untuk menyembunyikan dan menyamarkan diri menjadi proses yang legitimate.
+
 #### referensi
 1. [user mode and kernel mode](https://docs.microsoft.com/en-us/windows-hardware/drivers/gettingstarted/user-mode-and-kernel-mode)
 2. [session 0 isolation](http://securityinternals.blogspot.com/2014/02/windows-session-0-isolation.html)
@@ -180,4 +182,4 @@ beberapa karakteristik explorer.exe:
 4. [services](https://en.wikipedia.org/wiki/Service_Control_Manager)
 5. [nasbench.medium](https://nasbench.medium.com/windows-system-processes-an-overview-for-blue-teams-42fa7a617920)
 6. [andreafortuna](https://andreafortuna.org/2017/06/15/standard-windows-processes-a-brief-reference/)
-7. [tryhackme] (https://tryhackme.com/room/btwindowsinternals)
+7. [tryhackme](https://tryhackme.com/room/btwindowsinternals)
