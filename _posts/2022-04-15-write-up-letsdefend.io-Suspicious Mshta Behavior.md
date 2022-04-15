@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: write up - suspicious mshta behavior
 author: admin
 comments: true
