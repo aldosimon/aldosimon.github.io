@@ -30,12 +30,16 @@ virustotal result are bad, 23/58 malicious flag. you could also try to find the 
 ![wup_endpoint](/images/wup_endpoint.png)
 
 We use endpoint security tab to find out what was happening in the host 172.16.17.38. 
-The screenshot above is from the command history portion of the tab, where we can see that the first command line that trigger the alert, followed by another not so clear command.
+The screenshot above is from the command history portion of the tab, where we can see the first command line that trigger the alert, followed by another not so clear command.
 
-The first command is what triggered the alert. Mshta is a trusted Microsoft binary that in this case is abused for execution of the PS1.hta file. 
+```bash 
+C:/Windows/System32/mshta.exe C:/Users/roberto/Desktop/Ps1.hta
+```
+
+The first command above is what triggered the alert. Mshta is a trusted Microsoft binary that in this case is abused for execution of the Ps1.hta file. 
 you can see the related explanation here at the [MITRE](https://attack.mitre.org/techniques/T1218/005/)
 
-Tried a bit of magic at the second command so it will be more readable. 
+Now we tried a bit of magic at the second command so it will be more readable. 
 
 ```bash
 function H1($i) 
@@ -55,13 +59,15 @@ $H3-H6 with the help of $H1 just basically hex that reads "Downloadstring".
 $H2 was a glorified "New-Object Net.WebClient". 
 $H8 puts them all together to form an old fashion download using powershell from address mentioned in $H8 (http://193.142.58.23/Server.txt). 
 
+So it's a call to C2 server 193.142.58.23, probably trying to download something.
+
 #### log management
 
 After seeing what the script do, we best check log management and try to see did the c2 server (193.142.58.23) reply with anything.
 
 ![wup_endpoint](/images/wup_logmgmt.png)
 
-apparently the server replied with 404, so no response arrived for the host (172.16.17.38) because the server is dead/ the file was not there.
+Apparently the server replied with 404, so no response arrived for the host (172.16.17.38) because the server is dead/ the file was not there.
 
 #### containment and lesson learned
 
