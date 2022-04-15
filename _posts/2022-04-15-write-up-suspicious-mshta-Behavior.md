@@ -65,7 +65,7 @@ apparently the server replied with 404, so no response arrived for the host (172
 
 #### containment and lesson learned
 
-Since it's definetly a malicious script (but stopped due to the C2 server is dead), it's best to contain the host. We can do this by going to endpoint security and click the request containment. 
+Based on our previous analysis, we can safely conclude that its a malicious script (but stopped due to the C2 server is dead), next step would be to contain the host. We can do this by going to endpoint security and use the request containment button. 
 
 Lastly, we can use the IP address, and URL and also the md5 hash of the executed file can as IOC when we did the playbook and also close the case.
 
