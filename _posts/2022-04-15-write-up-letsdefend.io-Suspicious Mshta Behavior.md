@@ -4,7 +4,7 @@ published: true
 title: write up - suspicious mshta behavior
 author: admin
 comments: true
-date: '2022-04-15 18:00'
+date: '2022-04-13 18:00'
 categories:
   - DFIR
 ---
