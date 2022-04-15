@@ -20,10 +20,7 @@ This is what the case looked like, basically a host execute hta file thus an ale
 
 #### virustotal
 
-virustotal result look pretty bad, 23/58 malicious flag. you could also try to find the file and do more analysis, but for now I think we can move to endpoint security tabs and do more analysis there.
-
-[virustotal](https://www.virustotal.com/gui/file/886095c7861a068d1ee603c71cb161f256941e802e743fe2161f30013947a2f1/detection)
-
+We can use the hash we found at the first picture to search scan result at virustotal. The [result on virustotal](https://www.virustotal.com/gui/file/886095c7861a068d1ee603c71cb161f256941e802e743fe2161f30013947a2f1/detection) look pretty bad, 23/58 malicious flag. you could also try to find the file and do more analysis, but for now I think we can move to endpoint security tabs and do more analysis there.
 
 #### endpoint security
 
