@@ -9,7 +9,4 @@ ewaldo simon hiras/ aldo simon is a digital forensic and incident response enthu
 #### credits
 * [jekyll-now](https://github.com/barryclark/jekyll-now "jekyll-now")
 * <s>disqus</s>
-* [cleanpng](https://www.cleanpng.com/)
-* [pexels](https://www.pexels.com/)
-* [unsplash](https://unsplash.com)
-* [pixabay](https://pixabay.com)
+* media from [cleanpng](https://www.cleanpng.com/)/ [pexels](https://www.pexels.com/)/[unsplash](https://unsplash.com)/ [pixabay](https://pixabay.com)
