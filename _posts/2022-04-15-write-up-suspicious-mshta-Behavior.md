@@ -9,9 +9,9 @@ categories:
   - DFIR
 ---
 
-I've been trying out [letsdefend.io](https://letsdefend.io/) for a couple of week, and here's a write up of one of the challenge. its a platform to hone your blue teaming skill, you play in a SIEM like apps and you act as an analyst, finding IOC and deciding escalation etc. There are not a lot of blue team training site, and this concept is pretty nice. 
+I've been trying out [letsdefend.io](https://letsdefend.io/) for a couple of week, and here's a write up of one of the challenge. its a platform to hone your blue teaming skill, you play in a SIEM like apps and you act as an analyst, finding IOC and deciding escalation etc. There are not a lot of blue team training site, and this hands on concept by [letsdefend.io](https://letsdefend.io/) is great. 
 
-Here goes the write up. 
+With that intro about [letsdefend.io](https://letsdefend.io/) out of the way, here goes the write up. 
 <!--more-->
 
 ![mshta behaviour](/images/wup_ld.png)
