@@ -10,7 +10,7 @@ categories:
 ---
 #### intro
 
-tulisan ini mendokumentasikan beberapa hal unik yang kebetulan saya lihat bersarang di situs publik. Biasanya saya temukan ketika sedang iseng menjelajah internet.
+Tulisan ini mendokumentasikan beberapa hal unik yang kebetulan saya lihat bersarang di situs publik. Biasanya saya temukan ketika sedang iseng menjelajah internet.
 <!--more-->
 #### mining script di kemsos.go.id
 <!--tanggal lapor: 18/09/2018-->
