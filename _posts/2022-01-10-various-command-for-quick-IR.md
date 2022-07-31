@@ -145,7 +145,7 @@ hashing
 Get-FileHash .\file.txt -Algorithm MD5
 ```
 
-Alternate data stream (ADS)
+alternate data stream (ADS)
 ```bash
 Get-Item .\file.txt -Stream *
 ```
@@ -165,4 +165,4 @@ post ini tentu saja akan saya update d masa mendatang, dan semoga suatu saat scr
 2. [sans](https://www.sans.org/blog/wmic-for-incident-response/)
 3. [jordanpotti](https://jordanpotti.com/2017/01/20/basics-of-windows-incident-response/)
 4. [cybernote](http://www.cybernote.net/index.php/2020/05/02/practical-incident-response-commands-wmic/)
-5. [Troy Wojewoda](https://www.giac.org/paper/gsec/23549/hunting-gathering-powershell/121279)
+5. [troy wojewoda](https://www.giac.org/paper/gsec/23549/hunting-gathering-powershell/121279)
