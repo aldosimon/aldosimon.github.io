@@ -11,13 +11,12 @@ categories:
   - shell
 ---
 <s>Saya sedang mengerjakan sebuah investigation challenge di tryhackme.com,
-dan ada </s> Beberapa command line yang saya pakai disana yang menurut saya cukup menarik untuk di dokumentasikan,
-serta dapat dipakai sebagai script IR kilat di bagian awal asesmen, dan sebisa mungkin saya update terus.
+dan ada </s> Beberapa command line yang menurut saya cukup menarik untuk di dokumentasikan, serta dapat dipakai sebagai sarana IR kilat di bagian awal asesmen.
 
 <!--more-->
 #### command line yang saya pakai
 
-#####list usernames
+list usernames
 ```bash
 net user
 ```
@@ -25,22 +24,22 @@ net user
 Get-LocalUser
 ```
 
-#####list ADusername
+list ADusername
 ```bash
 Get-ADUser -Filter 'Name -Like "*"' | where Enabled -eq $True
 ```
 
-#####list logged on user
+list logged on user
 ```bash
 Get-CimInstance –ClassName Win32_ComputerSystem | Select-Object Name, UserName, PrimaryOwnerName, Domain, TotalPhysicalMemory, Model, Manufacturer
 ```
 
-#####last logon, group member, password settings, user full name, etc
+last logon, group member, password settings, user full name, etc
 ```bash
 net user [username]
 ```
 
-#####show local group and/or members of groups
+show local group and/or members of groups
 ```bash
 net localgroup
 ```
@@ -51,7 +50,7 @@ net localgroup "Administrators"
 Get-LocalGroup
 ```
 
-#####show ADgroups
+show ADgroups
 ```bash
 Get-ADGroupMember Administrators | where objectClass -eq 'user'
 ```
@@ -59,7 +58,7 @@ Get-ADGroupMember Administrators | where objectClass -eq 'user'
 Get-ADComputer -Filter "Name -Like '*'" -Properties * | where Enabled -eq $True | Select-Object Name, OperatingSystem, Enabled
 ```
 
-#####list running programs (and certain programs only)
+list running programs (and certain programs only)
 ```bash
 tasklist
 tasklist /m /fi “pid eq <Insert Process ID here w/out the brackets>”
@@ -71,12 +70,12 @@ Get-CimInstance -ClassName Win32_Process | Select-Object CreationDate, ProcessNa
 Get-Process | Select-Object StartTime, ProcessName, ID, Path | Where Id -eq xxxx
 ```
 
-#####list schedule task, services
+list schedule task, services
 ```bash
 schtasks /query /fo list /v > schtasks.txt
 ```
 
-#####list services
+list services
 ```bash
 Get-CimInstance –ClassName Win32_Service | Select-Object Name, DisplayName, StartMode, State, PathName, StartName, ServiceType
 ```
@@ -84,23 +83,23 @@ Get-CimInstance –ClassName Win32_Service | Select-Object Name, DisplayName, St
 Get-Service | Select-Object Name, DisplayName, Status, StartType
 ```
 
-#####various wevtutil
+various wevtutil
 ```bash
 wevtutil qe Security /f:text > seclogs.txt
 wevtutil el | Measure-Object
 ```
 
-#####system information
+system information
 ```bash
 systeminfo
 ```
 
-#####osbuild, servicepack, buildnumber, csname, lastboot
+osbuild, servicepack, buildnumber, csname, lastboot
 ```bash
 Get-CimInstance Win32_OperatingSystem | Select-Object Caption, Version, servicepackmajorversion, BuildNumber, CSName, LastBootUpTime
 ```
 
-#####various wmic
+various wmic
 ```bash
 wmic /node:<remote-ip> /user:<username> startup list full | more
 wmic /node:<remote-ip> /user:<username> service list full | more
@@ -111,13 +110,12 @@ wmic /node:<remote-ip> /user:<username> bios get serialnumber
 wmic /node:<remote-ip> /user:<username> diskdrive get model,serialNumber,size,mediaType
 ```
 
-#####ipconfig
+ipconfig
 ```bash
 ipconfig /displaydns
 ```
 
-#####network related
-network activity
+network related
 ```bash
 Get-NetTCPConnection -RemoteAddress xxx.xxx.xxx.xxx -RemotePort xx | Select-Object CreationTime, LocalAddress, LocalPort, RemoteAddress, RemotePort, OwningProcess, Stat
 ```
@@ -126,40 +124,39 @@ netstat with PID
 netstat -bona
 ```
 
-#####see firewall state
+see firewall state
 ```bash
 netsh firewall show state
 ```
 
-#####melihat dan setting execution policy
+melihat dan setting execution policy
 ```bash
 Get-ExecutionPolicy
 Set-ExecutionPolicy
 ```
 
-#####check PS version
+check PS version
 ```bash
 Get-Host | Select-Object Version
 ```
 
-#####hashing
+hashing
 ```bash
 Get-FileHash .\file.txt -Algorithm MD5
 ```
 
-#####Alternate data stream (ADS)
+Alternate data stream (ADS)
 ```bash
 Get-Item .\file.txt -Stream *
 ```
 
-#####raw file access, hex
+raw file access, hex
 ```bash
 Get-Content .\file.txt –Encoding Byte | Format-Hex
 ```
 
 #### penutup
 
-bagusnya sih dirangkum dalam sebuah script yang dapat dengan mudah langsung dijalankan.
 post ini tentu saja akan saya update d masa mendatang, dan semoga suatu saat script yang menyatukannya akan saya kerjakan :D
 
 #### referensi
