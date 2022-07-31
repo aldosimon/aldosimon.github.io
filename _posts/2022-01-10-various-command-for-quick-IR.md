@@ -116,7 +116,6 @@ network activity
 ```bash
 Get-NetTCPConnection -RemoteAddress xxx.xxx.xxx.xxx -RemotePort xx | Select-Object CreationTime, LocalAddress, LocalPort, RemoteAddress, RemotePort, OwningProcess, Stat
 ```
-
 netstat with PID
 ```bash
 netstat -bona
