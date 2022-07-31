@@ -11,8 +11,9 @@ categories:
   - shell
 ---
 <s>Saya sedang mengerjakan sebuah investigation challenge di tryhackme.com,
-dan ada </s> beberapa command line yang saya pakai disana yang menurut saya cukup menarik untuk di dokumentasikan,
-serta dapat dipakai sebagai script IR kilat di bagian awal asesmen.
+dan ada </s> Beberapa command line yang saya pakai disana yang menurut saya cukup menarik untuk di dokumentasikan,
+serta dapat dipakai sebagai script IR kilat di bagian awal asesmen, dan sebisa mungkin saya update terus.
+Untuk beberapa perintah berbasis powershell, saya berikan karakter "[ps]" sebelumnya.
 
 <!--more-->
 #### command line yang saya pakai
@@ -20,6 +21,7 @@ serta dapat dipakai sebagai script IR kilat di bagian awal asesmen.
 1. list usernames
 ```bash
 net user
+[ps]Get-LocalUser
 ```
 
 2. last logon, group member, password settings, user full name, etc
@@ -81,6 +83,19 @@ netstat -bona
 ```bash
 netsh firewall show state
 ```
+
+12. [powershell] melihat dan setting execution policy
+```bash
+Get-ExecutionPolicy
+Set-ExecutionPolicy
+```
+
+13. [powershell] check PS version
+```bash
+Get-Host | Select-Object Version
+```
+
+14.
 
 
 #### penutup
