@@ -24,6 +24,7 @@ net user
 ```bash
 Get-LocalUser
 ```
+
 list ADusername
 ```bash
 Get-ADUser -Filter 'Name -Like "*"' | where Enabled -eq $True
@@ -53,18 +54,22 @@ show ADgroups
 Get-ADGroupMember Administrators | where objectClass -eq 'user'
 ```
 ```bash
-Get-ADComputer -Filter "Name -Like '*'" -Properties * | where Enabled
--eq $True | Select-Object Name, OperatingSystem, Enabled
+Get-ADComputer -Filter "Name -Like '*'" -Properties * | where Enabled -eq $True | Select-Object Name, OperatingSystem, Enabled
 ```
-
 
 4. list running programs (and certain programs only)
 ```bash
 tasklist
 tasklist /m /fi “pid eq <Insert Process ID here w/out the brackets>”
 ```
+```bash
+Get-CimInstance -ClassName Win32_Process | Select-Object CreationDate, ProcessName, ProcessID, CommandLine, ParetProcessId | where ProcessID -eq xxxx
+```
+```bash
+Get-Process | Select-Object StartTime, ProcessName, ID, Path | Where Id -eq xxxx
+```
 
-5. list all schedule task, services
+5. list schedule task, services
 ```bash
 schtasks /query /fo list /v > schtasks.txt
 ```
@@ -102,6 +107,7 @@ wmic /node:<remote-ip> /user:<username> process get description,processid,parent
 wmic /node:<remote-ip> /user:<username> bios get serialnumber
 wmic /node:<remote-ip> /user:<username> diskdrive get model,serialNumber,size,mediaType
 ```
+
 9.ipconfig
 ```bash
 ipconfig /displaydns
@@ -112,6 +118,7 @@ network activity
 ```bash
 Get-NetTCPConnection -RemoteAddress xxx.xxx.xxx.xxx -RemotePort xx | Select-Object CreationTime, LocalAddress, LocalPort, RemoteAddress, RemotePort, OwningProcess, Stat
 ```
+
 netstat with PID
 ```bash
 netstat -bona
@@ -133,6 +140,20 @@ Set-ExecutionPolicy
 Get-Host | Select-Object Version
 ```
 
+14. hashing
+```bash
+Get-FileHash .\file.txt -Algorithm MD5
+```
+
+15. ADS
+```bash
+Get-Item .\file.txt -Stream *
+```
+
+16. raw file access, hex
+```bash
+Get-Content .\ps.txt –Encoding Byte | Format-Hex
+```
 
 #### penutup
 
