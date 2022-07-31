@@ -13,7 +13,6 @@ categories:
 <s>Saya sedang mengerjakan sebuah investigation challenge di tryhackme.com,
 dan ada </s> Beberapa command line yang saya pakai disana yang menurut saya cukup menarik untuk di dokumentasikan,
 serta dapat dipakai sebagai script IR kilat di bagian awal asesmen, dan sebisa mungkin saya update terus.
-Untuk beberapa perintah berbasis powershell, saya berikan karakter "[ps]" sebelumnya.
 
 <!--more-->
 #### command line yang saya pakai
@@ -21,7 +20,17 @@ Untuk beberapa perintah berbasis powershell, saya berikan karakter "[ps]" sebelu
 1. list usernames
 ```bash
 net user
-[ps]Get-LocalUser
+```
+```bash
+Get-LocalUser
+```
+list ADusername
+```bash
+Get-ADUser -Filter 'Name -Like "*"' | where Enabled -eq $True
+```
+list logged on user
+```bash
+Get-CimInstance –ClassName Win32_ComputerSystem | Select-Object Name, UserName, PrimaryOwnerName, Domain, TotalPhysicalMemory, Model, Manufacturer
 ```
 
 2. last logon, group member, password settings, user full name, etc
@@ -36,6 +45,18 @@ net localgroup
 ```bash
 net localgroup "Administrators"
 ```
+```bash
+Get-LocalGroup
+```
+show ADgroups
+```bash
+Get-ADGroupMember Administrators | where objectClass -eq 'user'
+```
+```bash
+Get-ADComputer -Filter "Name -Like '*'" -Properties * | where Enabled
+-eq $True | Select-Object Name, OperatingSystem, Enabled
+```
+
 
 4. list running programs (and certain programs only)
 ```bash
@@ -43,9 +64,17 @@ tasklist
 tasklist /m /fi “pid eq <Insert Process ID here w/out the brackets>”
 ```
 
-5. list all schedule task.
+5. list all schedule task, services
 ```bash
 schtasks /query /fo list /v > schtasks.txt
+```
+
+list services
+```bash
+Get-CimInstance –ClassName Win32_Service | Select-Object Name, DisplayName, StartMode, State, PathName, StartName, ServiceType
+```
+```bash
+Get-Service | Select-Object Name, DisplayName, Status, StartType
 ```
 
 6. various wevtutil
@@ -57,6 +86,10 @@ wevtutil el | Measure-Object
 7. system information
 ```bash
 systeminfo
+```
+osbuild, servicepack, buildnumber, csname, lastboot
+```bash
+Get-CimInstance Win32_OperatingSystem | Select-Object Caption, Version, servicepackmajorversion, BuildNumber, CSName, LastBootUpTime
 ```
 
 8. various wmic
@@ -74,7 +107,12 @@ wmic /node:<remote-ip> /user:<username> diskdrive get model,serialNumber,size,me
 ipconfig /displaydns
 ```
 
-10. netstat with PID
+10. network related
+network activity
+```bash
+Get-NetTCPConnection -RemoteAddress xxx.xxx.xxx.xxx -RemotePort xx | Select-Object CreationTime, LocalAddress, LocalPort, RemoteAddress, RemotePort, OwningProcess, Stat
+```
+netstat with PID
 ```bash
 netstat -bona
 ```
@@ -84,18 +122,16 @@ netstat -bona
 netsh firewall show state
 ```
 
-12. [powershell] melihat dan setting execution policy
+12. melihat dan setting execution policy
 ```bash
 Get-ExecutionPolicy
 Set-ExecutionPolicy
 ```
 
-13. [powershell] check PS version
+13. check PS version
 ```bash
 Get-Host | Select-Object Version
 ```
-
-14.
 
 
 #### penutup
