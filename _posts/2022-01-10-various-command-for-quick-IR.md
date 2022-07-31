@@ -24,7 +24,6 @@ net user
 ```bash
 Get-LocalUser
 ```
-
 list ADusername
 ```bash
 Get-ADUser -Filter 'Name -Like "*"' | where Enabled -eq $True
@@ -73,7 +72,6 @@ Get-Process | Select-Object StartTime, ProcessName, ID, Path | Where Id -eq xxxx
 ```bash
 schtasks /query /fo list /v > schtasks.txt
 ```
-
 list services
 ```bash
 Get-CimInstance –ClassName Win32_Service | Select-Object Name, DisplayName, StartMode, State, PathName, StartName, ServiceType
