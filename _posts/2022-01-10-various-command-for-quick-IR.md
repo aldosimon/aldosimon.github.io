@@ -21,9 +21,11 @@ list usernames
 net user
 ```
 ```bash
-Get-LocalUser
+Get-LocalUser | Select name, Enabled, sid, lastlogon
 ```
-
+```bash
+wmic useraccount get name, accounttype, sid, status
+```
 list ADusername
 ```bash
 Get-ADUser -Filter 'Name -Like "*"' | where Enabled -eq $True
