@@ -12,6 +12,7 @@ categories:
 
 even with the awesome list all over github, I kept losing tracks of cool tools, so here are some of them:
 (last update 07.08.2022)
+
 #### event log parser
 
 [chainsaw](https://github.com/WithSecureLabs/chainsaw)
@@ -35,8 +36,10 @@ Loki - Simple IOC and YARA Scanner
 Kroll Artifact Parser And Extractor, lets forensic teams collect and process forensically useful artifacts within minutes.
 
 #### all in one analysis
+
 [autposy/ TSK](http://www.sleuthkit.org/)
 Autopsy® is a digital forensics platform and graphical interface to The Sleuth Kit® and other digital forensics tools
 
 #### knowledge base, tutorial, etc
+
 [event ids](https://github.com/stuhli/awesome-event-ids)
