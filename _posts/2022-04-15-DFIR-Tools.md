@@ -43,3 +43,4 @@ Autopsy® is a digital forensics platform and graphical interface to The Sleuth 
 #### knowledge base, tutorial, etc
 
 [event ids](https://github.com/stuhli/awesome-event-ids)
+[mitre to evtx](https://github.com/mdecrevoisier/EVTX-to-MITRE-Attack)
