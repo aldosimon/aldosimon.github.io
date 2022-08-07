@@ -37,3 +37,6 @@ Kroll Artifact Parser And Extractor, lets forensic teams collect and process for
 #### all in one analysis
 [autposy/ TSK](http://www.sleuthkit.org/)
 Autopsy® is a digital forensics platform and graphical interface to The Sleuth Kit® and other digital forensics tools
+
+#### knowledge base, tutorial, etc
+[event ids](https://github.com/stuhli/awesome-event-ids)
