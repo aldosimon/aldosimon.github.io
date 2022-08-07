@@ -4,7 +4,7 @@ published: true
 title: DFIR tools
 author: admin
 comments: true
-date: '2022-08-07 18:00'
+date: '2022-08-06 18:00'
 categories:
   - DFIR
   - Tools
