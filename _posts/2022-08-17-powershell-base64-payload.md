@@ -4,7 +4,7 @@ published: true
 title: powershell base64 payload
 author: admin
 comments: true
-date: '2022-08-17 18:00'
+date: '2022-08-17 07:00'
 categories:
   - DFIR
   - powershell
