@@ -12,7 +12,7 @@ categories:
 
 even with the awesome list all over github, I kept losing tracks of cool tools, so here are some of them:
 
-(last update 07.08.2022)
+(last update 17.08.2022)
 <!--more-->
 #### event log parser
 
@@ -23,6 +23,7 @@ Chainsaw provides a powerful ‘first-response’ capability to quickly identify
 a PowerShell Module for Threat Hunting via Windows Event Logs
 
 [logparser studio](https://techcommunity.microsoft.com/t5/exchange-team-blog/log-parser-studio-2-0-is-now-available/ba-p/593266)
+various log parsing with SQL Language interface
 #### endpoint
 
 [velociraptor](https://github.com/Velocidex/velociraptor)
