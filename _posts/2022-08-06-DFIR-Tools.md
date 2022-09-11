@@ -14,7 +14,7 @@ even with the awesome list all over github, I kept losing tracks of cool tools, 
 
 (last update 11.09.2022)
 
-moving this to [aldosimon/dfir](https://aldosimon.com/dfir/)
+in the spirit of keep updating the resources, I'm moving this post to [aldosimon/dfir](https://aldosimon.com/dfir/) 
 <!--more-->
 #### event log parser
 
