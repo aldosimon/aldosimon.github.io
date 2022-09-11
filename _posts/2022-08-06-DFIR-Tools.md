@@ -12,7 +12,9 @@ categories:
 
 even with the awesome list all over github, I kept losing tracks of cool tools, so here are some of them:
 
-(last update 17.08.2022)
+(last update 11.09.2022)
+
+moving this to http://aldosimon/dfir/
 <!--more-->
 #### event log parser
 
