@@ -6,10 +6,10 @@ published: true
 ---
 
 
-even with the awesome list all over github, I kept losing tracks of cool tools, so here are some of them:
+even with the awesome list all over github, I kept losing tracks of cool tools, scripts, cheatsheet so here are some of them:
 
-(last update 17.08.2022)
-<!--more-->
+(last update 11.09.2022)
+
 #### event log parser
 
 [chainsaw](https://github.com/WithSecureLabs/chainsaw)
