@@ -43,10 +43,16 @@ Kroll Artifact Parser And Extractor, lets forensic teams collect and process for
 [autposy/ TSK](http://www.sleuthkit.org/)
 Autopsy® is a digital forensics platform and graphical interface to The Sleuth Kit® and other digital forensics tools
 
-#### knowledge base, tutorial, etc
+#### knowledge base, tutorial, cheatsheet, etc
 
 [event ids](https://github.com/stuhli/awesome-event-ids)
 github event id awesome list
 
 [mitre to evtx](https://github.com/mdecrevoisier/EVTX-to-MITRE-Attack)
 MITRE mapping to event id
+
+[lenny zeltser log cheatsheet](https://zeltser.com/media/docs/security-incident-log-review-checklist.pdf)
+IR critical log review cheatsheet
+
+[lenny zeltser incident survey](https://zeltser.com/media/docs/security-incident-survey-cheat-sheet.pdf)
+Security incident survey cheat sheet for server administrators
