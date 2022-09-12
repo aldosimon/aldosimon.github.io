@@ -1,7 +1,7 @@
 ---
 layout: page
 title: DFIR resources
-permalink: /dfir_resources/
+permalink: /dfirresources/
 published: true
 ---
 
