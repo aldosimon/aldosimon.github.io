@@ -8,7 +8,7 @@ published: true
 
 even with the awesome list all over github, I kept losing tracks of cool tools, scripts, cheatsheet so here are some of them:
 
-(last update 11.09.2022)
+(last update 05.10.2022)
 
 #### event log parser
 
@@ -52,3 +52,6 @@ IR critical log review cheatsheet
 
 [lenny zeltser incident survey](https://zeltser.com/media/docs/security-incident-survey-cheat-sheet.pdf)
 Security incident survey cheat sheet for server administrators
+
+[sentinel hunting query](https://danielchronlund.com/2022/10/03/sentinel-hunting-query-pack-dcsecurityoperations/)
+sentinel hunting query

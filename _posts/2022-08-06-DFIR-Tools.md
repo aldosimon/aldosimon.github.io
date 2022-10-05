@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: DFIR tools
+title: [moved] DFIR tools
 author: admin
 comments: true
 date: '2022-08-06 18:00'
@@ -14,7 +14,7 @@ even with the awesome list all over github, I kept losing tracks of cool tools, 
 
 (last update 11.09.2022)
 
-in the spirit of keep updating the resources, I'm moving this post to [aldosimon/dfir](https://aldosimon.com/dfir/) 
+in the spirit of keep updating the resources, I'm moving this post to [aldosimon/dfir](https://aldosimon.com/dfir/)
 <!--more-->
 #### event log parser
 
@@ -58,6 +58,3 @@ IR critical log review cheatsheet
 
 [lenny zeltser incident survey](https://zeltser.com/media/docs/security-incident-survey-cheat-sheet.pdf)
 Security incident survey cheat sheet for server administrators
-
-[sentinel hunting query](https://danielchronlund.com/2022/10/03/sentinel-hunting-query-pack-dcsecurityoperations/)
-sentinel hunting query
