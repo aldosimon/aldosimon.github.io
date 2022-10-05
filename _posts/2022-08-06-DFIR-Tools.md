@@ -58,3 +58,6 @@ IR critical log review cheatsheet
 
 [lenny zeltser incident survey](https://zeltser.com/media/docs/security-incident-survey-cheat-sheet.pdf)
 Security incident survey cheat sheet for server administrators
+
+[sentinel hunting query](https://danielchronlund.com/2022/10/03/sentinel-hunting-query-pack-dcsecurityoperations/)
+sentinel hunting query
