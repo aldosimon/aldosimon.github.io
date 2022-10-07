@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: [moved] DFIR tools
+title: DFIR tools
 author: admin
 comments: true
 date: '2022-08-06 18:00'
