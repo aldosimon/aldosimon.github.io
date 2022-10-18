@@ -8,7 +8,8 @@ published: true
 
 even with the awesome list all over github, I kept losing tracks of cool tools, scripts, cheatsheet so here are some of them:
 
-(last update 05.10.2022)
+update 05.10.2022
+update 18.10.2022 add 365defender resources
 
 #### event log parser
 
@@ -55,3 +56,6 @@ Security incident survey cheat sheet for server administrators
 
 [sentinel hunting query](https://danielchronlund.com/2022/10/03/sentinel-hunting-query-pack-dcsecurityoperations/)
 sentinel hunting query
+
+[365 defender](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/become-a-microsoft-365-defender-ninja/ba-p/1789376)
+365 defender resources
