@@ -4,12 +4,12 @@ published: true
 title: praktisi mengajar 2022
 author: admin
 comments: true
-date: '2022-11-15 18:00'
+date: '2022-11-11 18:00'
 categories:
   - other stuff
 ---
 
-I got the chance to co-teach at a university on network forensic through the praktisi mengajar programme. The topic was on network forensic, and the overall experience was fun.
+I got the chance to co-teach at a university on network forensic through the praktisi mengajar program. The topic was on network forensic, and the overall experience was fun.
 I might have misjudged the knowledge of university students, something that I planned on fixing if another similar chance arrived.
 The network forensic class co-teach took half a semester (i.e. 4 meetings @ 2 hour) and I cover suricata and wireshark (super briefly).
 anywho, here are my most favourite documentation of all the classes, the dude in the middle is a lot like me when I'm doing my job, super confused
