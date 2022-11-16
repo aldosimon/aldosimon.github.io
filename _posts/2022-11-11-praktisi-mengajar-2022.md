@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title: praktisi mengajar 2022
 author: admin
 comments: true
