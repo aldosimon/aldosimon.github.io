@@ -1,15 +1,16 @@
 ---
-layout: post
 title: berbagai perintah wmic
-date: 2019-03-07 08:00
+date: 2019-03-07 08:00:00 Z
+categories:
+- DFIR
+- forensic
+- forensik
+- triage
+layout: post
 author: admin
 comments: true
-categories:
-  - DFIR
-  - forensic
-  - forensik
-  - triage
 ---
+
 Beberapa perintah wmic yang berguna saat melakukan *triage*, yang *rencananya* akan terus di update
 <!--more-->
 #### nama, model, ukuran dan serial number hard drive

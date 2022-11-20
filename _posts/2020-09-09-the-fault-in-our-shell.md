@@ -1,15 +1,15 @@
 ---
-layout: post
-published: true
 title: the fault in our shell
+date: 2020-09-09 11:34:00 Z
+categories:
+- "-forensic"
+- "-writings"
+- "-honeypot"
+layout: post
 author: admin
 comments: true
-date: '2020-09-09 11:34'
-categories:
-  -forensic
-  -writings
-  -honeypot
 ---
+
 Tulisan lama saya mengenai honeypot. Secara umum sebagian besar malware yang melakukan serangan merupakan varian dari Mirai.
 <!--more-->
 Serangan dilakukan dengan menggunakan brute force kombinasi username/password yang sangat umum ditemui dalam wordlist/dictionary maupun username/password default milik beberapa device IoT.

@@ -1,13 +1,14 @@
 ---
-layout: post
-published: false
 title: moving to static
+date: 2019-11-07 06:38:00 Z
+published: false
+categories:
+- "-random"
+layout: post
 author: admin
 comments: true
-date: '2019-11-07 06:38'
-categories:
-  -random
 ---
+
 #### intro
 
 Around one year back, [this site](aldosimon.com) was breached. This is the second time it happened. The first time was through [remote file inclusion](https://www.imperva.com/learn/application-security/rfi-remote-file-inclusion/). I wrote my own 'so called' blog cms, which is immensely simple, but had a built in feature of remote file inclusion.

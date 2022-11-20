@@ -1,13 +1,12 @@
 ---
-layout: post
-published: true
 title: DFIR tools
+date: 2022-08-06 18:00:00 Z
+categories:
+- DFIR
+- Tools
+layout: post
 author: admin
 comments: true
-date: '2022-08-06 18:00'
-categories:
-  - DFIR
-  - Tools
 ---
 
 even with the awesome list all over github, I kept losing tracks of cool tools, so here are some of them:

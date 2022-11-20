@@ -1,15 +1,14 @@
 ---
-layout: post
-published: true
 title: persistence dengan netsh
+date: 2020-04-26 10:54:00 Z
+categories:
+- "-forensic"
+- "-persistence"
+- "-artifacts"
+- "-forensik"
+layout: post
 author: admin
 comments: true
-date: '2020-04-26 10:54'
-categories:
-  -forensic
-  -persistence
-  -artifacts
-  -forensik
 ---
 
 Sebagai sebuah blog yang *mengaku* blog forensik, malu rasanya tidak pernah menulis tentang forensik. Tadi pagi ketika membaca thisweekin4n6, ada artikel yang cukup menarik, yaitu teknik menggunakan netsh dalam melakukan persistence. Netsh sendiri secara default terinstall di Windows, sehingga teknik ini merupakan teknik yang cukup menarik untuk dibahas walaupun sudah lama beredar.

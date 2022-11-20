@@ -1,12 +1,11 @@
 ---
-layout: post
-published: true
 title: write up - suspicious mshta behavior
+date: 2022-04-13 18:00:00 Z
+categories:
+- DFIR
+layout: post
 author: admin
 comments: true
-date: '2022-04-13 18:00'
-categories:
-  - DFIR
 ---
 
 I've been trying out [letsdefend.io](https://letsdefend.io/) for a couple of week, and here's a write up of one of the challenge. its a platform to hone your blue teaming skill, you will be using some sort of SIEM apps and act as an analyst, i.e. finding IOC and deciding escalation etc. There are not a lot of blue team training site, and this hands on concept by [letsdefend.io](https://letsdefend.io/) is great. 

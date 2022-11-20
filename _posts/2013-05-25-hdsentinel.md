@@ -1,13 +1,14 @@
 ---
-layout: post
 title: melihat status hard disk dengan hdsentinel
-date: 2013-05-25 08:39
+date: 2013-05-25 08:39:00 Z
+categories:
+- hardware
+- ubuntu
+layout: post
 author: admin
 comments: true
-categories:
-  - hardware
-  - ubuntu
 ---
+
 HDD external yang tidak terdeteksi sensors atau hdtemp? Coba gunakan hdsentinel, mampu mendeteksi HDD external yang tidak terdeteksi hdtemp, bahkan yang terhubung via docking.
 <!--more-->
 

@@ -1,12 +1,13 @@
 ---
-layout: post
-published: true
 title: moving to static website
+date: 2019-11-01 00:00:00 Z
+categories:
+- "-random"
+layout: post
 author: admin
 comments: true
-categories:
-  -random
 ---
+
 ![moving](/images/moving.jpg){: .center-image }
 
 I'm moving to static web hosting, since the last wordpress installation got infected with emotet :(

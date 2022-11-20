@@ -1,8 +1,7 @@
 ---
-layout: page
 title: CV
-permalink: /cv2/
-published: true
+permalink: "/cv2/"
+layout: page
 ---
 
 <center> <h2> Ewaldo Simon Hiras / Digital Forensic Investigator </h2> </center>

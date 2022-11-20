@@ -1,16 +1,16 @@
 ---
-layout: post
 title: penggunaan fuzzy hash dalam ediscovery
-date: '2019-08-24 06:35'
+date: 2019-08-24 06:35:00 Z
+categories:
+- ediscovery
+- forensic
+- ssdeep
+- forensik
+layout: post
 author: admin
 comments: true
-categories:
-  - ediscovery
-  - forensic
-  - ssdeep
-  - forensik
-published: true
 ---
+
 Beberapa saat yang lalu, ketika sedang menunggu rekan-rekan praktisi forensik digital melakukan akuisisi pada beberapa perangkat komunikasi, mata penulis terpaku pada sebuah poster SANS forensic yang berisi teknik identifikasi *malware*. Dari beberapa teknik identifikasi tersebut, terdapat salah satu teknik untuk menghitung kesamaan dari dua buah *malware* yang berbeda. Penulis bertanya di dalam hati, mengapa teknik tersebut tidak digunakan untuk mencari dokumen elektronik yang memiliki kesamaan. Pertanyaan tersebut tidak menuai jawaban hari itu….karena penulis bertanya di dalam hati.
 <!--more-->
 #### pengantar

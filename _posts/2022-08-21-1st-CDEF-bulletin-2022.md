@@ -1,14 +1,13 @@
 ---
-layout: post
-published: true
 title: 1st CDEF bulletin 2022
+date: 2022-08-21 18:00:00 Z
+categories:
+- MITRE
+- Security
+- Framework
+layout: post
 author: admin
 comments: true
-date: '2022-08-21 18:00'
-categories:
-  - MITRE
-  - Security
-  - Framework
 ---
 
 My writings on use case of MITRE that I send  to cdef.id for their (supposedly) quarterly bulletin.

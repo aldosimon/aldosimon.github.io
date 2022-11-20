@@ -1,15 +1,16 @@
 ---
-layout: post
-published: false
 title: various command for quick IR
+date: 2022-01-10 23:00:00 Z
+published: false
+categories:
+- DFIR
+- incident Response
+- shell
+layout: post
 author: admin
 comments: true
-date: '2022-01-10 23:00'
-categories:
-  - DFIR
-  - incident Response
-  - shell
 ---
+
 winevent viewer shell
 #### command line yang saya pakai
 

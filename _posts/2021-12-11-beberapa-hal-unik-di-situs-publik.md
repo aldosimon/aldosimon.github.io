@@ -1,13 +1,13 @@
 ---
-layout: post
-published: true
 title: beberapa hal unik di situs publik
+date: 2021-12-11 21:52:00 Z
+categories:
+- malware
+layout: post
 author: admin
 comments: true
-date: '2021-12-11 21:52'
-categories:
-  - malware
 ---
+
 #### intro
 
 Tulisan ini mendokumentasikan beberapa hal unik yang kebetulan saya lihat bersarang di situs publik. Biasanya saya temukan ketika sedang iseng menjelajah internet.

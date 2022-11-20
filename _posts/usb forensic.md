@@ -1,13 +1,13 @@
 ---
-layout: post
-published: false
 title: analisis USB devices
+date: 2020-05-19 21:52:00 Z
+published: false
+layout: post
 author: admin
 comments: true
-date: '2020-05-19 21:52'
-categories:
-  -random
+categories: "-random"
 ---
+
 #### intro
 
 

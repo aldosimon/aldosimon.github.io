@@ -1,15 +1,15 @@
 ---
-layout: post
-published: true
 title: various command for quick IR
+date: 2022-01-10 23:00:00 Z
+categories:
+- DFIR
+- incident Response
+- shell
+layout: post
 author: admin
 comments: true
-date: '2022-01-10 23:00'
-categories:
-  - DFIR
-  - incident Response
-  - shell
 ---
+
 <s>Saya sedang mengerjakan sebuah investigation challenge di tryhackme.com,
 dan ada </s> Beberapa command line yang menurut saya cukup menarik untuk di dokumentasikan, serta dapat dipakai sebagai sarana IR kilat di bagian awal asesmen.
 

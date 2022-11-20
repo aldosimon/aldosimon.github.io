@@ -1,15 +1,15 @@
 ---
-layout: post
-published: true
 title: nginx log terkait log4j/ log4shell
+date: 2021-12-23 22:00:00 Z
+categories:
+- vuln
+- nginx
+- log
+layout: post
 author: admin
 comments: true
-date: '2021-12-23 22:00'
-categories:
-  - vuln
-  - nginx
-  - log
 ---
+
 #### intro
 
 log4j/ log4shell adalah sebuah vuln yang cukup menghebohkan di akhir tahun ini, hal ini karena aplikasi logging ini cukup banyak di pakai di software OSS, serta vuln. nya yang cukup parah.

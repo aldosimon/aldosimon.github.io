@@ -1,17 +1,16 @@
 ---
-layout: post
 title: fix ubuntu 11.04 wifi problem
-date: '2012-08-29 12:30'
+date: 2012-08-29 12:30:00 Z
+categories:
+- how to
+- networking
+- rfkill
+- ubuntu
+layout: post
 author: admin
 comments: true
-categories:
-  - how to
-  - networking
-  - rfkill
-  - ubuntu
-  - ubuntu
-published: true
 ---
+
 No wifi on 11.04?
 <!--more-->
 

@@ -1,10 +1,8 @@
 ---
-layout: page
 title: DFIR resources
-permalink: /dfir/
-published: true
+permalink: "/dfir/"
+layout: page
 ---
-
 
 even with the awesome list all over github, I kept losing tracks of cool tools, scripts, cheatsheet so here are some of them:
 

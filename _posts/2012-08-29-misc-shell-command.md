@@ -1,12 +1,13 @@
 ---
-layout: post
 title: misc. shell command
-date: 2012-08-29 12:15
+date: 2012-08-29 12:15:00 Z
+categories:
+- linux
+layout: post
 author: admin
 comments: true
-categories:
-  - linux
 ---
+
 Beberapa perintah shell (bash) yang *rencananya* akan di-*update* terus.
 
 dmesg refresh

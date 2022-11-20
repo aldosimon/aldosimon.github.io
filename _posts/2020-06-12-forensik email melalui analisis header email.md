@@ -1,15 +1,15 @@
 ---
-layout: post
-published: true
 title: forensik email melalui analisis header email
+date: 2020-06-12 11:08:00 Z
+categories:
+- "-email"
+- forensics
+- forensik
+layout: post
 author: admin
 comments: true
-date: '2020-06-12 11:08'
-categories:
-  -email forensics
-  -email forensik
-  -email
 ---
+
 email merupakan sebuah sarana komunikasi yang umum digunakan banyak pihak. Penting bagi seorang investigator forensik digital untuk mengerti secara menyeluruh, bagaimana protokol email bekerja. Tulisan ini akan membahas sebagian dari forensik pada email, dengan berfokus pada header email.
 <!--more-->
 sebagai bagian pembahasan, kita akan membedah sebuah email dari paypal di bawah ini:

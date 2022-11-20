@@ -1,12 +1,12 @@
 ---
-layout: post
-published: false
 title: praktisi mengajar 2022
+date: 2022-11-11 18:00:00 Z
+published: false
+categories:
+- other stuff
+layout: post
 author: admin
 comments: true
-date: '2022-11-11 18:00'
-categories:
-  - other stuff
 ---
 
 I got the chance to co-teach at a university on network forensic through the praktisi mengajar program. The topic was on network forensic, and the overall experience was fun.

@@ -1,14 +1,15 @@
 ---
-layout: post
 title: how to start networking ubuntu
-date: 2012-08-29 12:27
+date: 2012-08-29 12:27:00 Z
+categories:
+- how to
+- networking
+- ubuntu
+layout: post
 author: admin
 comments: true
-categories:
-  - how to
-  - networking
-  - ubuntu
 ---
+
 Mess your connection? here's how to start networking ubuntu from console
 <!--more-->
 ```bash

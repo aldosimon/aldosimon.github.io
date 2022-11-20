@@ -1,13 +1,12 @@
 ---
-layout: post
-published: true
 title: powershell base64 payload
+date: 2022-08-17 07:00:00 Z
+categories:
+- DFIR
+- powershell
+layout: post
 author: admin
 comments: true
-date: '2022-08-17 07:00'
-categories:
-  - DFIR
-  - powershell
 ---
 
 I was doing some 'weird jobs', and needed to know what really is happening with this powershell base64 payload.

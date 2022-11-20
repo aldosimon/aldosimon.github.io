@@ -1,17 +1,17 @@
 ---
-layout: post
-published: true
 title: windows core processes
+date: 2022-04-16 23:00:00 Z
+categories:
+- DFIR
+- incident Response
+- windows internals
+- sysinternals
+- malware
+layout: post
 author: admin
 comments: true
-date: '2022-04-16 23:00'
-categories:
-  - DFIR
-  - incident Response
-  - windows internals
-  - sysinternals
-  - malware
 ---
+
 Dalam sebuah kegiatan incident response, adakalanya kita perlu mengetahui karakteristik proses yang sedang berjalan, sehingga dapat memutuskan apakah proses tersebut malicious atau tidak.
 Berikut beberapa proses inti windows (Windows core processes), dengan sedikit deskripsi dan karakteristik masing-masing, sebagai acuan baseline, sehingga ketika melakukan incident response kita memiliki kemudahan untuk melakukan filtering proses yang malicious atau tidak.
 
