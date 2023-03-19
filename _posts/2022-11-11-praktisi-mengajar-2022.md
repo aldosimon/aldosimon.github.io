@@ -1,7 +1,10 @@
 ---
 title: praktisi mengajar and deal mentor 2022
 date: 2022-11-11 18:00:00 Z
+<<<<<<< HEAD
 published: False
+=======
+>>>>>>> 2b6d2854330ec5ca1a5420e26417de916239c412
 categories:
 - other stuff
 layout: post
