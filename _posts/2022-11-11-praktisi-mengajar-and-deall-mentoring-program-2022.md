@@ -1,7 +1,7 @@
 ---
 title: praktisi mengajar and deall mentoring program 2022
 date: 2022-11-11 18:00:00 Z
-published: False
+published: false
 categories:
 - other stuff
 layout: post

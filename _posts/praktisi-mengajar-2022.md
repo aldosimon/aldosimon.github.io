@@ -1,15 +1,5 @@
 ---
-title: praktisi mengajar and deal mentor 2022
-date: 2022-11-11 18:00:00 Z
-<<<<<<< HEAD
-published: False
-=======
->>>>>>> 2b6d2854330ec5ca1a5420e26417de916239c412
-categories:
-- other stuff
-layout: post
-author: admin
-comments: true
+title: 2022 11 11 Praktisi Mengajar 2022
 ---
 
 So I got two interesting opportunity in 2022. That is praktisi mengajar to talk about network forensic, and the other one is Deall Mentorship. Here how's those things goes:
