@@ -4,7 +4,7 @@ permalink: "/about/"
 layout: page
 ---
 
-ewaldo simon hiras/ aldo simon is a digital forensic and incident response enthusiast with interest in sleep marathon. currently doing digital forensic/ ediscovery for Directorate General of Taxes.
+ewaldo simon hiras/ aldo simon is a digital forensic and incident response enthusiast with interest in sleep marathon. currently doing DFIR for private company. <s>digital forensic/ ediscovery for Directorate General of Taxes</s>.
 
 learn more from my [cv](https://aldosimon.com/cv).
 
