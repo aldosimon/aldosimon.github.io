@@ -1,7 +1,6 @@
 ---
 title: praktisi mengajar 2022
 date: 2022-11-11 18:00:00 Z
-published: True
 categories:
 - other stuff
 layout: post
