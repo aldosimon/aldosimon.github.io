@@ -1,14 +1,14 @@
 ---
-title: various command for quick IR
+title: win-event-with-cmd-and-power-shell copy
 date: 2022-01-10 23:00:00 Z
 published: false
 categories:
 - DFIR
 - incident Response
 - shell
-layout: post
 author: admin
 comments: true
+layout: post
 ---
 
 winevent viewer shell
