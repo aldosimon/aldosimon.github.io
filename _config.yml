@@ -30,9 +30,10 @@ footer-links:
   stackoverflow: 
   youtube: 
   googleplus: 
+  CV: https://aldosimon.com/cv
 google_analytics: UA-158592968-1
 url: aldosimon.com
-baseurl: ''
+baseurl: 
 excerpt_separator: "<!--more-->"
 paginate: 5
 permalink: "/:title/"
@@ -43,7 +44,7 @@ kramdown:
   syntax_highlighter_opts:
     css_class: highlight
 sass:
-  style: :expanded
+  style: expanded
 gems:
 - jekyll-sitemap
 - jekyll-feed
