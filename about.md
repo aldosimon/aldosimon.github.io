@@ -11,6 +11,6 @@ Currently doing incident response for private company. <s>digital forensic/ edis
 learn more about me from my [cv](https://aldosimon.com/cv) or [linkedin](https://www.linkedin.com/in/aldosimon/)
 
 #### credits
-* [jekyll-now](https://github.com/barryclark/jekyll-now "jekyll-now")
+* CMS using: [jekyll-now](https://github.com/barryclark/jekyll-now "jekyll-now")
 * <s>disqus</s>
-* media from [cleanpng](https://www.cleanpng.com/)/ [pexels](https://www.pexels.com/)/[unsplash](https://unsplash.com)/ [pixabay](https://pixabay.com)
+* various media from [cleanpng](https://www.cleanpng.com/)/ [pexels](https://www.pexels.com/)/[unsplash](https://unsplash.com)/ [pixabay](https://pixabay.com)
