@@ -1,5 +1,5 @@
 ---
-title: DFIR resources
+title: dfir resources
 permalink: "/dfir/"
 layout: page
 ---
