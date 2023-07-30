@@ -8,7 +8,7 @@ ewaldo simon hiras/ aldo simon is a digital forensic and incident response profe
 
 Currently doing incident response for private company. <s>digital forensic/ ediscovery for Directorate General of Taxes</s>.
 
-learn more from my [cv](https://aldosimon.com/cv) or [linkedin](https://www.linkedin.com/in/aldosimon/)
+learn more about me from my [cv](https://aldosimon.com/cv) or [linkedin](https://www.linkedin.com/in/aldosimon/)
 
 #### credits
 * [jekyll-now](https://github.com/barryclark/jekyll-now "jekyll-now")
