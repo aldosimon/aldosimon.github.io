@@ -25,7 +25,9 @@ What basically we need to do is using power shell to do prep work and KAPE to do
 
 * blob storage was used to store KAPE executable and later the collection result.
 
-#### Obstacles 
+#### Obstacles
+Here are obstacles found in implementing the solution and some work around used to deal with it:
+ 
 * KAPE run pretty okay, but in the end decided to use batch mode instead of compound target in KAPE. This is to ensure collection run as efficient as possible.
 
 * One the problem is trying to group folders from the same machine, because batch upload to blob storage will have each batch command in separate folder. 
