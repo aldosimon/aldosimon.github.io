@@ -11,16 +11,19 @@ Throughout my experience using sentinel, I felt that sentinel live response coll
 
 <!--more-->
 #### Intro
-Sentinel have live response capabilities to do collection of devices in case of DFIR needs. The problem is sometime the collection is not as complete as needed, and to customize this, a script (or executable) is needed. Although I won't share any detailed script but here is how similar problem was solved and what obstacle I found.
+Sentinel have live response capabilities to do collection of devices in case of DFIR needs. 
+
+The problem is sometime the collection is not as complete as needed, and to customize this, a script (or executable) is needed. 
+
+Although I won't share any detailed script but here is how similar problem was solved and what obstacle I found.
  
 #### What we did
-These are several things used to improve sentinel live response collection capabilities:
+What basically we need to do is using power shell to do prep work and KAPE to do most of the heavy lifting. These are several steps taken to do that:
+* run live response, download customized power shell script.
 
-* using KAPE to collect
+* power shell script was then used to download KAPE,  run KAPE with required parameters, and upload collection result.
 
-* create power shell to download, and later run KAPE with required parameters
-
-* use some sort of blob storage in cloud to store KAPE executable and later collection result
+* blob storage was used to store KAPE executable and later the collection result.
 
 #### Obstacles 
 * KAPE run pretty okay, but in the end decided to use batch mode instead of compound target in KAPE. This is to ensure collection run as efficient as possible.
