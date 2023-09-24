@@ -27,10 +27,12 @@ These are several things that we use to improve sentinel live response collectio
 
 * One the problem is trying to group folders from the same machine, because batch upload to blob storage will have each batch command in separate folder. Although KAPE -s3kp switch will allow folder grouping, the problem is the switch won't take environment variables (unlike --tsource/ --tdest switch) so no way to group collection result via machine name.
 
-* to solve this, power shell is used to write this environment variables to KAPE batch file in -s3kp switch.
+* Power shell is used to solve this by writing environment variables to KAPE batch file in -s3kp switch.
+
+* Another thing I found is KAPE turns to zombie after finishing task, which is annoying but since collection probably done only once, I don't think this is a big problem.
 
 ## Result
-KAPE run pretty okay, and I think this is a solution well done.
+KAPE run pretty okay, and I think all in all this is a pretty good solution.
 
 Aside than those problems, doing this at scale is another problem to solve. This I believe will require API access and impossible to create workaround via power shell.
 
