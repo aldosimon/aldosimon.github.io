@@ -19,6 +19,7 @@ Although I won't share any detailed script but here is how similar problem was s
  
 #### What we did
 What basically we need to do is using power shell to do prep work and KAPE to do most of the heavy lifting. These are several steps taken to do that:
+
 * run live response, download customized power shell script.
 
 * power shell script was then used to download KAPE,  run KAPE with required parameters, and upload collection result.
