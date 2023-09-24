@@ -1,5 +1,5 @@
 ---
-title: Operationalizing KAPE in sentinel
+title: improving sentinel live response collection
 date: 2023-09-24 13:48:00 Z
 published: false
 categories:
@@ -13,6 +13,9 @@ Sentinel have live response capabilities to do collection of devices in case of 
 
 <!--more-->
 ##Task
-There are 
+These are several things that we use to improve sentinel live response collection capabilities:
+* using KAPE to collect
+* create powershell to run KAPE with required parameters
+* use some sort of blob storage in cloud to store KAPE executable and later collection result
 Action
 Result
