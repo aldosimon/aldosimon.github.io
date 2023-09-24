@@ -39,7 +39,7 @@ Although KAPE -s3kp switch will allow folder grouping, the problem is the switch
 * Another thing I found is KAPE turns to zombie after finishing task, which is annoying but since collection probably done only once, I don't think this is a big problem.
 
 #### Result
-KAPE run pretty okay, and I think all in all this is a pretty good solution.
+In the end the implementation run pretty okay, and I think all in all this is a pretty good solution.
 
 Aside than those problems, doing this at scale is another problem to solve. This I believe will require API access and impossible to create workaround via power shell.
 
