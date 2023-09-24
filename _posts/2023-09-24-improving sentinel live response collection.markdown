@@ -14,7 +14,7 @@ Throughout my experience using sentinel, I felt that sentinel live response coll
 Sentinel have live response capabilities to do collection of devices in case of DFIR needs. The problem is sometime the collection is not as complete as needed, and to customize this, a script (or executable) is needed. Although I won't share any detailed script but here is how similar problem was solved and what obstacle I found.
  
 #### What we did
-These are several things that we use to improve sentinel live response collection capabilities:
+These are several things used to improve sentinel live response collection capabilities:
 
 * using KAPE to collect
 
