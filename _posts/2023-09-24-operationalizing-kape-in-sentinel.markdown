@@ -1,6 +1,7 @@
 ---
 title: Operationalizing KAPE in sentinel
 date: 2023-09-24 13:48:00 Z
+published: false
 categories:
 - DFIR
 - incident Response
