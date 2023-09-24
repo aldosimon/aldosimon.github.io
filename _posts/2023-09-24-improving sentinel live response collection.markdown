@@ -35,4 +35,4 @@ KAPE run pretty okay, and I think this is a solution well done.
 Aside than those problems, doing this at scale is another problem to solve. This I believe will require API access and impossible to create workaround via power shell.
 
 ## Other
-* more on KAPE:[Kape manual](https://ericzimmerman.github.io/KapeDocs/)
+* more on KAPE:[KAPE manual](https://ericzimmerman.github.io/KapeDocs/)
