@@ -7,7 +7,7 @@ categories:
 - SIEM
 ---
 
-Over my experience doing DFIR, I found that sentinel live response collection is not very good. This post document how I try to solve the problem and obstacles I found. 
+Throughout my experience using sentinel, I felt that sentinel live response collection is not very good. This post document how I try to solve the problem and obstacles I found. 
 
 <!--more-->
 ## Intro
