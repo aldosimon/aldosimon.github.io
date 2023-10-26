@@ -39,7 +39,7 @@ Kroll Artifact Parser And Extractor, lets forensic teams collect and process for
 [autposy/ TSK](http://www.sleuthkit.org/)
 Autopsy® is a digital forensics platform and graphical interface to The Sleuth Kit® and other digital forensics tools
 
-#### knowledge base, tutorial, cheatsheet, etc
+#### knowledge base, tutorial, cheat sheet, etc
 
 [event ids](https://github.com/stuhli/awesome-event-ids)
 github event id awesome list
@@ -48,15 +48,12 @@ github event id awesome list
 MITRE mapping to event id
 
 [lenny zeltser log cheatsheet](https://zeltser.com/media/docs/security-incident-log-review-checklist.pdf)
-IR critical log review cheatsheet
 
 [lenny zeltser incident survey](https://zeltser.com/media/docs/security-incident-survey-cheat-sheet.pdf)
 Security incident survey cheat sheet for server administrators
 
 [sentinel hunting query](https://danielchronlund.com/2022/10/03/sentinel-hunting-query-pack-dcsecurityoperations/)
-sentinel hunting query
 
-[365 defender](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/become-a-microsoft-365-defender-ninja/ba-p/1789376)
-365 defender resources
+[365 defender resources](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/become-a-microsoft-365-defender-ninja/ba-p/1789376)
 
-[Linux IR cheatsheet](https://oxidized-card-5c9.notion.site/Linux-Cheat-Sheet-930a862e57244925a83155a89695db91)
+[linux IR cheatsheet](https://oxidized-card-5c9.notion.site/Linux-Cheat-Sheet-930a862e57244925a83155a89695db91)
