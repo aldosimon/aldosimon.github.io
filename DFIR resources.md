@@ -8,6 +8,7 @@ even with the awesome list all over github, I kept losing tracks of cool tools, 
 
 update 05.10.2022
 update 18.10.2022 add 365defender resources
+update 26.10.2023 add linux IR cheatsheet
 
 #### event log parser
 
@@ -57,3 +58,5 @@ sentinel hunting query
 
 [365 defender](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/become-a-microsoft-365-defender-ninja/ba-p/1789376)
 365 defender resources
+
+[Linux IR cheatsheet](https://oxidized-card-5c9.notion.site/Linux-Cheat-Sheet-930a862e57244925a83155a89695db91)
