@@ -58,4 +58,4 @@ Security incident survey cheat sheet for server administrators
 
 [linux IR cheatsheet](https://oxidized-card-5c9.notion.site/Linux-Cheat-Sheet-930a862e57244925a83155a89695db91)
 
-[ideas for writing] (https://oxidized-card-5c9.notion.site/ideas-for-blog-paper-writings-on-information-security-and-forensic-a8dd1a9eb1fc4ffe9fe47728ec30ddec?pvs=4)
+[ideas for writing about infosec/dfir](https://oxidized-card-5c9.notion.site/ideas-for-blog-paper-writings-on-information-security-and-forensic-a8dd1a9eb1fc4ffe9fe47728ec30ddec?pvs=4)
