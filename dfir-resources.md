@@ -4,10 +4,10 @@ permalink: "/dfir-resources/"
 layout: page
 ---
 
-even with the awesome list all over github, I kept losing tracks of cool tools, scripts, cheatsheet so here are some of them:
+even with the awesome list all over GitHub, I kept losing tracks of cool tools, scripts, cheat sheet so here are some of them:
 * 05.10.2022 initial
 * 18.10.2022 add 365defender resources link
-* 26.10.2023 add linux IR cheatsheet link
+* 26.10.2023 add Linux IR cheat sheet link
 * 10.11.2023 add ideas for writing about infosec/dfir link
  
 #### event log parser
