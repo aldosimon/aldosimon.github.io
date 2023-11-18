@@ -5,12 +5,10 @@ layout: page
 ---
 
 even with the awesome list all over github, I kept losing tracks of cool tools, scripts, cheatsheet so here are some of them:
-|date|update|
-|--- |--- |
-|05.10.2022|initial|
-|18.10.2022|add 365defender resources link|
-|26.10.2023|add linux IR cheatsheet link|
-|10.11.2023|add ideas for writing about infosec/dfir link|
+* 05.10.2022 initial
+* 18.10.2022 add 365defender resources link
+* 26.10.2023 add linux IR cheatsheet link
+* 10.11.2023 add ideas for writing about infosec/dfir link
  
 #### event log parser
 
