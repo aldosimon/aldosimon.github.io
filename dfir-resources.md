@@ -5,12 +5,13 @@ layout: page
 ---
 
 even with the awesome list all over github, I kept losing tracks of cool tools, scripts, cheatsheet so here are some of them:
-
-* update 05.10.2022
-* update 18.10.2022 add 365defender resources
-* update 26.10.2023 add linux IR cheatsheet
-* update 10.11.2023 add ideas for writing about infosec/dfir
-
+|date|update|
+|--- |--- |
+|05.10.2022|initial|
+|18.10.2022|add 365defender resources link|
+|26.10.2023|add linux IR cheatsheet link|
+|10.11.2023|add ideas for writing about infosec/dfir link|
+ 
 #### event log parser
 
 [chainsaw](https://github.com/WithSecureLabs/chainsaw)
