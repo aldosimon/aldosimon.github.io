@@ -9,6 +9,7 @@ even with the awesome list all over github, I kept losing tracks of cool tools, 
 * update 05.10.2022
 * update 18.10.2022 add 365defender resources
 * update 26.10.2023 add linux IR cheatsheet
+* update 10.11.2023 add ideas for writing about infosec/dfir
 
 #### event log parser
 
