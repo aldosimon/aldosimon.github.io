@@ -6,9 +6,9 @@ layout: page
 
 even with the awesome list all over github, I kept losing tracks of cool tools, scripts, cheatsheet so here are some of them:
 
-update 05.10.2022
-update 18.10.2022 add 365defender resources
-update 26.10.2023 add linux IR cheatsheet
+* update 05.10.2022
+* update 18.10.2022 add 365defender resources
+* update 26.10.2023 add linux IR cheatsheet
 
 #### event log parser
 
