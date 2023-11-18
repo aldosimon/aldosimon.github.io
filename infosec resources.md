@@ -1,5 +1,5 @@
 ---
-title: dfir resources
+title: infosec resources
 permalink: "/dfir/"
 layout: page
 ---
