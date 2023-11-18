@@ -1,6 +1,6 @@
 ---
 title: infosec-resources
-permalink: "/dfir/"
+permalink: "/infosec-resources/"
 layout: page
 ---
 
