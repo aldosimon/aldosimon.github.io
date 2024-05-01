@@ -7,16 +7,10 @@ tags:
 layout: default
 ---
 
----
-layout: post
-title: meningkatkan Efektifitas Dalam Proses Analisis Digital Forensik (Melalui Penggunaan Tehnik Data Mining)
-date: 2015-12-22 14:37
-author: admin
-comments: true
-categories: [data science, forensic, Image, text clustering]
----
+
 <strong>I. Latar Belakang</strong>
 Digital Forensik, secara sederhana adalah sebuah proses mengumpulkan, menganalisis, serta menyajikan bukti digital yang dilakukan secara ilmiah dan terstandar (sehingga dapat dipertanggungjawabkan di muka pengadilan). Sesuai dengan definisi tersebut, Digital Forensic melibatkan tiga buah proses besar yang saling berkaitan, yaitu : kegiatan mengumpulkan (akuisisi) bukti digital, kegiatan menganalisis bukti digital, dan kegiatan menyajikan bukti digital.
+<!--more-->
 Kegiatan menganalisis sendiri terdiri dari beberapa metode, dengan beberapa metode yang sering digunakan adalah analisis berbagai file log, file carving, timeline analysis, dan text string search. Text string search sendiri memegang peranan penting dalam proses analisis, hal ini disebabkan besarnya data digital yang berbentuk text, dan data digital berbentuk text seringkali memiliki nilai yang tinggi dalam proses investigasi. Data digital berbentuk text dapat berbentuk email, text messages, instant messages, Microsoft Office files, browsing history, bahkan berbagai jenis log.
 Pertumbuhan teknologi di dunia penyimpanan data dan meningkatnya computing power secara drastis menyajikan tantangan baru dalam proses investigasi digital forensic. Kapasitas hard drive yang umum ditemui 5 tahun lalu biasanya berkisar antara 160-320 Gigabyte, dengan semakin murahnya harga media penyimpan, dalam sebuah investigasi digital forensik sekarang, tidak jarang menemui hard drive berkapasitas 1 Terabyte, bahkan dalam 1-2 tahun kedepan hard drive 2 Terabyte akan menjadi hal yang umum.
 Semakin terjangkaunya harga media penyimpan, akan mengakibatkan semakin tingginya noise dalam proses file text searching, sehingga tidak jarang investigator digital forensik harus dengan teliti menyaring ribuan hasil search hit sebuah keyword tertentu yang sebagian besar tidak berhubungan dengan investigasi. Sebuah pencarian dengan keyword “faktur” dengan harapan untuk menemukan pembicaraan email Wajib Pajak mengenai “faktur pajak fiktif” dapat menghasilkan ratusan file mengenai penawaran pelatihan faktur pajak, peraturan tentang faktur pajak dan banyak false hit lain.
