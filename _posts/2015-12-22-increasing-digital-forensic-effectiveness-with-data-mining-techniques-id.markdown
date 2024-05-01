@@ -1,9 +1,10 @@
 ---
 title: increasing digital forensic effectiveness with data mining techniques [ID]
-date: 2024-05-01 02:55:00 Z
+date: 2015-12-22 02:55:00 Z
 tags:
 - DFIR
 - eDiscovery
+layout: default
 ---
 
 ---
