@@ -52,6 +52,8 @@ MITRE mapping to event id
 [lenny zeltser incident survey](https://zeltser.com/media/docs/security-incident-survey-cheat-sheet.pdf)
 Security incident survey cheat sheet for server administrators
 
+[lenny zeltser malicious document cheatsheet](https://zeltser.com/analyzing-malicious-documents/)
+
 [sentinel hunting query](https://danielchronlund.com/2022/10/03/sentinel-hunting-query-pack-dcsecurityoperations/)
 
 [365 defender resources](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/become-a-microsoft-365-defender-ninja/ba-p/1789376)
